@@ -1,0 +1,16 @@
+[project]
+name = "IntCog-R"
+version = "0.1.0"
+description = "可降级的意图驱动意识生成原型"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0",
+    "structlog>=24.1",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]

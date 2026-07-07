@@ -1,0 +1,1 @@
+"""IntCog-R core package."""
