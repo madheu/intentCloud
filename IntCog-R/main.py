@@ -65,15 +65,37 @@ class CogStreamEngine:
             else None
         )
 
-        self.input_queue: asyncio.Queue[str] = asyncio.Queue()
-        self.output_queue: asyncio.Queue[str | FallbackBlueprint] = asyncio.Queue()
+        self.input_queue: asyncio.Queue[str] = asyncio.Queue(maxsize=128)
+        self.output_queue: asyncio.Queue[str | FallbackBlueprint] = asyncio.Queue(maxsize=256)
         self.pending_slow_tasks: set[asyncio.Task[list[ConsciousFrame]]] = set()
         self.logs: list[dict[str, Any]] = []
         self.running = False
 
-    async def ingest(self, text: str) -> None:
-        """用户输入进入感知队列。"""
+    async def ingest(self, text: str) -> bool:
+        """用户输入进入感知队列；队列满时丢弃最旧输入并记录。
+
+        Returns:
+            True if the input was accepted without dropping, False if an older entry was dropped.
+        """
+        dropped = False
+        if self.input_queue.full():
+            try:
+                self.input_queue.get_nowait()
+                self._log_dropped_input("queue_overflow")
+                dropped = True
+            except asyncio.QueueEmpty:
+                pass
         await self.input_queue.put(text)
+        return not dropped
+
+    def _log_dropped_input(self, reason: str) -> None:
+        self.logs.append(
+            {
+                "event": "input_dropped",
+                "reason": reason,
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+            }
+        )
 
     async def tick(self) -> ConsciousFrame | None:
         """执行一个意识 tick。"""
@@ -166,7 +188,7 @@ class CogStreamEngine:
         return planned
 
     async def _collect_slow_results(self, current_tick: int) -> list[ConsciousFrame]:
-        """收集已完成的慢通道结果，丢弃过期的。"""
+        """收集已完成的慢通道结果，丢弃过期的；记录异常。"""
         results: list[ConsciousFrame] = []
         done_tasks: set[asyncio.Task[list[ConsciousFrame]]] = set()
         for task in self.pending_slow_tasks:
@@ -174,7 +196,15 @@ class CogStreamEngine:
                 done_tasks.add(task)
                 try:
                     frames = task.result()
-                except Exception:
+                except Exception as exc:
+                    self.logs.append(
+                        {
+                            "event": "slow_task_error",
+                            "exc_type": type(exc).__name__,
+                            "exc": str(exc),
+                            "timestamp": datetime.now(timezone.utc).isoformat(),
+                        }
+                    )
                     continue
                 for frame in frames:
                     if current_tick - frame.tick_id <= self.max_slow_task_age_ticks:
