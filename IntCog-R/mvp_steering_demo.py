@@ -134,6 +134,8 @@ class TransformerBlock(nn.Module):
 
 
 class CharTokenizer:
+    """简单的字符级 tokenizer，vocab_size=256，映射到连续 ID。"""
+
     def __init__(self) -> None:
         self.bos_id = 0
         self.eos_id = 1
@@ -158,6 +160,14 @@ class CharTokenizer:
     def to_tensor(self, text: str) -> torch.Tensor:
         ids = self.encode(text)
         return torch.tensor([ids], dtype=torch.long)
+
+    def __call__(self, text: str, return_tensors: str = None) -> dict:
+        """模拟 HuggingFace tokenizer 的调用接口。"""
+        ids = self.encode(text)
+        result = {"input_ids": torch.tensor([ids], dtype=torch.long)}
+        if return_tensors == "pt":
+            return result
+        return {"input_ids": ids}
 
 
 # ── 3. 蓝图生成 ──────────────────────────────────────────────────────────────
