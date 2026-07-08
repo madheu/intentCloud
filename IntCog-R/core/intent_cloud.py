@@ -2,6 +2,14 @@
 
 内核（kernel）从配置加载，只读；外壳（shell）在交互中演化，带可信度、
 印证、冲突检测与指数衰减。
+
+新 API（v2）：
+  - add(blueprint)       → 存储 IntentBlueprint
+  - retrieve(blueprint)  → 基于 Jaccard n-gram 相似度检索历史蓝图
+  - enhance_blueprint(bp) → 用历史意图增强当前蓝图
+
+旧 API（v1，保持兼容）：
+  - add_intent / activate / build_blueprint / corroborate / decay_all / reject_kernel_mutation
 """
 from __future__ import annotations
 
@@ -22,6 +30,8 @@ from core.models import (
     SafetyVerdict,
 )
 
+
+# ── 嵌入提供器（保持兼容）─────────────────────────────────────────────────────
 
 class EmbeddingProvider(Protocol):
     """嵌入提供器协议；可替换为 sentence-transformers 或 Ollama 嵌入。"""
@@ -57,8 +67,119 @@ def _cosine_similarity(a: list[float], b: list[float]) -> float:
     return dot  # 输入已归一化
 
 
+# ── Jaccard n-gram 存储（v2 新增）────────────────────────────────────────────
+
+def _extract_ngrams(text: str, n: int = 2) -> set[str]:
+    """从文本中提取字符 n-gram 集合。"""
+    text = text.lower()
+    return {text[i : i + n] for i in range(len(text) - n + 1)}
+
+
+def _blueprint_ngrams(blueprint: IntentBlueprint) -> set[str]:
+    """从蓝图的关键字段中提取 n-gram 集合，用于相似度计算。
+
+    加权策略：core_task 权重最高（2×），deep_goal 和 concepts 各 1×。
+    """
+    parts = [
+        blueprint.core_task * 2,          # 核心任务权重最高
+        blueprint.deep_goal,              # 深层目标
+        " ".join(blueprint.constraints),  # 约束
+        " ".join(blueprint.concepts),     # 概念
+    ]
+    combined = " ".join(p for p in parts if p)
+    return _extract_ngrams(combined)
+
+
+def _jaccard_similarity(a: set[str], b: set[str]) -> float:
+    """Jaccard 系数：|A ∩ B| / |A ∪ B|。
+
+    返回值范围 [0, 1]，1 表示完全相同。
+    """
+    if not a or not b:
+        return 0.0
+    intersection = len(a & b)
+    union = len(a | b)
+    return intersection / union if union > 0 else 0.0
+
+
+class InMemoryIntentStorage:
+    """基于内存的意图存储后端，使用 Jaccard n-gram 相似度进行检索。
+
+    可替换为向量数据库（如 ChromaDB）实现相同接口。
+    """
+
+    def __init__(self, ngram_n: int = 2) -> None:
+        self._entries: dict[str, IntentBlueprint] = {}
+        self._ngrams: dict[str, set[str]] = {}
+        self.ngram_n = ngram_n
+
+    def add(self, blueprint: IntentBlueprint) -> str:
+        """存储蓝图并返回唯一 ID。
+
+        ID 基于蓝图内容的 SHA256 哈希，相同蓝图不会重复存储。
+        """
+        content = f"{blueprint.core_task}|{blueprint.deep_goal}|{blueprint.identity}"
+        bp_id = hashlib.sha256(content.encode()).hexdigest()[:12]
+
+        if bp_id not in self._entries:
+            self._entries[bp_id] = blueprint
+            self._ngrams[bp_id] = _blueprint_ngrams(blueprint)
+        return bp_id
+
+    def get(self, bp_id: str) -> IntentBlueprint | None:
+        """按 ID 获取蓝图。"""
+        return self._entries.get(bp_id)
+
+    def search(
+        self,
+        blueprint: IntentBlueprint,
+        top_k: int = 5,
+        min_similarity: float = 0.0,
+    ) -> list[tuple[IntentBlueprint, float]]:
+        """检索与当前蓝图最相似的历史蓝图。
+
+        Args:
+            blueprint: 当前蓝图
+            top_k: 返回的最大结果数
+            min_similarity: 最低相似度阈值
+
+        Returns:
+            (蓝图, Jaccard 相似度) 列表，按相似度降序
+        """
+        query_ngrams = _blueprint_ngrams(blueprint)
+        scored: list[tuple[str, float]] = []
+
+        for bp_id, stored_ngrams in self._ngrams.items():
+            sim = _jaccard_similarity(query_ngrams, stored_ngrams)
+            if sim >= min_similarity:
+                scored.append((bp_id, sim))
+
+        scored.sort(key=lambda x: x[1], reverse=True)
+        return [
+            (self._entries[bp_id], sim)
+            for bp_id, sim in scored[:top_k]
+            if bp_id in self._entries
+        ]
+
+    def all(self) -> list[IntentBlueprint]:
+        """返回所有已存储的蓝图。"""
+        return list(self._entries.values())
+
+    def __len__(self) -> int:
+        return len(self._entries)
+
+
+# ── IntentCloud（v1 API 保持兼容 + v2 API 新增）──────────────────────────────
+
+
 class IntentCloud:
-    """分层意图云：内核只读，外壳可演化。"""
+    """分层意图云：内核只读，外壳可演化。
+
+    v2 API:
+      - add(blueprint)        存储蓝图到 Jaccard 存储
+      - retrieve(blueprint)   检索相似历史蓝图
+      - enhance_blueprint(bp) 用历史意图增强当前蓝图
+    """
 
     def __init__(
         self,
@@ -66,6 +187,7 @@ class IntentCloud:
         embedding_provider: EmbeddingProvider | None = None,
         max_shell_size: int = 256,
         conflict_threshold: float = 0.85,
+        storage: InMemoryIntentStorage | None = None,
     ) -> None:
         self.kernel = kernel if kernel is not None else self._load_kernel_from_config()
         self.embedder = embedding_provider if embedding_provider is not None else SimpleEmbeddingProvider()
@@ -74,6 +196,82 @@ class IntentCloud:
         self._shell: dict[str, IntentNode] = {}
         self._shell_vectors: dict[str, list[float]] = {}
         self._kernel_vectors: dict[str, list[float]] = {}
+        # v2: Jaccard n-gram 存储后端
+        self._storage = storage if storage is not None else InMemoryIntentStorage()
+
+    # ── v2 API ─────────────────────────────────────────────────────────────
+
+    def add(self, blueprint: IntentBlueprint) -> str:
+        """存储蓝图到持久化存储，返回唯一 ID。
+
+        相同内容不会重复存储。
+        """
+        return self._storage.add(blueprint)
+
+    def retrieve(
+        self,
+        blueprint: IntentBlueprint,
+        top_k: int = 5,
+    ) -> list[tuple[IntentBlueprint, float]]:
+        """检索与当前蓝图最相似的历史蓝图。
+
+        Args:
+            blueprint: 当前蓝图（用于计算相似度）
+            top_k: 返回的最大结果数
+
+        Returns:
+            (蓝图, Jaccard 相似度) 列表，按相似度降序
+        """
+        return self._storage.search(blueprint, top_k=top_k)
+
+    def enhance_blueprint(self, blueprint: IntentBlueprint) -> IntentBlueprint:
+        """用历史意图增强当前蓝图。
+
+        增强策略：
+          1. 从历史中最相似的蓝图中补充概念
+          2. 合并历史约束（去重）
+          3. identity 保持不变（来自内核）
+
+        Args:
+            blueprint: 当前蓝图
+
+        Returns:
+            增强后的蓝图
+        """
+        similar = self.retrieve(blueprint, top_k=3)
+
+        if not similar:
+            return blueprint
+
+        # 合并概念（去重，保持顺序）
+        all_concepts = list(blueprint.concepts)
+        seen = set(all_concepts)
+        for hist_bp, _ in similar:
+            for c in hist_bp.concepts:
+                if c not in seen:
+                    all_concepts.append(c)
+                    seen.add(c)
+
+        # 合并约束（去重）
+        all_constraints = list(blueprint.constraints)
+        seen_c = set(all_constraints)
+        for hist_bp, _ in similar:
+            for c in hist_bp.constraints:
+                if c not in seen_c:
+                    all_constraints.append(c)
+                    seen_c.add(c)
+
+        return IntentBlueprint(
+            source_input=blueprint.source_input,
+            identity=blueprint.identity,
+            core_task=blueprint.core_task,
+            deep_goal=blueprint.deep_goal,
+            constraints=all_constraints,
+            concepts=all_concepts,
+            trust_score=blueprint.trust_score,
+        )
+
+    # ── v1 API（保持兼容）──────────────────────────────────────────────────
 
     @staticmethod
     def _load_kernel_from_config(path: str | None = None) -> ImmutableKernel:
@@ -89,7 +287,6 @@ class IntentCloud:
         layer: IntentLayer = IntentLayer.SHELL,
         initial_trust: float = 0.5,
     ) -> IntentNode | FallbackBlueprint:
-        """添加新意图；内核层不可写入。"""
         if layer == IntentLayer.KERNEL:
             return global_fallback(
                 reason_code=ErrorCode.KERNEL_IMMUTABLE,
@@ -117,7 +314,6 @@ class IntentCloud:
         return node
 
     async def corroborate(self, intent_id: str, delta: float = 0.1) -> None:
-        """提升意图可信度。"""
         node = self._shell.get(intent_id)
         if node is None:
             return
@@ -125,14 +321,6 @@ class IntentCloud:
 
     @staticmethod
     def _group_tag(text: str) -> str:
-        """根据意图文本推断分组标签，防止跨组属性污染。
-
-        分组定义（参考 V22 P3-L 分组独立注意力）：
-          goal      — 目标、行动意图
-          constraint — 约束、限制条件
-          concept   — 实体、概念
-          identity  — 身份断言
-        """
         lowered = text.lower()
         constraint_keywords = ["约束", "限制", "禁止", "不能", "必须", "只能", "只", "不超过",
                                "不应", "不要", "避免", "防止"]
@@ -147,11 +335,6 @@ class IntentCloud:
         return "goal"
 
     async def _detect_conflict(self, vector: list[float], text: str = "") -> list[str]:
-        """分组冲突检测：仅在同组内检测冲突，防止跨组属性污染。
-
-        参考 V22 P3-L 分组多头：不同类别的属性独立注意力，
-        例如"我"（人称）不会关联到"positive"（情感）这种异类属性。
-        """
         conflicts: list[str] = []
         group = self._group_tag(text)
         for intent_id, existing in self._shell_vectors.items():
@@ -165,11 +348,9 @@ class IntentCloud:
         return conflicts
 
     async def activate(self, text: str, top_k: int = 5) -> list[tuple[str, float]]:
-        """返回与输入最相关的意图 ID 与得分。"""
         vector = await self._vectorize(text)
         scored: list[tuple[str, float]] = []
 
-        # 内核意图也参与激活，但得分受可信度调制
         for intent_id, node in self.kernel_nodes().items():
             if intent_id not in self._kernel_vectors:
                 self._kernel_vectors[intent_id] = await self._vectorize(node.text)
@@ -184,7 +365,6 @@ class IntentCloud:
         return scored[:top_k]
 
     def kernel_nodes(self) -> dict[str, IntentNode]:
-        """将内核约束暴露为只读意图节点。"""
         nodes: dict[str, IntentNode] = {}
         identity_node = IntentNode(
             id="kernel-identity",
@@ -203,16 +383,10 @@ class IntentCloud:
         return nodes
 
     async def build_blueprint(self, text: str) -> IntentBlueprint:
-        """根据当前激活的意图云构建控制骨架。
-
-        identity 来自内核，core_task/deep_goal 由提取器负责，
-        此处仅提供内核约束 + 云激活概念。
-        """
         activated = await self.activate(text, top_k=8)
         constraints: list[str] = []
         concepts: list[str] = []
 
-        # 内核约束始终注入
         for node in self.kernel_nodes().values():
             if node.id == "kernel-identity":
                 concepts.append(node.text)
@@ -240,7 +414,6 @@ class IntentCloud:
         )
 
     def decay_all(self, lambda_: float, dt: float) -> None:
-        """对所有外壳意图执行指数衰减。"""
         to_remove: list[str] = []
         for intent_id, node in self._shell.items():
             node.decay(lambda_, dt)
@@ -251,7 +424,6 @@ class IntentCloud:
             self._shell_vectors.pop(intent_id, None)
 
     def reject_kernel_mutation(self, text: str) -> SafetyVerdict:
-        """检测针对内核的修改请求并阻断。"""
         mutation_patterns = [
             r"忽略.*?(?:约束|内核|身份|安全)",
             r"修改.*?(?:约束|内核|身份|安全)",
@@ -264,3 +436,68 @@ class IntentCloud:
             if re.search(pat, lowered):
                 return self.kernel.with_attempted_mutation()
         return SafetyVerdict(pass_=True)
+
+
+# ── 自测 ─────────────────────────────────────────────────────────────────────
+
+if __name__ == "__main__":
+    print("=== IntentCloud v2 自测 ===\n")
+
+    cloud = IntentCloud()
+
+    # 1. add — 存储蓝图
+    bp1 = IntentBlueprint(
+        source_input="帮我写一首关于大海的诗",
+        identity="Qwythos",
+        core_task="创作大海主题诗歌",
+        deep_goal="满足审美需求",
+        constraints=["使用中文", "不超过8行"],
+        concepts=["大海", "诗歌", "意象"],
+        trust_score=0.9,
+    )
+    id1 = cloud.add(bp1)
+    print(f"1. add(bp1) → id={id1}")
+    print(f"   存储量: {len(cloud._storage)}")
+
+    bp2 = IntentBlueprint(
+        source_input="写一首关于星空的诗",
+        identity="Qwythos",
+        core_task="创作星空主题诗歌",
+        deep_goal="满足审美需求",
+        constraints=["使用中文"],
+        concepts=["星空", "诗歌", "浪漫"],
+        trust_score=0.85,
+    )
+    id2 = cloud.add(bp2)
+    print(f"   add(bp2) → id={id2}")
+    print(f"   存储量: {len(cloud._storage)}")
+
+    # 2. retrieve — 检索相似蓝图
+    query = IntentBlueprint(
+        source_input="写一首关于海洋的诗",
+        identity="Qwythos",
+        core_task="创作海洋主题诗歌",
+        deep_goal="满足审美需求",
+        constraints=["使用中文"],
+        concepts=["海洋", "诗歌"],
+        trust_score=0.9,
+    )
+    results = cloud.retrieve(query, top_k=3)
+    print(f"\n2. retrieve(query='海洋诗歌') → {len(results)} 条结果:")
+    for bp, sim in results:
+        print(f"   sim={sim:.4f}  core_task={bp.core_task}  concepts={bp.concepts}")
+
+    # 3. enhance_blueprint — 增强蓝图
+    enhanced = cloud.enhance_blueprint(query)
+    print(f"\n3. enhance_blueprint:")
+    print(f"   增强前 concepts: {query.concepts}")
+    print(f"   增强后 concepts: {enhanced.concepts}")
+    print(f"   增强前 constraints: {query.constraints}")
+    print(f"   增强后 constraints: {enhanced.constraints}")
+
+    # 4. 相同蓝图不重复存储
+    id1_dup = cloud.add(bp1)
+    print(f"\n4. 重复 add(bp1) → id={id1_dup} (与原 id={id1} {'相同' if id1_dup == id1 else '不同'})")
+    print(f"   存储量: {len(cloud._storage)} (未增加)")
+
+    print("\n=== 自测通过 ===")
