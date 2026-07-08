@@ -220,7 +220,11 @@ class CogStreamEngine:
         memories: list[MemoryEntry],
     ) -> None:
         """根据当前帧类型做出反应。"""
-        # 将当前帧存入情节记忆
+        # 仅将原始输入与生成输出存入情节记忆；跳过内部帧，防止回环噪声。
+        if frame.frame_type in (FrameType.MEMORY_RETRIEVAL, FrameType.SILENCE, FrameType.CONSTRAINT_CHECK):
+            return
+        if frame.modality in (FrameModality.METACOG, FrameModality.SILENCE):
+            return
         await self.memory.store(
             MemoryEntry(
                 text=self._frame_to_text(frame),

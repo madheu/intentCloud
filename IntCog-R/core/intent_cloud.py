@@ -110,7 +110,7 @@ class IntentCloud:
             trust=initial_trust,
         )
         vector = await self._vectorize(text)
-        conflicts = await self._detect_conflict(vector)
+        conflicts = await self._detect_conflict(vector, text)
         node.conflict_edges = conflicts
         self._shell[intent_id] = node
         self._shell_vectors[intent_id] = vector
@@ -123,10 +123,43 @@ class IntentCloud:
             return
         node.corroborate(delta)
 
-    async def _detect_conflict(self, vector: list[float]) -> list[str]:
-        """基于余弦相似度检测冲突意图。"""
+    @staticmethod
+    def _group_tag(text: str) -> str:
+        """根据意图文本推断分组标签，防止跨组属性污染。
+
+        分组定义（参考 V22 P3-L 分组独立注意力）：
+          goal      — 目标、行动意图
+          constraint — 约束、限制条件
+          concept   — 实体、概念
+          identity  — 身份断言
+        """
+        lowered = text.lower()
+        constraint_keywords = ["约束", "限制", "禁止", "不能", "必须", "只能", "只", "不超过",
+                               "不应", "不要", "避免", "防止"]
+        if any(kw in lowered for kw in constraint_keywords):
+            return "constraint"
+        identity_keywords = ["你是", "我是", "身份", "角色", "扮演", "作为"]
+        if any(kw in lowered for kw in identity_keywords):
+            return "identity"
+        concept_keywords = ["概念", "定义", "什么是", "解释", "背景", "上下文", "名词", "术语"]
+        if any(kw in lowered for kw in concept_keywords):
+            return "concept"
+        return "goal"
+
+    async def _detect_conflict(self, vector: list[float], text: str = "") -> list[str]:
+        """分组冲突检测：仅在同组内检测冲突，防止跨组属性污染。
+
+        参考 V22 P3-L 分组多头：不同类别的属性独立注意力，
+        例如"我"（人称）不会关联到"positive"（情感）这种异类属性。
+        """
         conflicts: list[str] = []
+        group = self._group_tag(text)
         for intent_id, existing in self._shell_vectors.items():
+            node = self._shell.get(intent_id)
+            if node is None:
+                continue
+            if self._group_tag(node.text) != group:
+                continue
             if _cosine_similarity(vector, existing) >= self.conflict_threshold:
                 conflicts.append(intent_id)
         return conflicts

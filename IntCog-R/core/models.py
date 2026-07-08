@@ -194,6 +194,7 @@ class IntentBlueprint(BaseModel):
     constraints: list[str] = Field(default_factory=list)
     concepts: list[str] = Field(default_factory=list)
     identity_assertions: list[str] = Field(default_factory=list)
+    relations: list[dict[str, str]] = Field(default_factory=list)
     trust_score: float = Field(default=0.5, ge=0.0, le=1.0)
 
     @field_validator("trust_score", mode="before")

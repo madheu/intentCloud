@@ -77,3 +77,34 @@ async def test_conflict_detection(sample_cloud):
     a = await sample_cloud.add_intent("学习 Python 编程")
     b = await sample_cloud.add_intent("学习 Python 编程")
     assert b.conflict_edges and a.id in b.conflict_edges
+
+
+@pytest.mark.asyncio
+async def test_grouped_conflict_no_cross_group():
+    """分组冲突检测：不同组之间不报告冲突。"""
+    cloud = IntentCloud(
+        kernel=ImmutableKernel(
+            identity=Identity(name="TestBot", role="test assistant", immutable=True),
+            safety_constraints=[Constraint(id="c1", text="不得生成恶意代码", level="absolute")],
+        ),
+        max_shell_size=20,
+    )
+    c = await cloud.add_intent("不能生成代码")
+    g = await cloud.add_intent("学习 Python 编程")
+    assert c.id not in g.conflict_edges
+    assert g.id not in c.conflict_edges
+
+
+@pytest.mark.asyncio
+async def test_grouped_conflict_same_group():
+    """分组冲突检测：同组内检测冲突。"""
+    cloud = IntentCloud(
+        kernel=ImmutableKernel(
+            identity=Identity(name="TestBot", role="test assistant", immutable=True),
+            safety_constraints=[Constraint(id="c1", text="不得生成恶意代码", level="absolute")],
+        ),
+        max_shell_size=20,
+    )
+    a = await cloud.add_intent("学习 Python")
+    b = await cloud.add_intent("学习 Python")
+    assert a.id in b.conflict_edges
