@@ -27,10 +27,9 @@ from core.generator import SafeGenerator
 from core.intent_cloud import IntentCloud
 from core.intent_extractor import IntentExtractor
 from core.internal_speech import InternalSpeechPlanner
-from core.memory import ChromaMemory, MemoryEntry, MemoryProvider
+from core.memory import InMemoryMemory, MemoryEntry, MemoryProvider
 from core.metacognition import MetacognitionMonitor
 from core.models import ConsciousFrame, FallbackBlueprint, FrameModality, FrameType, IntentBlueprint
-from core.safety import SafetyFilter
 from core.workspace import GlobalWorkspace
 from intent_safe_generate import IntentSafeGeneratePipeline
 
@@ -51,16 +50,15 @@ class CogStreamEngine:
         self.workspace = GlobalWorkspace(capacity=1)
         self.intent_cloud = IntentCloud()
         self.attention = AttentionRouter(self.intent_cloud)
-        self.memory: MemoryProvider = ChromaMemory()
+        self.memory: MemoryProvider = InMemoryMemory()
         self.planner = InternalSpeechPlanner(llm_client=llm_client, use_llm=False)
         self.metacog = MetacognitionMonitor()
-        self.safety = SafetyFilter(config=config)
 
         # 意图提取与生成（慢通道）
         self.extractor = IntentExtractor(llm_client=llm_client) if llm_client else None
         self.generator = SafeGenerator(llm_client=llm_client, kernel=self.intent_cloud.kernel) if llm_client else None
         self.safe_pipeline = (
-            IntentSafeGeneratePipeline(self.extractor, self.intent_cloud, self.generator, self.safety)
+            IntentSafeGeneratePipeline(self.extractor, self.intent_cloud, self.generator)
             if self.extractor and self.generator
             else None
         )
@@ -124,7 +122,7 @@ class CogStreamEngine:
         # 3. 快通道：记忆检索（基于当前工作空间帧）
         context = self._context_text()
         blueprint = await self.intent_cloud.build_blueprint(context)
-        memories = await self.memory.retrieve(context, blueprint.goals, top_k=3)
+        memories = await self.memory.retrieve(context, blueprint.concepts, top_k=3)
         if memories:
             candidates.append(
                 ConsciousFrame(
@@ -132,7 +130,7 @@ class CogStreamEngine:
                     frame_type=FrameType.MEMORY_RETRIEVAL,
                     data={"memories": [m.text for m in memories]},
                     confidence=0.45,
-                    intent_refs=blueprint.goals,
+                    intent_refs=blueprint.concepts,
                     tick_id=tick_id,
                 )
             )
@@ -181,7 +179,7 @@ class CogStreamEngine:
     ) -> list[ConsciousFrame]:
         """慢通道：异步生成候选思维帧。"""
         blueprint = await self.intent_cloud.build_blueprint(user_input)
-        memories = await self.memory.retrieve(user_input, blueprint.goals, top_k=3)
+        memories = await self.memory.retrieve(user_input, blueprint.concepts, top_k=3)
         planned = await self.planner.plan(perception_frame, blueprint, memories)
         for frame in planned:
             frame.timestamp = datetime.now(timezone.utc)

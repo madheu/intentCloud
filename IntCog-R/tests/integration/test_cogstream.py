@@ -25,7 +25,7 @@ async def test_engine_stores_memories():
     async for _ in engine.run(ticks=3):
         pass
 
-    assert len(engine.memory._fallback.entries) > 0
+    assert len(engine.memory.entries) > 0
 
 
 @pytest.mark.asyncio

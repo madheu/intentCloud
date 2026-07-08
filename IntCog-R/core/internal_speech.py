@@ -50,7 +50,7 @@ class InternalSpeechPlanner:
                 frame_type=FrameType.INTENT_EXTRACTION,
                 data={
                     "thought": f"正在理解输入：{blueprint.source_input}",
-                    "goals": blueprint.goals,
+                    "core_task": blueprint.core_task,
                 },
                 confidence=0.6,
                 intent_refs=current_frame.intent_refs,

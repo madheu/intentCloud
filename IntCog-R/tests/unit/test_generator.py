@@ -23,7 +23,7 @@ async def test_generate_returns_safe_text(sample_generator):
     client._responses = ["你好，我可以帮你学习 Python。"]
     blueprint = IntentBlueprint(
         source_input="教我 Python",
-        goals=["教 Python"],
+        core_task="教 Python",
         trust_score=0.9,
     )
     output = await generator.generate(blueprint)
@@ -46,7 +46,7 @@ async def test_generate_prompt_contains_skeleton_and_neg(sample_generator):
     client._responses = ["ok"]
     blueprint = IntentBlueprint(
         source_input="教我 Python",
-        goals=["教 Python"],
+        core_task="教 Python",
         concepts=["Python"],
         trust_score=0.9,
     )

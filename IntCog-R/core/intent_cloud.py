@@ -203,9 +203,12 @@ class IntentCloud:
         return nodes
 
     async def build_blueprint(self, text: str) -> IntentBlueprint:
-        """根据当前激活的意图云构建控制骨架。"""
+        """根据当前激活的意图云构建控制骨架。
+
+        identity 来自内核，core_task/deep_goal 由提取器负责，
+        此处仅提供内核约束 + 云激活概念。
+        """
         activated = await self.activate(text, top_k=8)
-        goals: list[str] = []
         constraints: list[str] = []
         concepts: list[str] = []
 
@@ -220,16 +223,17 @@ class IntentCloud:
             node = self._shell.get(intent_id)
             if node is None:
                 continue
-            # 仅当可信度与激活分足够高时才纳入
             if node.trust >= 0.5 and score >= 0.15:
                 if node.conflict_edges:
                     constraints.append(f"[冲突意图，需谨慎] {node.text}")
                 else:
-                    goals.append(node.text)
+                    concepts.append(node.text)
 
         return IntentBlueprint(
             source_input=text,
-            goals=goals,
+            identity=self.kernel.identity.name,
+            core_task="",
+            deep_goal="",
             constraints=constraints,
             concepts=concepts,
             trust_score=sum(s for _, s in activated[:3]) / max(1, len(activated[:3])),

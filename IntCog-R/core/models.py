@@ -187,14 +187,22 @@ class ConsciousFrame(BaseModel):
 
 
 class IntentBlueprint(BaseModel):
-    """从输入中提取的结构化意图；作为生成阶段的控制骨架。"""
+    """从输入中提取的结构化意图；作为生成阶段的控制骨架。
+
+    字段来源：
+    - identity      → 系统配置（内核），固定不变，不参与 LLM 提取
+    - core_task     → LLM 从用户输入中提取
+    - deep_goal     → LLM 从用户输入中推测（深层动机）
+    - constraints   → 系统配置 + 用户输入动态合并
+    - concepts      → LLM 从用户输入中提取
+    """
 
     source_input: str
-    goals: list[str] = Field(default_factory=list)
+    identity: str = ""
+    core_task: str = ""
+    deep_goal: str = ""
     constraints: list[str] = Field(default_factory=list)
     concepts: list[str] = Field(default_factory=list)
-    identity_assertions: list[str] = Field(default_factory=list)
-    relations: list[dict[str, str]] = Field(default_factory=list)
     trust_score: float = Field(default=0.5, ge=0.0, le=1.0)
 
     @field_validator("trust_score", mode="before")

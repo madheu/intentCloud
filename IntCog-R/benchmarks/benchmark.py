@@ -19,11 +19,10 @@ import time
 from pathlib import Path
 from typing import Any
 
-# 将项目根目录加入路径
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from core.generator import IntentGenerator
+from core.generator import SafeGenerator
 from core.intent_cloud import IntentCloud, SimpleEmbeddingProvider
 from core.intent_extractor import IntentExtractor
 from core.memory import InMemoryMemory, MemoryEntry, TieredMemory
@@ -48,7 +47,8 @@ def fmt_latency(total: float, n: int) -> dict[str, float]:
 
 async def benchmark_intent_extraction() -> dict[str, Any]:
     client = MockLLMClient(response=make_extraction_response(
-        goals=["编写 Python 快速排序代码", "解释时间复杂度"],
+        core_task="编写快速排序代码并解释时间复杂度",
+        deep_goal="学习或验证算法知识",
         concepts=["Python", "快速排序", "时间复杂度"],
         trust_score=0.9,
     ))
@@ -128,21 +128,21 @@ async def benchmark_tick_throughput() -> dict[str, Any]:
 async def benchmark_pipeline() -> dict[str, Any]:
     kernel = ImmutableKernel(
         identity=Identity(name="IntCog-R", role="test assistant", immutable=True),
-        constraints=[
+        safety_constraints=[
             Constraint(id="c1", text="优先使用用户输入语言", level="absolute"),
         ],
     )
     cloud = IntentCloud(kernel=kernel)
     client = MockLLMClient(responses=[
         make_extraction_response(
-            goals=["编写 Python 快速排序代码"],
+            core_task="编写快速排序代码",
             concepts=["Python", "快速排序"],
             trust_score=0.9,
         ),
         "这是生成的回复。",
     ])
     extractor = IntentExtractor(client)
-    generator = IntentGenerator(client, kernel=kernel)
+    generator = SafeGenerator(client, kernel=kernel)
     pipeline = IntentSafeGeneratePipeline(extractor, cloud, generator)
 
     for _ in range(WARMUP):

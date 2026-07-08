@@ -14,8 +14,9 @@ from core.models import ErrorCode, FallbackBlueprint, ImmutableKernel, IntentBlu
 GENERATION_PROMPT_TEMPLATE = """{neg_prompt}
 
 === 本轮意图骨架（仅作控制参考，不替代原始输入） ===
-目标：
-{goals}
+核心任务：{core_task}
+
+深层目标：{deep_goal}
 
 概念：
 {concepts}
@@ -44,11 +45,13 @@ class SafeGenerator:
     def build_prompt(self, blueprint: IntentBlueprint) -> str:
         """构造生成提示：否定提示 + 意图骨架。"""
         neg_prompt = self.executor.build_neg_prompt(blueprint)
-        goals = "\n".join(f"- {g}" for g in blueprint.goals) or "（无明确目标）"
+        core_task = blueprint.core_task or "（无明确任务）"
+        deep_goal = blueprint.deep_goal or "（未推断）"
         concepts = "\n".join(f"- {c}" for c in blueprint.concepts) or "（无关键概念）"
         return GENERATION_PROMPT_TEMPLATE.format(
             neg_prompt=neg_prompt,
-            goals=goals,
+            core_task=core_task,
+            deep_goal=deep_goal,
             concepts=concepts,
             trust_score=blueprint.trust_score,
         )

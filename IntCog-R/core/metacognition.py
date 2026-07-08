@@ -14,7 +14,6 @@ from core.models import ConsciousFrame, ErrorCode, FrameModality, FrameType, Int
 
 class MetaAction(StrEnum):
     """元认知决策动作。"""
-    RETRY_EXTRACT = "retry_extract"
     RETRIEVE_MEMORY = "retrieve_memory"
     GENERATE = "generate"
     SILENCE = "silence"
@@ -75,7 +74,7 @@ class MetacognitionMonitor:
 
         # 评估：是否有目标/约束/概念可供生成
         has_content = (
-            len(blueprint.goals) > self.min_goals_threshold
+            (blueprint.core_task and len(blueprint.core_task.strip()) > 0)
             or len(blueprint.concepts) > 0
             or len(blueprint.constraints) > 0
         )
@@ -84,17 +83,6 @@ class MetacognitionMonitor:
             diagnosis.action = MetaAction.SILENCE
             diagnosis.confidence = 0.15
             return diagnosis
-
-        # 评估：关系自洽性（若存在 relations 字段）
-        if hasattr(blueprint, "relations") and blueprint.relations:
-            consistent = all(
-                rel.get("type", "") != "contradiction" for rel in blueprint.relations
-            )
-            if not consistent:
-                diagnosis.issues.append("contradictory relations detected")
-                diagnosis.action = MetaAction.RETRY_EXTRACT
-                diagnosis.confidence = 0.25
-                return diagnosis
 
         diagnosis.action = MetaAction.GENERATE
         diagnosis.confidence = blueprint.trust_score
@@ -118,20 +106,6 @@ class MetacognitionMonitor:
                     "recursion_depth": frame.recursion_depth,
                     "trust_score": blueprint.trust_score,
                 },
-            )
-
-        if diagnosis.action == MetaAction.RETRY_EXTRACT:
-            return ConsciousFrame(
-                modality=FrameModality.METACOG,
-                frame_type=FrameType.CONSTRAINT_CHECK,
-                data={
-                    "action": "retry_extract",
-                    "issues": diagnosis.issues,
-                    "confidence": diagnosis.confidence,
-                },
-                confidence=0.3,
-                intent_refs=frame.intent_refs,
-                recursion_depth=frame.recursion_depth,
             )
 
         # 正常：生成元认知确认帧

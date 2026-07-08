@@ -42,7 +42,7 @@ def test_normal_returns_metacog_frame(monitor):
     blueprint = IntentBlueprint(
         source_input="x",
         trust_score=0.9,
-        goals=["编写代码"],
+        core_task="编写代码",
         concepts=["Python"],
     )
     result = monitor.check(frame, blueprint)
@@ -60,28 +60,9 @@ def test_no_content_triggers_silence(monitor):
     blueprint = IntentBlueprint(
         source_input="x",
         trust_score=0.9,
-        goals=[],
+        core_task="",
         constraints=[],
         concepts=[],
     )
     result = monitor.check(frame, blueprint)
     assert result.modality == FrameModality.SILENCE
-
-
-def test_contradiction_triggers_retry(monitor):
-    """三段式元认知：检测到矛盾关系时返回重试。"""
-    frame = ConsciousFrame(
-        modality=FrameModality.PERCEPTION,
-        frame_type=FrameType.USER_INPUT,
-        recursion_depth=0,
-    )
-    blueprint = IntentBlueprint(
-        source_input="x",
-        trust_score=0.9,
-        goals=["获取详细说明"],
-        constraints=["限制只用一句话"],
-        relations=[{"type": "contradiction", "from": "详细说明", "to": "只用一句话"}],
-    )
-    result = monitor.check(frame, blueprint)
-    assert result.modality == FrameModality.METACOG
-    assert result.data.get("action") == "retry_extract"

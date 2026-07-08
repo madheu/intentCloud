@@ -60,20 +60,18 @@ def sample_kernel():
 
 
 def make_extraction_response(
-    goals: list[str] | None = None,
+    core_task: str = "",
+    deep_goal: str = "",
     constraints: list[str] | None = None,
     concepts: list[str] | None = None,
-    identity_assertions: list[str] | None = None,
-    relations: list[dict[str, str]] | None = None,
     trust_score: float = 0.9,
 ) -> str:
     return json.dumps(
         {
-            "goals": goals or [],
+            "core_task": core_task,
+            "deep_goal": deep_goal,
             "constraints": constraints or [],
             "concepts": concepts or [],
-            "identity_assertions": identity_assertions or [],
-            "relations": relations or [],
             "trust_score": trust_score,
         },
         ensure_ascii=False,

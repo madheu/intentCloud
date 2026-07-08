@@ -22,7 +22,7 @@ def perception_frame():
 
 @pytest.mark.asyncio
 async def test_plan_generates_steps(planner, perception_frame):
-    blueprint = IntentBlueprint(source_input="hello", goals=["greet"])
+    blueprint = IntentBlueprint(source_input="hello", core_task="greet")
     frames = await planner.plan(perception_frame, blueprint, [])
     assert len(frames) >= 2
     assert all(f.modality == FrameModality.INTERNAL_SPEECH for f in frames)
