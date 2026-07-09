@@ -518,6 +518,41 @@ class IntentCloud:
         """获取指定边的当前状态。"""
         return self._edges.get((source_id, target_id))
 
+    # ── v3 API：快慢分离的交互处理 ──────────────────────────────────────────
+
+    def process_interaction(
+        self,
+        input_signals: dict[str, float],
+        config: IntentCloudConfig | None = None,
+    ) -> dict[str, float]:
+        """处理一次完整的交互：先扩散激活（快子系统），再更新权重（慢子系统）。
+
+        两步执行：
+          1. 调用 diffuse_activation() 进行激活扩散，直到收敛
+          2. 调用 update_weights_after_diffusion() 更新非锚点边的权重
+
+        Args:
+            input_signals: 外部输入信号（节点 ID → 初始激活值）
+            config: 拓扑演化配置（可选，默认使用 cloud.topology_config）
+
+        Returns:
+            收敛后的各节点激活值字典
+        """
+        cfg = config if config is not None else self.topology_config
+
+        from core.intent_cloud_dynamics import (
+            diffuse_activation,
+            update_weights_after_diffusion,
+        )
+
+        # 阶段 1：快子系统 —— 激活扩散（权重固定）
+        converged_activations = diffuse_activation(self, input_signals, cfg)
+
+        # 阶段 2：慢子系统 —— 权重更新（激活固定，仅在收敛后执行）
+        update_weights_after_diffusion(self, converged_activations, cfg)
+
+        return converged_activations
+
     # ── v1 API（保持兼容）──────────────────────────────────────────────────
 
     async def _vectorize(self, text: str) -> list[float]:
