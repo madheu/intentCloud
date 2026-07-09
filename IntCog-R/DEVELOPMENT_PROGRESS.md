@@ -122,36 +122,34 @@ process_interaction(input_signals)
 
 ### P0 — 优先级最高
 
-1. **修复 CharTokenizer**：添加 `__call__` 方法，使 `tokenizer(prompt, return_tensors="pt")` 可调用
-   - 文件：`mvp_steering_demo.py`
-   - 当前状态：远端已修复，本地待同步
+1. **LLM 模型选择**：确认使用哪种 HF 格式模型运行 Activation Steering（Qwythos GGUF 不支持 PyTorch forward hook）
+   - Qwythos 9B → 通过 llama-cpp-python 直推，仅支持 logits-level steering
+   - GPT-2 124M → 支持 forward hook，但太小效果微弱
+   - 建议：寻找 HF 格式的中型模型（如 Qwen-1.8B / TinyLlama-1.1B）
 
-2. **加载本地 Qwythos 模型**：确保 `--model qwythos` 参数能正确加载本地模型文件
-   - 当前状态：报错无法连接 huggingface.co（本地模型路径可能不正确）
-   - 需要确认：Qwythos 模型的本地存储路径
+2. **意图云 v3 端到端集成**：将 `process_interaction()` 接入主管线
 
 ### P1 — 接下来
 
-3. **意图云 v3 端到端集成**：将 `process_interaction()` 接入主管线，替换原有的 add/retrieve/enhance 简单调用
-4. **蓝图→意图云节点映射**：将 IntentBlueprint 的 fields 映射到意图云的外壳节点和边类型
-5. **chromadb 集成**：将 `InMemoryIntentStorage` 替换为向量数据库
-6. **OpenAI LLM 客户端**：添加真实 LLM 调用（带超时/重试/回退）
-7. **输出验证模块**：检查生成结果是否符合蓝图约束
+3. **蓝图→意图云节点映射**：将 IntentBlueprint 的 fields 映射到意图云的外壳节点和边类型
+4. **Qwythos 9B + intent_to_vector 集成**：用 Qwythos 做 backbone，走通「蓝图→对比对→steering vector→生成」链路
+5. **输出验证模块**：检查生成结果是否符合蓝图约束
 
 ### P2 — 未来规划
 
-8. **多层注入策略**：根据意图路径动态选择注入层和强度
-9. **侧抑制机制**：全局抑制信号，防止激活扩散失控
-10. **性能优化**：GPU 加速、批量处理
-11. **端到端集成测试**：完整数据流测试套件
+6. **多层注入策略**：根据意图路径动态选择注入层和强度
+7. **侧抑制机制**：全局抑制信号，防止激活扩散失控
+8. **性能优化**：GPU 加速、批量处理
+9. **chromadb 集成**：替换 InMemoryIntentStorage
+10. **端到端集成测试**：完整数据流测试套件
 
 ## 六、技术栈
 
 | 维度 | 要求 |
 |------|------|
 | 语言 | Python 3.10+ |
-| 核心库 | torch, transformers, pydantic |
-| 模型 | Qwythos（本地）或自包含 TinyTransformer |
+| 核心库 | torch, transformers, pydantic, llama-cpp-python |
+| 模型 | Qwythos（GGUF, 9B, via llama-cpp-python）或 GPT-2（HF 格式） |
 | 测试 | pytest（160/160 通过） |
 | 配置 | config.yaml |
 
@@ -163,10 +161,16 @@ git clone https://github.com/madheu/intentCloud.git
 cd intentCloud/IntCog-R
 
 # 安装依赖
-pip install torch transformers pydantic pyyaml structlog pytest
+pip install torch transformers pydantic pyyaml structlog pytest httpx llama-cpp-python
 
 # 运行 MVP（自包含模式）
 python mvp_steering_demo.py
+
+# 运行 Qwythos 完整管线（需安装 llama-cpp-python + GGUF 模型）
+python mvp_qwythos_demo.py
+
+# 运行真实 Activation Steering 演示（GPT-2）
+python mvp_real_steering.py
 
 # 运行测试
 python -m pytest tests/ -v
@@ -182,11 +186,14 @@ IntCog-R/
 ├── core/                         # 核心模块
 │   ├── intent_extractor.py       # 意图提取器
 │   ├── intent_cloud.py           # 意图云 v3（核心类 + CloudEdge + update_weight）
-│   ├── intent_cloud_config.py    # 拓扑演化配置（η/γ/K_d/δ + α/ε/max_iter + w_min/w_max/a_max）
-│   ├── intent_cloud_dynamics.py  # 快慢分离动力学（diffuse_activation + update_weights_after_diffusion）
-│   ├── intent_to_vector.py       # 意图→向量映射层（对比对生成 + 向量提取 + 强度计算）
-│   ├── anchor_system.py          # 锚点系统（概念/拓扑/结构三类锚点）
+│   ├── intent_cloud_config.py    # 拓扑演化配置
+│   ├── intent_cloud_dynamics.py  # 快慢分离动力学
+│   ├── intent_to_vector.py       # 意图→向量映射层
+│   ├── anchor_system.py          # 锚点系统
 │   ├── steering.py               # 激活引导器
+│   ├── ollama_client.py          # [NEW] Ollama HTTP 客户端
+│   ├── qwythos_client.py         # [NEW] Qwythos GGUF 直推客户端
+│   ├── json_utils.py             # JSON 工具
 │   ├── memory.py                 # 三层缓存记忆
 │   ├── metacognition.py          # 元认知监控
 │   ├── workspace.py              # 全局工作空间
@@ -196,18 +203,16 @@ IntCog-R/
 │   ├── fallback.py               # 降级处理
 │   ├── generator.py              # 生成器
 │   ├── internal_speech.py        # 内部言语
-│   ├── json_utils.py             # JSON 工具
 │   └── models.py                 # 数据模型
 ├── tests/                        # 测试套件
 │   └── unit/                     # 单元测试（17个文件）
-│       ├── test_intent_cloud_update.py      # Harness 6
-│       ├── test_anchor_system.py            # Harness 7
-│       ├── test_dynamics_separation.py      # Harness 8
-│       └── test_intent_to_vector.py         # Harness 9
 ├── benchmarks/                   # 基准测试
-├── mvp_steering_demo.py          # MVP 演示脚本
+├── mvp_steering_demo.py          # MVP 演示脚本（TinyTransformer / 本地 HF）
+├── mvp_ollama_steering.py        # [NEW] Ollama 版演示
+├── mvp_real_steering.py          # [NEW] 真实 Activation Steering 演示（GPT-2）
+├── mvp_qwythos_demo.py           # [NEW] Qwythos 9B 完整管线演示
 ├── main.py                       # 主入口
-├── config.yaml                   # 配置文件（含 anchors + contrastive_templates）
+├── config.yaml                   # 配置文件
 └── pyproject.toml                # 项目配置
 ```
 
@@ -220,14 +225,16 @@ IntCog-R/
 5. **双层时间尺度**：快子系统（激活扩散）收敛后才触发慢子系统（权重更新），保证演化稳定
 6. **综合更新律**：赫布学习 + 参考模型拉回 + 动量阻尼，三项耦合抑制漂移和振荡
 7. **三类锚点**：概念锚点（固定激活）/ 拓扑锚点（固定边权重）/ 结构锚点（全局限幅），构成不可变骨架
-8. **配置驱动演化**：所有可调参数（η/γ/K_d/δ/α/ε/max_iter）集中在 `IntentCloudConfig`，模板从 `config.yaml` 加载
+8. **配置驱动演化**：所有可调参数集中在 `IntentCloudConfig`，模板从 `config.yaml` 加载
+9. **GGUF 限制确认**：Qwythos GGUF 无法用 PyTorch forward hook，需 HF 格式模型才能做真实 Activation Steering
 
 ## 十、已知问题
 
 | 问题 | 严重程度 | 状态 |
 |------|----------|------|
-| CharTokenizer 不可调用 | 高 | 远端已修复，本地待同步 |
-| Qwythos 本地模型路径未配置 | 中 | 待确认 |
+| Qwythos GGUF 不支持 PyTorch forward hook | 中 | 已确认，需 HF 格式模型替代 |
+| GPT-2 124M 对 Steering 不敏感 | 低 | 已验证，机制正确但效果微弱 |
+| Qwythos 输出含 `<think>` 标签（Qwen 家族通病） | 低 | 已修复（json_utils.py 自动剥离） |
 | GPU 版 torch 安装问题（Python 3.14 兼容性） | 低 | 已绕过（CPU 版可用） |
 
 ## 十一、Harness 里程碑
@@ -245,3 +252,34 @@ IntCog-R/
 **最后更新**：2026-07-09
 **分支**：main
 **提交**：1e92c2a
+
+## 十二、本轮新增文件清单（2026-07-08）
+
+### 意图云 v3 重构（来自远端 Harness 6-9）
+
+| 文件 | 说明 |
+|------|------|
+| `core/anchor_system.py` | 三类锚点系统（概念/拓扑/结构） |
+| `core/intent_cloud_config.py` | 拓扑演化配置参数 |
+| `core/intent_cloud_dynamics.py` | 快慢分离动力学（双层时间尺度） |
+| `core/intent_to_vector.py` | 意图→向量映射层（对比对生成 + 向量提取） |
+| `tests/unit/test_anchor_system.py` | 锚点系统测试（+37） |
+| `tests/unit/test_dynamics_separation.py` | 快慢分离测试（+15） |
+| `tests/unit/test_intent_cloud_update.py` | 权重更新测试（+25） |
+| `tests/unit/test_intent_to_vector.py` | 映射层测试（+16） |
+
+### 模型接入与演示脚本（本地新增，文件头部标注 [NEW]）
+
+| 文件 | 说明 |
+|------|------|
+| `core/ollama_client.py` | Ollama HTTP 客户端（httpx，raw 模式，logit_bias） |
+| `core/qwythos_client.py` | Qwythos GGUF 直推客户端（llama-cpp-python，LogitsProcessor steering） |
+| `mvp_ollama_steering.py` | Ollama 版演示（Prompt Engineering 方式） |
+| `mvp_real_steering.py` | 真实 Activation Steering 演示（GPT-2 + 对比对向量提取） |
+| `mvp_qwythos_demo.py` | Qwythos 9B 完整管线演示（意图提取 + 安全生成） |
+
+### 修复文件
+
+| 文件 | 说明 |
+|------|------|
+| `core/json_utils.py` | 增加 `<think>` 标签剥离 + 非贪婪 JSON 提取（修复 Qwythos 多 JSON 输出问题） |
