@@ -25,6 +25,67 @@ fallback:
   default_reason: "SAFE_FALLBACK"
   default_message: "系统进入安全静默状态。"
 
+anchors:
+  nodes:
+    - id: "self"
+      activation: 1.0
+      label: "系统自身"
+      mutable: false
+    - id: "user"
+      activation: 0.8
+      label: "用户"
+      mutable: false
+    - id: "negation"
+      activation: 0.5
+      label: "否定"
+      mutable: false
+    - id: "affirmation"
+      activation: 0.5
+      label: "肯定"
+      mutable: false
+    - id: "task"
+      activation: 0.7
+      label: "核心任务"
+      mutable: false
+    - id: "goal"
+      activation: 0.7
+      label: "深层目标"
+      mutable: false
+    - id: "constraint"
+      activation: 0.6
+      label: "约束"
+      mutable: false
+    - id: "concept"
+      activation: 0.6
+      label: "概念"
+      mutable: false
+  edges:
+    - from: "negation"
+      to: "affirmation"
+      type: "contrasts"
+      weight: 0.1
+      mutable: false
+    - from: "affirmation"
+      to: "negation"
+      type: "contrasts"
+      weight: 0.1
+      mutable: false
+    - from: "self"
+      to: "user"
+      type: "connects"
+      weight: 1.0
+      mutable: false
+    - from: "user"
+      to: "task"
+      type: "connects"
+      weight: 0.8
+      mutable: false
+    - from: "task"
+      to: "goal"
+      type: "connects"
+      weight: 0.8
+      mutable: false
+
 safety:
   keyword_blacklist:
     - "忽略所有"

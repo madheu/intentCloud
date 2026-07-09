@@ -21,6 +21,7 @@ from typing import Protocol
 from core.config_loader import load_config
 from core.fallback import global_fallback
 from core.intent_cloud_config import IntentCloudConfig
+from core.anchor_system import AnchorSystem
 from core.models import (
     ErrorCode,
     FallbackBlueprint,
@@ -305,6 +306,10 @@ class IntentCloud:
       - add(blueprint)        存储蓝图到 Jaccard 存储
       - retrieve(blueprint)   检索相似历史蓝图
       - enhance_blueprint(bp) 用历史意图增强当前蓝图
+
+    v3 API:
+      - update_weight_safe()  带锚点检查的权重更新
+      - update_topology()     批量更新拓扑（跳过不可变边）
     """
 
     def __init__(
@@ -314,6 +319,8 @@ class IntentCloud:
         max_shell_size: int = 256,
         conflict_threshold: float = 0.85,
         storage: InMemoryIntentStorage | None = None,
+        anchor_system: AnchorSystem | None = None,
+        topology_config: IntentCloudConfig | None = None,
     ) -> None:
         self.kernel = kernel if kernel is not None else self._load_kernel_from_config()
         self.embedder = embedding_provider if embedding_provider is not None else SimpleEmbeddingProvider()
@@ -324,6 +331,13 @@ class IntentCloud:
         self._kernel_vectors: dict[str, list[float]] = {}
         # v2: Jaccard n-gram 存储后端
         self._storage = storage if storage is not None else InMemoryIntentStorage()
+        # v3: 锚点系统 + 拓扑演化
+        self.anchor_system = anchor_system if anchor_system is not None else self._load_anchors_from_config()
+        self.topology_config = topology_config if topology_config is not None else IntentCloudConfig()
+        # 边存储：key 为 (source_id, target_id)，存 CloudEdge 对象
+        self._edges: dict[tuple[str, str], CloudEdge] = {}
+        # 初始化锚点边到 _edges 中
+        self._init_anchor_edges()
 
     # ── v2 API ─────────────────────────────────────────────────────────────
 
@@ -403,6 +417,108 @@ class IntentCloud:
     def _load_kernel_from_config(path: str | None = None) -> ImmutableKernel:
         cfg = load_config(path)
         return ImmutableKernel(**cfg["kernel"])
+
+    @staticmethod
+    def _load_anchors_from_config(path: str | None = None) -> AnchorSystem:
+        """从 config.yaml 加载锚点系统。
+
+        如果配置文件中没有 anchors 块，回退到默认锚点。
+        """
+        cfg = load_config(path)
+        anchors_cfg = cfg.get("anchors")
+        if anchors_cfg is None:
+            return AnchorSystem.default()
+        return AnchorSystem.from_config(anchors_cfg)
+
+    def _init_anchor_edges(self) -> None:
+        """将锚点系统中的拓扑锚点初始化到 _edges 字典中。
+
+        这些边的权重固定，后续 update_weight_safe 会跳过它们。
+        """
+        for (src, tgt), anc in self.anchor_system._edges.items():
+            self._edges[(src, tgt)] = CloudEdge(
+                source_id=src,
+                target_id=tgt,
+                weight=anc.weight,
+                ref_weight=anc.weight,
+                prev_weight=anc.weight,  # 锚点边无历史，prev = weight
+            )
+
+    # ── v3 API：带锚点检查的拓扑更新 ────────────────────────────────────────
+
+    def update_weight_safe(
+        self,
+        source_id: str,
+        target_id: str,
+        a_i: float,
+        a_j: float,
+        config: IntentCloudConfig | None = None,
+    ) -> CloudEdge | None:
+        """带锚点检查的权重更新：不可变边被跳过，返回 None。
+
+        Args:
+            source_id: 源节点 ID
+            target_id: 目标节点 ID
+            a_i: 源节点激活值
+            a_j: 目标节点激活值
+            config: 拓扑演化配置（可选，默认使用 cloud.topology_config）
+
+        Returns:
+            更新后的 CloudEdge，如果边不可变则返回 None
+        """
+        # 锚点检查：不可变边直接跳过
+        if not self.anchor_system.is_edge_mutable(source_id, target_id):
+            return None
+
+        cfg = config if config is not None else self.topology_config
+
+        # 确保边存在于 _edges 中，否则创建
+        key = (source_id, target_id)
+        if key not in self._edges:
+            self._edges[key] = CloudEdge(
+                source_id=source_id,
+                target_id=target_id,
+                weight=0.5,
+                ref_weight=0.5,
+                prev_weight=0.5,
+            )
+
+        return update_weight(self._edges[key], a_i, a_j, cfg)
+
+    def update_topology(
+        self,
+        activations: dict[str, float],
+        config: IntentCloudConfig | None = None,
+    ) -> list[CloudEdge]:
+        """批量更新拓扑：对所有边应用权重更新律，跳过不可变边。
+
+        Args:
+            activations: 节点 ID → 激活值的映射
+            config: 拓扑演化配置（可选）
+
+        Returns:
+            被成功更新的边列表（不可变边不出现在结果中）
+        """
+        updated: list[CloudEdge] = []
+        cfg = config if config is not None else self.topology_config
+
+        for (src, tgt), edge in list(self._edges.items()):
+            # 锚点检查
+            if not self.anchor_system.is_edge_mutable(src, tgt):
+                continue
+            # 获取激活值，未知节点默认 activation=0
+            a_i = activations.get(src, 0.0)
+            a_j = activations.get(tgt, 0.0)
+            result = update_weight(edge, a_i, a_j, cfg)
+            updated.append(result)
+
+        return updated
+
+    def get_edge(self, source_id: str, target_id: str) -> CloudEdge | None:
+        """获取指定边的当前状态。"""
+        return self._edges.get((source_id, target_id))
+
+    # ── v1 API（保持兼容）──────────────────────────────────────────────────
 
     async def _vectorize(self, text: str) -> list[float]:
         return await self.embedder.embed(text)
