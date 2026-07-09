@@ -80,9 +80,10 @@ class CloudEdge:
     每条边连接两个 IntentNode，权重随用户交互演化。
     ref_weight 是初始云骨架中该边的基准权重，作为锚点防止全局漂移。
     prev_weight 记录上一步权重，用于动量阻尼计算。
+    edge_type 表示边的语义关系类型（如 connects, refines, contrasts, evokes, constrains）。
     """
 
-    __slots__ = ("source_id", "target_id", "weight", "ref_weight", "prev_weight")
+    __slots__ = ("source_id", "target_id", "weight", "ref_weight", "prev_weight", "edge_type")
 
     def __init__(
         self,
@@ -91,6 +92,7 @@ class CloudEdge:
         weight: float = 0.5,
         ref_weight: float | None = None,
         prev_weight: float | None = None,
+        edge_type: str = "connects",
     ) -> None:
         self.source_id = source_id
         self.target_id = target_id
@@ -99,11 +101,13 @@ class CloudEdge:
         self.ref_weight = ref_weight if ref_weight is not None else weight
         # prev_weight 默认等于 weight，表示初始时没有"上一步"变化
         self.prev_weight = prev_weight if prev_weight is not None else weight
+        # 边的语义关系类型，用于意图到向量的映射
+        self.edge_type = edge_type
 
     def __repr__(self) -> str:
         return (
             f"CloudEdge({self.source_id} -> {self.target_id}, "
-            f"w={self.weight:.4f}, ref={self.ref_weight:.4f}, prev={self.prev_weight:.4f})"
+            f"w={self.weight:.4f}, ref={self.ref_weight:.4f}, prev={self.prev_weight:.4f}, type={self.edge_type})"
         )
 
 

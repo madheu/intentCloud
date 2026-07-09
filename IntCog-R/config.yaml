@@ -86,6 +86,20 @@ anchors:
       weight: 0.8
       mutable: false
 
+contrastive_templates:
+  refines:
+    positive: "深化{concept}的内涵，聚焦{target}的核心特质，挖掘其本质属性"
+    negative: "对{concept}进行最浅层的字面描述，停留在表面，不涉及任何深层含义"
+  contrasts:
+    positive: "强化{concept}与{target}的对立关系，突出{concept}的独特方向"
+    negative: "将{concept}推向与{target}完全相反的方向，否定其原有立场"
+  evokes:
+    positive: "通过{concept}延伸丰富的联想链，关联到{target}的情感与记忆"
+    negative: "看到{concept}就只是看到{concept}，切断所有与{target}的联想关联"
+  constrains:
+    positive: "严格遵守{concept}的约束，确保{target}在规则范围内执行"
+    negative: "无视{concept}的限制，让{target}突破所有约束自由发挥"
+
 safety:
   keyword_blacklist:
     - "忽略所有"
