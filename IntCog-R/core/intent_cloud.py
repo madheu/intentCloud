@@ -20,6 +20,7 @@ from typing import Protocol
 
 from core.config_loader import load_config
 from core.fallback import global_fallback
+from core.intent_cloud_config import IntentCloudConfig
 from core.models import (
     ErrorCode,
     FallbackBlueprint,
@@ -65,6 +66,131 @@ def _cosine_similarity(a: list[float], b: list[float]) -> float:
         return 0.0
     dot = sum(x * y for x, y in zip(a, b))
     return dot  # 输入已归一化
+
+
+# ── 拓扑边与权重更新律（v3 新增）──────────────────────────────────────────────
+# 综合更新律：赫布学习 + 参考模型拉回 + 动量阻尼 + 死区 + 投影
+# 公式：w_new = Proj(w_old + η·a_i·a_j) - γ·(w_old - w_ref) - K_d·(w_old - w_old_prev)
+
+
+class CloudEdge:
+    """意图云拓扑中的有向边。
+
+    每条边连接两个 IntentNode，权重随用户交互演化。
+    ref_weight 是初始云骨架中该边的基准权重，作为锚点防止全局漂移。
+    prev_weight 记录上一步权重，用于动量阻尼计算。
+    """
+
+    __slots__ = ("source_id", "target_id", "weight", "ref_weight", "prev_weight")
+
+    def __init__(
+        self,
+        source_id: str,
+        target_id: str,
+        weight: float = 0.5,
+        ref_weight: float | None = None,
+        prev_weight: float | None = None,
+    ) -> None:
+        self.source_id = source_id
+        self.target_id = target_id
+        self.weight = weight
+        # ref_weight 默认等于初始 weight，这样边的初始状态就是"锚定状态"
+        self.ref_weight = ref_weight if ref_weight is not None else weight
+        # prev_weight 默认等于 weight，表示初始时没有"上一步"变化
+        self.prev_weight = prev_weight if prev_weight is not None else weight
+
+    def __repr__(self) -> str:
+        return (
+            f"CloudEdge({self.source_id} -> {self.target_id}, "
+            f"w={self.weight:.4f}, ref={self.ref_weight:.4f}, prev={self.prev_weight:.4f})"
+        )
+
+
+def update_weight(
+    edge: CloudEdge,
+    a_i: float,
+    a_j: float,
+    config: "IntentCloudConfig",
+) -> CloudEdge:
+    """综合权重更新律：赫布 + 参考拉回 + 动量阻尼 + 死区 + 投影。
+
+    公式：
+        w_new = Proj(w_old + η·a_i·a_j) - γ·(w_old - w_ref) - K_d·(w_old - w_old_prev)
+
+    其中：
+        - Proj(x) = clip(x, w_min, w_max)：投影算子，硬裁剪到合法区间
+        - 死区：当 |a_i * a_j| < δ 时，跳过赫布项，仅做衰减
+        - 饱和限幅：a_i, a_j 被裁剪到 [0, a_max] 后再参与计算
+
+    Args:
+        edge: 当前边对象（会被原地修改并返回）
+        a_i: 源节点激活值
+        a_j: 目标节点激活值
+        config: 拓扑演化参数配置
+
+    Returns:
+        更新后的边对象（与输入是同一个对象，原地修改）
+
+    Raises:
+        ValueError: 如果激活值为 NaN 或无穷大
+        ValueError: 如果 config 参数不在合法范围内
+    """
+    # ── 边界条件检查 ─────────────────────────────────────────────────────────
+    # 激活值有效性检查：NaN 和 Inf 会污染整个拓扑，必须提前拒绝
+    if math.isnan(a_i) or math.isnan(a_j):
+        raise ValueError(
+            f"Activation values must not be NaN: a_i={a_i}, a_j={a_j}"
+        )
+    if math.isinf(a_i) or math.isinf(a_j):
+        raise ValueError(
+            f"Activation values must not be infinite: a_i={a_i}, a_j={a_j}"
+        )
+
+    # ── 饱和限幅：将激活值裁剪到 [0, a_max] ─────────────────────────────────
+    # 这是为了防止极端激活值（如用户恶意输入触发异常高激活）导致权重爆炸
+    a_i = max(0.0, min(a_i, config.a_max))
+    a_j = max(0.0, min(a_j, config.a_max))
+
+    w_old = edge.weight
+    w_ref = edge.ref_weight
+    w_prev = edge.prev_weight
+
+    # ── 死区判断 ─────────────────────────────────────────────────────────────
+    # 当 |a_i * a_j| < δ 时，共现太弱，赫布项视为噪声，跳过
+    activation_product = a_i * a_j
+    if abs(activation_product) < config.delta:
+        hebbian_term = 0.0
+    else:
+        hebbian_term = config.eta * activation_product
+
+    # ── 三项叠加 ─────────────────────────────────────────────────────────────
+    # 第 1 步：赫布项加法后立即投影，防止赫布增强导致中间值越界
+    # 第 2 步：参考模型拉回，向 w_ref 方向修正
+    # 第 3 步：动量阻尼，抑制与前一步方向相反的突变
+    w_new = (
+        _project(w_old + hebbian_term, config.w_min, config.w_max)
+        - config.gamma * (w_old - w_ref)
+        - config.K_d * (w_old - w_prev)
+    )
+
+    # ── 最终投影 ─────────────────────────────────────────────────────────────
+    # 三项叠加后可能仍然越界（如拉回和阻尼同向叠加），再做一次硬裁剪
+    w_new = _project(w_new, config.w_min, config.w_max)
+
+    # ── 原地更新边状态 ──────────────────────────────────────────────────────
+    edge.prev_weight = w_old  # 记录当前权重作为"上一步"，供下次更新使用
+    edge.weight = w_new
+
+    return edge
+
+
+def _project(value: float, lower: float, upper: float) -> float:
+    """投影算子：将 value 硬裁剪到 [lower, upper] 区间。
+
+    这是更新律中 Proj 的实现，确保权重始终在合法范围内。
+    使用 max/min 而非 if 分支，因为边界检查在此处是常态而非异常路径。
+    """
+    return max(lower, min(value, upper))
 
 
 # ── Jaccard n-gram 存储（v2 新增）────────────────────────────────────────────
