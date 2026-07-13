@@ -23,7 +23,7 @@ from core.intent_cloud_config import IntentCloudConfig
 
 @pytest.fixture
 def default_config() -> IntentCloudConfig:
-    """默认配置：η=0.1, γ=0.01, K_d=0.3, δ=0.01, w_min=0.0, w_max=1.0, a_max=1.0。"""
+    """默认配置：η=0.1, γ=0.01, K_d=0.02, δ=0.01, w_min=0.0, w_max=1.0, a_max=1.0。"""
     return IntentCloudConfig()
 
 
@@ -256,13 +256,13 @@ def test_dead_zone_still_applies_decay(default_config):
     w_old=0.6, w_ref=0.5, w_prev=0.5, a_i=a_j=0（死区内）：
       - 赫布 = 0
       - 拉回 = -0.01*(0.6-0.5) = -0.001
-      - 阻尼 = -0.3*(0.6-0.5) = -0.03
-      - w_new = 0.6 - 0.001 - 0.03 = 0.569
+      - 阻尼 = -0.02*(0.6-0.5) = -0.002
+      - w_new = 0.6 - 0.001 - 0.002 = 0.597
     """
     edge = CloudEdge("A", "B", weight=0.6, ref_weight=0.5, prev_weight=0.5)
     edge = update_weight(edge, 0.0, 0.0, default_config)
     assert edge.weight < 0.6  # 衰减生效
-    assert edge.weight == pytest.approx(0.569, abs=1e-9)
+    assert edge.weight == pytest.approx(0.597, abs=1e-9)
 
 
 # ── 边界条件 ──────────────────────────────────────────────────────────────────
@@ -345,7 +345,7 @@ def test_config_default_values():
     cfg = IntentCloudConfig()
     assert cfg.eta == 0.1
     assert cfg.gamma == 0.01
-    assert cfg.K_d == 0.3
+    assert cfg.K_d == 0.02
     assert cfg.delta == 0.01
     assert cfg.w_min == 0.0
     assert cfg.w_max == 1.0

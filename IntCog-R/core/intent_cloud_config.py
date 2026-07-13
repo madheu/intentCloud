@@ -67,8 +67,8 @@ class IntentCloudConfig:
     gamma: float = 0.01
     """参考模型拉回系数 γ。"""
 
-    K_d: float = 0.3
-    """动量阻尼系数 K_d。"""
+    K_d: float = 0.02
+    """动量阻尼系数 K_d（文献比例 η:γ:K_d = 1:10:100，当前 K_d 应在 0.01~0.03）。"""
 
     delta: float = 0.01
     """死区阈值 δ。"""
