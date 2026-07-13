@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "nodes": [
+    {
+      "id": "time_past",
+      "text": "过去",
+      "category": "时间",
+      "trust": 0.6,
+      "llm_embedding": [0.1, -0.2, 0.3]
+    },
+    {
+      "id": "time_future",
+      "text": "未来",
+      "category": "时间",
+      "trust": 0.5
+    },
+    {
+      "id": "space_here",
+      "text": "这里",
+      "category": "空间",
+      "trust": 0.7
+    }
+  ],
+  "edges": [
+    {
+      "source": "time_past",
+      "target": "time_future",
+      "type": "contrasts",
+      "weight": 0.2
+    },
+    {
+      "source": "time_past",
+      "target": "space_here",
+      "type": "connects",
+      "weight": 0.4
+    }
+  ]
+}

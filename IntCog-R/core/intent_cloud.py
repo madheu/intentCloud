@@ -612,6 +612,29 @@ class IntentCloud:
 
         return internalized
 
+    # ── H10.1：常识加载 ────────────────────────────────────────────────────
+
+    def load_common_sense(
+        self,
+        data_path: str = "data/common_sense.json",
+        model: "nn.Module | None" = None,
+        tokenizer=None,
+        layer_idx: int | None = None,
+    ) -> tuple[int, int]:
+        """加载常识数据到意图云（便捷封装）。
+
+        Args:
+            data_path: JSON 数据文件路径
+            model: 用于实时查询 embedding 的 LLM 模型（可选）
+            tokenizer: 对应的 tokenizer（可选）
+            layer_idx: 目标层索引（可选）
+
+        Returns:
+            (节点数, 边数)
+        """
+        from core.common_sense_loader import load_common_sense as _load
+        return _load(self, data_path, model, tokenizer, layer_idx)
+
     # ── v3 API：快慢分离的交互处理 ──────────────────────────────────────────
 
     def process_interaction(
