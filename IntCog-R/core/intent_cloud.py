@@ -83,7 +83,11 @@ class CloudEdge:
     edge_type 表示边的语义关系类型（如 connects, refines, contrasts, evokes, constrains）。
     """
 
-    __slots__ = ("source_id", "target_id", "weight", "ref_weight", "prev_weight", "edge_type")
+    __slots__ = (
+        "source_id", "target_id", "weight", "ref_weight", "prev_weight", "edge_type",
+        "internalized", "internalization_count", "forget_factor",
+        "effective_gamma", "effective_K_d",
+    )
 
     def __init__(
         self,
@@ -93,6 +97,11 @@ class CloudEdge:
         ref_weight: float | None = None,
         prev_weight: float | None = None,
         edge_type: str = "connects",
+        internalized: bool = False,
+        internalization_count: int = 0,
+        forget_factor: float = 1.0,
+        effective_gamma: float | None = None,
+        effective_K_d: float | None = None,
     ) -> None:
         self.source_id = source_id
         self.target_id = target_id
@@ -103,12 +112,21 @@ class CloudEdge:
         self.prev_weight = prev_weight if prev_weight is not None else weight
         # 边的语义关系类型，用于意图到向量的映射
         self.edge_type = edge_type
+        # ── 内化字段 ──
+        self.internalized = internalized
+        self.internalization_count = internalization_count
+        self.forget_factor = forget_factor
+        self.effective_gamma = effective_gamma
+        self.effective_K_d = effective_K_d
 
     def __repr__(self) -> str:
-        return (
+        base = (
             f"CloudEdge({self.source_id} -> {self.target_id}, "
-            f"w={self.weight:.4f}, ref={self.ref_weight:.4f}, prev={self.prev_weight:.4f}, type={self.edge_type})"
+            f"w={self.weight:.4f}, ref={self.ref_weight:.4f}, prev={self.prev_weight:.4f}, type={self.edge_type}"
         )
+        if self.internalized:
+            base += f", internalized(count={self.internalization_count}, ff={self.forget_factor:.3f})"
+        return base + ")"
 
 
 def update_weight(
@@ -172,10 +190,19 @@ def update_weight(
     # 第 1 步：赫布项加法后立即投影，防止赫布增强导致中间值越界
     # 第 2 步：参考模型拉回，向 w_ref 方向修正
     # 第 3 步：动量阻尼，抑制与前一步方向相反的突变
+    #
+    # 内化门逻辑：内化边使用 effective_gamma / effective_K_d 替代 config 默认值，
+    # 且 forget_factor 乘在衰减项上（内化边 forget_factor=0.02，衰减极慢；普通边=1.0）
+    gamma = edge.effective_gamma if edge.effective_gamma is not None else config.gamma
+    K_d = edge.effective_K_d if edge.effective_K_d is not None else config.K_d
+
+    pullback = gamma * (w_old - w_ref) * edge.forget_factor
+    damping = K_d * (w_old - w_prev) * edge.forget_factor
+
     w_new = (
         _project(w_old + hebbian_term, config.w_min, config.w_max)
-        - config.gamma * (w_old - w_ref)
-        - config.K_d * (w_old - w_prev)
+        - pullback
+        - damping
     )
 
     # ── 最终投影 ─────────────────────────────────────────────────────────────
@@ -521,6 +548,69 @@ class IntentCloud:
     def get_edge(self, source_id: str, target_id: str) -> CloudEdge | None:
         """获取指定边的当前状态。"""
         return self._edges.get((source_id, target_id))
+
+    def check_internalization(
+        self,
+        interaction_edges: list[tuple[str, str]],
+        user_correction: bool = True,
+        config: IntentCloudConfig | None = None,
+    ) -> list[CloudEdge]:
+        """将一次交互中的所有边标记为内化。
+
+        内化逻辑（全给 + 遗传权重）：
+          1. 遍历 interaction_edges 中的所有边
+          2. 对每条边：
+             a. 如果边不存在，跳过（不创建新边）
+             b. 设置 internalized = True
+             c. internalization_count += 1
+             d. forget_factor = config.internalized_forget_factor (0.02)
+             e. effective_gamma = config.internalized_gamma (0.08)
+             f. effective_K_d = config.K_d * config.internalized_K_d_multiplier
+          3. user_correction=False 时（系统纠正），权重变化幅度降低为 0.1 倍
+             — effective_gamma 和 effective_K_d 更接近 config 默认值
+
+        Args:
+            interaction_edges: 本次交互涉及的所有边 (source_id, target_id) 列表
+            user_correction: 是否为用户纠正（True=用户，False=系统）
+            config: 配置（可选，默认使用 cloud.topology_config）
+
+        Returns:
+            被内化的边列表
+        """
+        cfg = config if config is not None else self.topology_config
+        internalized: list[CloudEdge] = []
+
+        # 系统纠正的衰减系数：效果降为 0.1 倍
+        correction_factor = 1.0 if user_correction else 0.1
+
+        for src, tgt in interaction_edges:
+            key = (src, tgt)
+            edge = self._edges.get(key)
+            if edge is None:
+                continue
+
+            edge.internalized = True
+            edge.internalization_count += 1
+            edge.forget_factor = cfg.internalized_forget_factor
+
+            # effective_gamma：内化值向 config 默认值方向插值
+            # user_correction → effective_gamma = internalized_gamma (0.08)
+            # system_correction → effective_gamma 更接近 config.gamma
+            edge.effective_gamma = (
+                cfg.internalized_gamma * correction_factor
+                + cfg.gamma * (1.0 - correction_factor)
+            )
+
+            # effective_K_d：同理
+            target_K_d = cfg.K_d * cfg.internalized_K_d_multiplier
+            edge.effective_K_d = (
+                target_K_d * correction_factor
+                + cfg.K_d * (1.0 - correction_factor)
+            )
+
+            internalized.append(edge)
+
+        return internalized
 
     # ── v3 API：快慢分离的交互处理 ──────────────────────────────────────────
 

@@ -82,6 +82,17 @@ class IntentCloudConfig:
     a_max: float = 1.0
     """激活值饱和上界。"""
 
+    # ── 内化参数 ──────────────────────────────────────────────────────────
+
+    internalized_gamma: float = 0.08
+    """内化边的拉回系数 γ。内化后降低拉回，让内化边更自由地偏离 w_ref。"""
+
+    internalized_K_d_multiplier: float = 10.0
+    """内化边的 K_d 倍率。内化后 K_d = K_d × multiplier，增强阻尼保护内化记忆。"""
+
+    internalized_forget_factor: float = 0.02
+    """内化边的遗忘因子。远低于普通边的 forget_factor=1.0，使内化边衰减极慢。"""
+
     def __post_init__(self) -> None:
         """构造后校验：确保参数在合理范围内。"""
         # 快子系统参数校验
@@ -107,3 +118,17 @@ class IntentCloudConfig:
             )
         if self.a_max < 0:
             raise ValueError(f"a_max must be >= 0, got {self.a_max}")
+
+        # 内化参数校验
+        if self.internalized_gamma < 0:
+            raise ValueError(
+                f"internalized_gamma must be >= 0, got {self.internalized_gamma}"
+            )
+        if self.internalized_K_d_multiplier < 0:
+            raise ValueError(
+                f"internalized_K_d_multiplier must be >= 0, got {self.internalized_K_d_multiplier}"
+            )
+        if self.internalized_forget_factor < 0:
+            raise ValueError(
+                f"internalized_forget_factor must be >= 0, got {self.internalized_forget_factor}"
+            )
