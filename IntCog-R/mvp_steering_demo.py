@@ -126,7 +126,10 @@ class TransformerBlock(nn.Module):
         )
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        attn_out, _ = self.attn(x, x, x, is_causal=True)
+        attn_mask = nn.Transformer.generate_square_subsequent_mask(
+            x.shape[1], device=x.device
+        )
+        attn_out, _ = self.attn(x, x, x, attn_mask=attn_mask)
         x = self.ln1(x + attn_out)
         mlp_out = self.mlp(x)
         x = self.ln2(x + mlp_out)

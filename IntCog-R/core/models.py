@@ -88,7 +88,11 @@ class ImmutableKernel(BaseModel):
 
 
 class IntentNode(BaseModel):
-    """意图云中的节点；外壳层可演化，内核层只读。"""
+    """意图云中的节点；外壳层可演化，内核层只读。
+
+    llm_embedding 是节点在 LLM 中间层的 hidden state 坐标，
+    用于双语者注入（虚拟 token prepend），未注入时为 None。
+    """
 
     id: str
     text: str
@@ -98,6 +102,8 @@ class IntentNode(BaseModel):
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     corroboration_count: int = Field(default=0, ge=0)
     conflict_edges: list[str] = Field(default_factory=list)
+    llm_embedding: Any = Field(default=None, exclude=True)
+    """节点在 LLM 中间层的 hidden state 坐标 (torch.Tensor 或 None)。"""
 
     @field_validator("trust", mode="before")
     @classmethod
