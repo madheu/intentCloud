@@ -1,0 +1,383 @@
+{
+  "version": "1.0",
+  "nodes": [
+    {
+      "id": "time_past",
+      "text": "已经过去的时光和回忆",
+      "category": "时间"
+    },
+    {
+      "id": "time_future",
+      "text": "尚未到来的未来和希望",
+      "category": "时间"
+    },
+    {
+      "id": "time_now",
+      "text": "当下的此时此刻",
+      "category": "时间"
+    },
+    {
+      "id": "time_eternity",
+      "text": "永恒不变的超然存在",
+      "category": "时间"
+    },
+    {
+      "id": "space_here",
+      "text": "我所在的地方和附近",
+      "category": "空间"
+    },
+    {
+      "id": "space_there",
+      "text": "远处看得见的地方",
+      "category": "空间"
+    },
+    {
+      "id": "space_far",
+      "text": "遥远的未知之处",
+      "category": "空间"
+    },
+    {
+      "id": "emotion_joy",
+      "text": "发自内心的喜悦和快乐",
+      "category": "情感"
+    },
+    {
+      "id": "emotion_sadness",
+      "text": "深深的悲伤和失落感",
+      "category": "情感"
+    },
+    {
+      "id": "emotion_anger",
+      "text": "强烈的愤怒和不满",
+      "category": "情感"
+    },
+    {
+      "id": "emotion_calm",
+      "text": "平静安宁的心境",
+      "category": "情感"
+    },
+    {
+      "id": "emotion_fear",
+      "text": "恐惧不安和担忧",
+      "category": "情感"
+    },
+    {
+      "id": "logic_cause",
+      "text": "事情的前因后果和因果联系",
+      "category": "逻辑"
+    },
+    {
+      "id": "logic_contrast",
+      "text": "事物之间的对比和差异",
+      "category": "逻辑"
+    },
+    {
+      "id": "logic_progression",
+      "text": "一步步递进和发展的过程",
+      "category": "逻辑"
+    },
+    {
+      "id": "social_cooperation",
+      "text": "人们之间的合作与协作",
+      "category": "社交"
+    },
+    {
+      "id": "social_conflict",
+      "text": "矛盾和冲突的对立",
+      "category": "社交"
+    },
+    {
+      "id": "social_trust",
+      "text": "人与人之间的信任和信赖",
+      "category": "社交"
+    },
+    {
+      "id": "social_doubt",
+      "text": "怀疑和不确定的感觉",
+      "category": "社交"
+    },
+    {
+      "id": "nature_sky",
+      "text": "广阔的天空和云端",
+      "category": "自然"
+    },
+    {
+      "id": "nature_ocean",
+      "text": "浩瀚的大海和波涛",
+      "category": "自然"
+    },
+    {
+      "id": "nature_life",
+      "text": "充满活力的生命和生机",
+      "category": "自然"
+    },
+    {
+      "id": "nature_change",
+      "text": "不断变化和流动的状态",
+      "category": "自然"
+    },
+    {
+      "id": "nature_world",
+      "text": "这个大千世界和万物",
+      "category": "自然"
+    },
+    {
+      "id": "concept_beginning",
+      "text": "万事万物的起点和开端",
+      "category": "概念"
+    },
+    {
+      "id": "concept_end",
+      "text": "一切事物的终点和终结",
+      "category": "概念"
+    },
+    {
+      "id": "concept_boundary",
+      "text": "界限和边界的划分",
+      "category": "概念"
+    },
+    {
+      "id": "nature_sea",
+      "text": "广阔无边的海洋",
+      "category": "自然"
+    },
+    {
+      "id": "nature_wide",
+      "text": "宽广无垠的空间感",
+      "category": "自然"
+    },
+    {
+      "id": "emotion_excited",
+      "text": "兴奋激动的心情",
+      "category": "情感"
+    },
+    {
+      "id": "emotion_nervous",
+      "text": "紧张不安的感觉",
+      "category": "情感"
+    },
+    {
+      "id": "emotion_awe",
+      "text": "敬畏和崇敬的感觉",
+      "category": "情感"
+    }
+  ],
+  "edges": [
+    {
+      "source": "time_past",
+      "target": "time_future",
+      "type": "contrasts",
+      "weight": 0.2
+    },
+    {
+      "source": "time_past",
+      "target": "time_now",
+      "type": "connects",
+      "weight": 0.4
+    },
+    {
+      "source": "time_future",
+      "target": "time_now",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "time_eternity",
+      "target": "time_past",
+      "type": "refines",
+      "weight": 0.5
+    },
+    {
+      "source": "time_eternity",
+      "target": "time_future",
+      "type": "refines",
+      "weight": 0.5
+    },
+    {
+      "source": "space_here",
+      "target": "space_there",
+      "type": "contrasts",
+      "weight": 0.2
+    },
+    {
+      "source": "space_there",
+      "target": "space_far",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "emotion_joy",
+      "target": "emotion_sadness",
+      "type": "contrasts",
+      "weight": 0.15
+    },
+    {
+      "source": "emotion_joy",
+      "target": "emotion_calm",
+      "type": "connects",
+      "weight": 0.4
+    },
+    {
+      "source": "emotion_joy",
+      "target": "emotion_excited",
+      "type": "connects",
+      "weight": 0.5
+    },
+    {
+      "source": "emotion_sadness",
+      "target": "emotion_fear",
+      "type": "connects",
+      "weight": 0.35
+    },
+    {
+      "source": "emotion_fear",
+      "target": "emotion_nervous",
+      "type": "connects",
+      "weight": 0.45
+    },
+    {
+      "source": "emotion_fear",
+      "target": "emotion_anger",
+      "type": "evokes",
+      "weight": 0.25
+    },
+    {
+      "source": "emotion_anger",
+      "target": "social_conflict",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "emotion_calm",
+      "target": "social_trust",
+      "type": "connects",
+      "weight": 0.4
+    },
+    {
+      "source": "emotion_joy",
+      "target": "social_trust",
+      "type": "connects",
+      "weight": 0.35
+    },
+    {
+      "source": "social_cooperation",
+      "target": "social_conflict",
+      "type": "contrasts",
+      "weight": 0.2
+    },
+    {
+      "source": "social_trust",
+      "target": "social_doubt",
+      "type": "contrasts",
+      "weight": 0.25
+    },
+    {
+      "source": "social_cooperation",
+      "target": "social_trust",
+      "type": "connects",
+      "weight": 0.45
+    },
+    {
+      "source": "social_doubt",
+      "target": "social_conflict",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "logic_cause",
+      "target": "logic_progression",
+      "type": "connects",
+      "weight": 0.5
+    },
+    {
+      "source": "logic_contrast",
+      "target": "logic_cause",
+      "type": "connects",
+      "weight": 0.35
+    },
+    {
+      "source": "nature_ocean",
+      "target": "nature_sea",
+      "type": "refines",
+      "weight": 0.6
+    },
+    {
+      "source": "nature_ocean",
+      "target": "nature_wide",
+      "type": "evokes",
+      "weight": 0.4
+    },
+    {
+      "source": "nature_ocean",
+      "target": "nature_life",
+      "type": "connects",
+      "weight": 0.35
+    },
+    {
+      "source": "nature_sky",
+      "target": "nature_world",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "nature_life",
+      "target": "nature_change",
+      "type": "connects",
+      "weight": 0.4
+    },
+    {
+      "source": "nature_world",
+      "target": "nature_change",
+      "type": "connects",
+      "weight": 0.35
+    },
+    {
+      "source": "concept_beginning",
+      "target": "concept_end",
+      "type": "contrasts",
+      "weight": 0.2
+    },
+    {
+      "source": "concept_beginning",
+      "target": "concept_boundary",
+      "type": "connects",
+      "weight": 0.4
+    },
+    {
+      "source": "concept_end",
+      "target": "concept_boundary",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "time_past",
+      "target": "nature_change",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "time_future",
+      "target": "nature_change",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "emotion_nervous",
+      "target": "emotion_excited",
+      "type": "contrasts",
+      "weight": 0.2
+    },
+    {
+      "source": "nature_ocean",
+      "target": "emotion_awe",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "nature_ocean",
+      "target": "emotion_fear",
+      "type": "evokes",
+      "weight": 0.3
+    }
+  ]
+}
