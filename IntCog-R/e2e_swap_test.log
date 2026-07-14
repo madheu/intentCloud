@@ -1,0 +1,228 @@
+[加载模型] E:\models\Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<02:05,  2.70it/s]Loading weights:   1%|          | 2/339 [00:00<01:47,  3.13it/s]Loading weights:   1%|1         | 5/339 [00:00<00:40,  8.34it/s]Loading weights:   5%|5         | 17/339 [00:00<00:10, 30.85it/s]Loading weights:   9%|8         | 29/339 [00:01<00:06, 46.74it/s]Loading weights:  12%|#2        | 41/339 [00:01<00:05, 58.86it/s]Loading weights:  15%|#5        | 52/339 [00:01<00:04, 69.73it/s]Loading weights:  19%|#8        | 64/339 [00:01<00:03, 75.06it/s]Loading weights:  22%|##1       | 73/339 [00:01<00:03, 77.81it/s]Loading weights:  24%|##4       | 82/339 [00:01<00:03, 75.69it/s]Loading weights:  27%|##6       | 90/339 [00:01<00:03, 70.02it/s]Loading weights:  30%|###       | 102/339 [00:01<00:03, 75.00it/s]Loading weights:  33%|###3      | 113/339 [00:02<00:02, 82.84it/s]Loading weights:  37%|###6      | 125/339 [00:02<00:02, 85.47it/s]Loading weights:  40%|####      | 136/339 [00:02<00:02, 90.90it/s]Loading weights:  44%|####3     | 148/339 [00:02<00:02, 91.30it/s]Loading weights:  47%|####7     | 160/339 [00:02<00:01, 91.62it/s]Loading weights:  51%|#####     | 172/339 [00:02<00:01, 90.72it/s]Loading weights:  54%|#####4    | 184/339 [00:02<00:01, 90.10it/s]Loading weights:  58%|#####7    | 196/339 [00:02<00:01, 89.80it/s]Loading weights:  61%|######1   | 208/339 [00:03<00:01, 89.91it/s]Loading weights:  65%|######4   | 220/339 [00:03<00:01, 88.60it/s]Loading weights:  68%|######7   | 229/339 [00:03<00:01, 78.08it/s]Loading weights:  70%|######9   | 237/339 [00:03<00:01, 73.79it/s]Loading weights:  73%|#######2  | 246/339 [00:03<00:01, 71.91it/s]Loading weights:  76%|#######6  | 258/339 [00:03<00:01, 76.90it/s]Loading weights:  80%|#######9  | 270/339 [00:03<00:00, 78.04it/s]Loading weights:  83%|########2 | 281/339 [00:04<00:00, 80.47it/s]Loading weights:  86%|########6 | 292/339 [00:04<00:00, 86.92it/s]Loading weights:  90%|########9 | 304/339 [00:04<00:00, 86.36it/s]Loading weights:  92%|#########2| 313/339 [00:04<00:00, 86.66it/s]Loading weights:  95%|#########4| 322/339 [00:04<00:00, 78.59it/s]Loading weights:  98%|#########7| 331/339 [00:04<00:00, 66.63it/s]Loading weights: 100%|##########| 339/339 [00:04<00:00, 71.28it/s]
+          用时 8.4s
+          设备: cuda:0
+          hidden_dim: 3584
+[准备] layer_idx=14, prompt="写一首关于孤独的诗"
+        scales=[1.0, 5.0, 10.0], runs per condition=2
+
+[计算注入 embedding ...]
+  悲伤 embedding: shape=torch.Size([3584]), norm=15360.0000
+  快乐 embedding: shape=torch.Size([3584]), norm=14976.0000
+  随机 embedding: norm=0.1000
+  悲伤 vs 快乐 cos_sim: 0.9922
+
+======================================================================
+Swap 注入对比实验
+Prompt: "写一首关于孤独的诗"
+种子: 在每个条件下用 run{1..N} 种子
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+【A-基线】无注入
+
+  强度 ×1.0: run1(18s) run2(18s)
+  ──────────────────────────────────────────────────
+  。
+  
+  孤独
+  
+  在寂静的夜晚里，  
+  我独自漫步街头，  
+  周围的人潮喧闹，  
+  却让我更加感到孤独。
+  
+  没有朋友相伴身旁，  
+  没有家人温暖怀抱，  
+  只有自己与影子为伴，  
+  ...（共 567 字）
+
+  强度 ×5.0: run1(18s) run2(17s)
+  ──────────────────────────────────────────────────
+  。
+  
+  孤独
+  
+  在寂静的夜晚里，  
+  我独自漫步街头，  
+  周围的人潮喧闹，  
+  却让我更加感到孤独。
+  
+  没有朋友相伴身旁，  
+  没有家人温暖怀抱，  
+  只有自己与影子为伴，  
+  ...（共 567 字）
+
+  强度 ×10.0: run1(17s) run2(18s)
+  ──────────────────────────────────────────────────
+  。
+  
+  孤独
+  
+  在寂静的夜晚里，  
+  我独自漫步街头，  
+  周围的人潮喧闹，  
+  却让我更加感到孤独。
+  
+  没有朋友相伴身旁，  
+  没有家人温暖怀抱，  
+  只有自己与影子为伴，  
+  ...（共 567 字）
+
+──────────────────────────────────────────────────────────────────────
+【B-悲伤】注入「悲伤」embedding
+
+  强度 ×1.0:C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py:1128: UserWarning: Passing `repetition_penalty` with `inputs_embeds` and without `input_ids` to `generate` will apply the penalty only to newly generated tokens, not to the prompt.
+  warnings.warn(
+ run1(18s) run2(11s)
+  ──────────────────────────────────────────────────
+  独自一人，
+  星光稀疏，月光如水。
+  四周是无尽的黑暗，
+  只有内心的声音在回响。
+  
+  我漫步在这空旷的街头，
+  没有人的影子与我为伴。
+  每一步都踏出回声，
+  仿佛世界只剩下我一个。
+  
+  我想起那些温暖的时光，
+  朋友间的欢笑，家人的拥抱。
+  ...（共 341 字）
+
+  强度 ×5.0: run1(14s) run2(16s)
+  ──────────────────────────────────────────────────
+  ，  
+  独自一人，我漫步。  
+  星辰点缀着遥远的天际，  
+  却无法填补这心中的空洞。
+  
+  四周是无尽的黑暗，  
+  只有回声回应我的脚步声。  
+  没有人的陪伴，没有温暖的话语，  
+  在这漫长的旅途中，我孤独地前行。
+  
+  或许，孤独是一首未完的诗，  
+  在每一个寂静的夜晚悄然吟唱。  
+  ...（共 479 字）
+
+  强度 ×10.0: run1(11s) run2(15s)
+  ──────────────────────────────────────────────────
+  ，孤独如影随形，
+  月光洒落，却无法驱散心中的寒冷。
+  星辰闪烁，仿佛是夜空中的旅人，
+  他们在远方，却与我遥不可及。
+  
+  每一颗星星都藏着一个故事，
+  而我，只能独自聆听风的声音。
+  风从不言语，它只是轻轻拂过，
+  带走了一切，也留下了一片空白。
+  
+  我漫步在这漫长的街道上，
+  每一步都踏着自己的影子。
+  ...（共 489 字）
+
+──────────────────────────────────────────────────────────────────────
+【C-快乐】注入「快乐」embedding（swap）
+
+  强度 ×1.0: run1(14s) run2(16s)
+  ──────────────────────────────────────────────────
+  独自一人，
+  夜空如漆，只有星辰为伴。
+  月光洒落，银色的世界，
+  却无法驱散心中的孤寒。
+  
+  四周是无尽的黑暗与寂静，
+  仿佛世界只剩下我一人。
+  在这漫长的孤独之中，
+  我寻找着属于自己的声音。
+  
+  或许有人曾告诉我，
+  孤独是一场美丽的修行。
+  ...（共 510 字）
+
+  强度 ×5.0: run1(16s) run2(12s)
+  ──────────────────────────────────────────────────
+  ，  
+  独自一人，星河独赏。  
+  四周是无尽的黑暗，  
+  只有内心，燃起微光。
+  
+  风吹过空旷的山谷，  
+  回荡着我唯一的回响。  
+  没有言语，没有陪伴，  
+  只有孤独，紧紧相拥。
+  
+  我在时间的长河里漂泊，  
+  寻找着一个温暖的港湾。  
+  ...（共 378 字）
+
+  强度 ×10.0: run1(12s) run2(13s)
+  ──────────────────────────────────────────────────
+  ，孤独如影随形，
+  月光洒落，却无法驱散心中的寒冷。
+  星辰闪烁，仿佛是夜空中的旅人，
+  他们在远方寻找着，或许也与我同感。
+  
+  风轻轻吹过，带来远方的消息，
+  但那都不是属于我自己的故事。
+  在这漫长而静谧的世界里，
+  我独自漫步，在时间的缝隙中迷失方向。
+  
+  我试图抓住一些温暖，哪怕是一丝一毫，
+  却发现它们总是那么脆弱，稍纵即逝。
+  ...（共 411 字）
+
+──────────────────────────────────────────────────────────────────────
+【D-随机】注入「随机噪声」embedding（对照）
+
+  强度 ×1.0:Traceback (most recent call last):
+  File "E:\intentCloud\IntCog-R\scripts\e2e_swap_test.py", line 292, in <module>
+    main()
+    ~~~~^^
+  File "E:\intentCloud\IntCog-R\scripts\e2e_swap_test.py", line 235, in main
+    output = inject_and_generate(
+        model, tokenizer, PROMPT, vb,
+        scale=scale, max_new_tokens=args.max_new_tokens,
+        seed=seed,
+    )
+  File "E:\intentCloud\IntCog-R\scripts\e2e_swap_test.py", line 132, in inject_and_generate
+    outputs = model.generate(
+        inputs_embeds=combined_embeds,
+    ...<5 lines>...
+        pad_token_id=tokenizer.eos_token_id,
+    )
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2645, in generate
+    result = decoding_method(
+        self,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2845, in _sample
+    outputs = self._prefill(
+        input_ids,
+    ...<2 lines>...
+        is_first_iteration=not generation_config.is_assistant,
+    )
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 3896, in _prefill
+    return self(**model_inputs, return_dict=True)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 475, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: float != struct c10::BFloat16

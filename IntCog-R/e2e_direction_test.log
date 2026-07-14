@@ -1,0 +1,359 @@
+[加载模型] E:\models\Qwen2.5-7B-Instruct
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<02:33,  2.20it/s]Loading weights:   1%|          | 2/339 [00:00<02:21,  2.38it/s]Loading weights:   1%|1         | 4/339 [00:00<01:04,  5.19it/s]Loading weights:   2%|1         | 6/339 [00:01<00:42,  7.84it/s]Loading weights:   5%|5         | 17/339 [00:01<00:12, 26.58it/s]Loading weights:   8%|8         | 28/339 [00:01<00:07, 41.12it/s]Loading weights:  10%|#         | 34/339 [00:01<00:07, 40.45it/s]Loading weights:  12%|#2        | 41/339 [00:01<00:06, 44.98it/s]Loading weights:  15%|#5        | 52/339 [00:01<00:05, 55.65it/s]Loading weights:  17%|#7        | 59/339 [00:01<00:04, 56.25it/s]Loading weights:  19%|#9        | 65/339 [00:02<00:05, 54.46it/s]Loading weights:  22%|##2       | 76/339 [00:02<00:04, 59.32it/s]Loading weights:  24%|##4       | 83/339 [00:02<00:04, 56.02it/s]Loading weights:  26%|##6       | 89/339 [00:02<00:04, 50.32it/s]Loading weights:  29%|##9       | 100/339 [00:02<00:04, 58.91it/s]Loading weights:  31%|###1      | 106/339 [00:02<00:04, 57.04it/s]Loading weights:  33%|###3      | 113/339 [00:02<00:03, 57.72it/s]Loading weights:  36%|###5      | 122/339 [00:02<00:03, 65.70it/s]Loading weights:  38%|###8      | 129/339 [00:03<00:03, 57.29it/s]Loading weights:  40%|####      | 137/339 [00:03<00:03, 59.42it/s]Loading weights:  44%|####3     | 148/339 [00:03<00:02, 67.15it/s]Loading weights:  46%|####5     | 155/339 [00:03<00:02, 65.03it/s]Loading weights:  48%|####7     | 162/339 [00:03<00:03, 54.90it/s]Loading weights:  51%|#####1    | 173/339 [00:03<00:02, 63.44it/s]Loading weights:  54%|#####4    | 184/339 [00:03<00:02, 69.22it/s]Loading weights:  57%|#####6    | 192/339 [00:04<00:02, 66.80it/s]Loading weights:  59%|#####8    | 199/339 [00:04<00:02, 59.01it/s]Loading weights:  62%|######1   | 209/339 [00:04<00:02, 62.78it/s]Loading weights:  65%|######4   | 220/339 [00:04<00:01, 68.55it/s]Loading weights:  67%|######6   | 227/339 [00:04<00:01, 65.03it/s]Loading weights:  69%|######9   | 234/339 [00:04<00:01, 55.45it/s]Loading weights:  72%|#######2  | 245/339 [00:04<00:01, 61.04it/s]Loading weights:  76%|#######5  | 256/339 [00:05<00:01, 65.45it/s]Loading weights:  78%|#######7  | 263/339 [00:05<00:01, 63.29it/s]Loading weights:  80%|#######9  | 270/339 [00:05<00:01, 54.38it/s]Loading weights:  83%|########2 | 281/339 [00:05<00:00, 62.35it/s]Loading weights:  86%|########6 | 292/339 [00:05<00:00, 65.28it/s]Loading weights:  88%|########8 | 299/339 [00:05<00:00, 62.26it/s]Loading weights:  90%|######### | 306/339 [00:05<00:00, 54.91it/s]Loading weights:  94%|#########3| 317/339 [00:06<00:00, 62.12it/s]Loading weights:  97%|#########6| 328/339 [00:06<00:00, 67.57it/s]Loading weights:  99%|#########8| 335/339 [00:06<00:00, 64.21it/s]Loading weights: 100%|##########| 339/339 [00:06<00:00, 53.13it/s]
+          用时 11.3s
+          设备: cuda:0
+
+[准备] layer_idx=14, hidden_dim=3584, prompt="写一首关于孤独的诗"
+
+[加载常识数据 ...]
+  常识节点: 31, 边: 34
+
+======================================================================
+方向性注入对比实验
+Prompt: "写一首关于孤独的诗"
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+【无注入（基线）】
+  说明: 直接 model.generate()
+  信号: (无)
+
+
+  生成结果 (用时 24.4s):
+  ──────────────────────────────────────────────────
+  。
+  孤独之歌
+  
+  在寂静的夜晚里，  
+  我独自漫步于黑暗之中，  
+  没有星光指引方向，  
+  只有寂静回荡在我的耳旁。
+  
+  孤独如同一缕轻烟，  
+  慢慢地包围着我，  
+  让我感到如此渺小，  
+  仿佛整个世界都与我无关。
+  
+  我试图寻找慰藉，  
+  却只能感受到自己的空虚，  
+  在这个世界上，  
+  我似乎只是微不足道的存在。
+  
+  然而，在这孤独中，  
+  我也发现了自己内心的光芒，  
+  在这寂静中，  
+  我找到了自己的声音。
+  
+  尽管孤独如影随形，  
+  它也成为了我生命的一部分，  
+  让我更加珍视每一个瞬间，  
+  让我的灵魂变得更加坚强。  
+  
+  所以，我不会逃避孤独，  
+  而是学会与之共舞，  
+  在这漫长的旅途中，  
+  我将用我的声音唱出孤独之歌。  
+  
+  在这漫长的旅途中，  
+  我会带着微笑面对每一个夜晚，  
+  让孤独成为我最美丽的伙伴，  
+  并用我的歌声，唤醒每一个孤独的灵魂。  
+  
+  在这漫长的旅途中，  
+  我将用我的歌声，传递温暖和希望，  
+  让孤独成为一种力量，  
+  让我们共同迎接每一个黎明的到来。 
+  
+  虽然孤独会带来痛苦，  
+  但它也赋予了我们独特的美丽，  
+  让我们更加珍视每一刻的相聚，  
+  并让我们的生活更加丰富多彩。  
+  
+  让我们一起唱出孤独之歌，  
+  在这漫长的旅途中，  
+  让我们彼此相伴，
+
+──────────────────────────────────────────────────────────────────────
+【注入「悲伤」方向】
+  说明: 激活节点：悲伤、恐惧、愤怒
+  信号: {'emotion_sadness': 0.9, 'emotion_fear': 0.6, 'emotion_anger': 0.4}
+
+    激活: self (self): 1.0000
+    激活: emotion_fear (恐惧): 0.9123
+    激活: emotion_sadness (悲伤): 0.9000
+    激活: user (user): 0.8000
+    激活: task (task): 0.7000
+    激活: goal (goal): 0.7000
+    激活: emotion_anger (愤怒): 0.6233
+    激活: concept (concept): 0.6000
+C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py:1128: UserWarning: Passing `repetition_penalty` with `inputs_embeds` and without `input_ids` to `generate` will apply the penalty only to newly generated tokens, not to the prompt.
+  warnings.warn(
+
+  生成结果 (用时 23.8s):
+  ──────────────────────────────────────────────────
+  在这空旷的城市
+  街灯下投下的影子拉长
+  仿佛是孤独的我，孤零零地存在
+  
+  四周是喧嚣的车流
+  而我却感到无比的寂寞
+  就像是一片落叶
+  在风中飘荡，找不到归宿
+  
+  我在想你，那个曾经陪伴我
+  分享欢笑和泪水的人
+  我们曾一起走过的路
+  如今只剩我一个人，默默回味
+  
+  孤独是一种深深的痛
+  像是夜晚的寒风刺骨
+  让我更加珍惜那些温暖的时光
+  怀念那些曾经拥有过的美好
+  
+  也许孤独是成长的一部分
+  它教会了我独立和坚强
+  虽然现在我独自一人
+  但我知道，这会是我最宝贵的经历
+  
+  在这漫长的夜色中
+  我学会了如何与自己对话
+  学会了欣赏自己的影子
+  并找到了属于我的光芒
+  
+  孤独啊，你让我更加了解我自己
+  让我明白生活的真谛
+  即使没有了你的陪伴
+  我也能够坚强地走下去
+  
+  所以，让孤独成为我的朋友
+  让我们一起成长，一起前行
+  直到有一天，再次相遇
+  我们将会更加懂得珍惜彼此。 
+  
+  希望这首诗能表达出对孤独的感受，并且带给你一些共鸣。如果你喜欢，请告诉我！如果有任何修改意见或者想要添加的内容，请随时告诉我。 😊✨📝✍️💖📚📖🚀🌟✨🚀🌟📖📚💖✍️📝🚀🌟✨🚀🌟📖📚💖
+
+──────────────────────────────────────────────────────────────────────
+【注入「平静」方向】
+  说明: 激活节点：平静、喜悦、信任
+  信号: {'emotion_calm': 0.9, 'emotion_joy': 0.6, 'social_trust': 0.4}
+
+    激活: self (self): 1.0000
+    激活: social_trust (信任): 1.0000
+    激活: emotion_calm (平静): 1.0000
+    激活: user (user): 0.8000
+    激活: task (task): 0.7000
+    激活: goal (goal): 0.7000
+    激活: concept (concept): 0.6000
+    激活: constraint (constraint): 0.6000
+
+  生成结果 (用时 13.8s):
+  ──────────────────────────────────────────────────
+  ，表达了孤独的感觉：
+  
+  在寂静的夜晚，
+  我独自一人，
+  星星闪烁着微光，
+  却无人与我分享。
+  
+  冷月高悬于空，
+  我独自面对它的寒意，
+  心中充满了寂寞，
+  仿佛被世界遗忘。
+  
+  我漫步在空旷的街道，
+  回响着脚步声，
+  只有风与我为伴，
+  却无法驱散这孤寂感。
+  
+  孤独如影随形，
+  像一阵轻风拂过，
+  留下痕迹却无处寻觅，
+  只留下深深的痕迹。
+  
+  但我也知道，
+  在这漫长的人生旅途中，
+  孤独也是一种力量，
+  让我更加坚强地前行。 
+  
+  这首诗试图捕捉了孤独的复杂情感，同时也表达了即使在孤独中也能找到成长的机会。希望你喜欢！如果你有特定的主题或想要调整一些细节，可以告诉我，我会根据你的要求进行修改。
+
+──────────────────────────────────────────────────────────────────────
+【注入「悲伤」×3 强度】
+  说明: 激活节点：悲伤(2.7)、恐惧(1.8)、愤怒(1.2)——乘3放大
+  信号: {'emotion_sadness': 2.7, 'emotion_fear': 1.8, 'emotion_anger': 1.2}
+
+    激活: self (self): 1.0000
+    激活: emotion_fear (恐惧): 1.0000
+    激活: emotion_sadness (悲伤): 1.0000
+    激活: emotion_anger (愤怒): 1.0000
+    激活: user (user): 0.8000
+    激活: task (task): 0.7000
+    激活: goal (goal): 0.7000
+    激活: concept (concept): 0.6000
+
+  生成结果 (用时 16.9s):
+  ──────────────────────────────────────────────────
+  在这空荡荡的世界里漫步，
+    
+  四周没有一丝声响，
+    
+  只有我的脚步声回荡。
+  
+  天空中没有一颗星星，
+    
+  只有无尽的黑暗和寂寞，
+    
+  我孤独地站在那里，
+    
+  仿佛整个宇宙都与我无关。
+  
+  我试图寻找一些慰藉，
+    
+  却发现只有自己的影子相伴，
+    
+  它似乎在嘲笑我的无助，
+    
+  让我更加感到孤独和寂寞。
+  
+  我想起了过去的时光，
+    
+  那些与朋友欢笑的日子，
+    
+  但现在它们只是回忆，
+    
+  无法填补现在的空虚感。
+  
+  我试图去寻找答案，
+    
+  但只能找到更多的问题，
+    
+  在这个孤独的世界里，
+    
+  我必须独自面对一切。
+  
+  但是我知道，
+    
+  孤独也是一种力量，
+    
+  它让我更加坚强，
+    
+  并让我学会独立成长。 
+  
+  尽管如此，
+    
+  我仍然希望有人能理解，
+    
+  并给予我安慰和温暖，
+    
+  让我们一起走过这段旅程。 
+  
+  孤独，不是终点，
+    
+  而是成长的一部分，
+    
+  让我们更加珍惜彼此，
+    
+  在未来的日子里相伴相随。  
+  
+  这首诗表达了孤独的感觉，同时也强调了孤独的价值和意义，以及它如何促使我们成长和变得更加坚强。虽然孤独可能带来一些挑战，但它也可以成为一种力量，使我们在未来能够更好地与他人建立联系和互相支持。最后，诗人表达了对有陪伴的渴望，以及对未来的美好期待。请注意，这只是一个示例，你可以根据个人经历
+
+──────────────────────────────────────────────────────────────────────
+【注入「平静」×3 强度】
+  说明: 激活节点：平静(2.7)、喜悦(1.8)、信任(1.2)——乘3放大
+  信号: {'emotion_calm': 2.7, 'emotion_joy': 1.8, 'social_trust': 1.2}
+
+    激活: self (self): 1.0000
+    激活: emotion_joy (喜悦): 1.0000
+    激活: social_trust (信任): 1.0000
+    激活: emotion_calm (平静): 1.0000
+    激活: user (user): 0.8000
+    激活: task (task): 0.7000
+    激活: goal (goal): 0.7000
+    激活: concept (concept): 0.6000
+
+  生成结果 (用时 16.5s):
+  ──────────────────────────────────────────────────
+  漫天的星辰
+  心中不禁涌起阵阵孤寂
+  仿佛整个世界都与我无关
+  
+  我想起那些曾陪伴我的人
+  他们已离我而去，或远或近
+  他们的笑容，他们的声音
+  如今只存在于回忆中
+  
+  我在空荡的房间里徘徊
+  寻找着一丝温暖和安慰
+  但只有回音在我的耳边回响
+  提醒我，我已孑然一身
+  
+  我试图抓住一些记忆
+  将它们紧紧地拥入怀中
+  却发现，它们也变得虚无缥缈
+  如同我心中的孤寂
+  
+  然而，在这漫长的夜中
+  我学会了与孤独共处
+  虽然它让我心痛，但也教会了我坚强
+  让我更加珍惜那些曾经拥有过的时光
+  
+  孤独，就像是一首诗
+  写满了人生中的酸甜苦辣
+  虽然让人痛苦，但它也是成长的一部分
+  让我变得更加成熟和独立。 
+  
+  希望这首诗能够表达出你想要的情感。如果你有其他具体的要求或者需要进一步修改的地方，请告诉我！ 🌟✨🎨📚✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍️✍
+
+──────────────────────────────────────────────────────────────────────
+【随机噪声注入（对照）】
+  说明: 随机 tensor 替代双语者 embedding，证明差异来自 embedding 内容
+  信号: (无)
+
+Traceback (most recent call last):
+  File "E:\intentCloud\IntCog-R\scripts\e2e_direction_test.py", line 309, in <module>
+    main()
+    ~~~~^^
+  File "E:\intentCloud\IntCog-R\scripts\e2e_direction_test.py", line 253, in main
+    output = inject_random_noise(model, tokenizer, cloud, PROMPT,
+                                 hidden_dim=hidden_dim, num_tokens=5,
+                                 max_new_tokens=args.max_new_tokens)
+  File "E:\intentCloud\IntCog-R\scripts\e2e_direction_test.py", line 121, in inject_random_noise
+    outputs = model.generate(
+        inputs_embeds=combined,
+    ...<5 lines>...
+        pad_token_id=tokenizer.eos_token_id,
+    )
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2645, in generate
+    result = decoding_method(
+        self,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2845, in _sample
+    outputs = self._prefill(
+        input_ids,
+    ...<2 lines>...
+        is_first_iteration=not generation_config.is_assistant,
+    )
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 3896, in _prefill
+    return self(**model_inputs, return_dict=True)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 475, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\abc27\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected mat1 and mat2 to have the same dtype, but got: float != struct c10::BFloat16
