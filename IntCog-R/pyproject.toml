@@ -2,6 +2,8 @@
 name = "IntCog-R"
 version = "0.1.0"
 description = "可降级的意图驱动意识生成原型"
+license = {text = "Apache-2.0"}
+authors = [{name = "户维尚 (madheu)", email = "madheu@users.noreply.github.com"}]
 requires-python = ">=3.11"
 dependencies = [
     "pydantic>=2.0",
