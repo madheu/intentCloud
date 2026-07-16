@@ -90,7 +90,6 @@ IntCog-R/
 │   ├── node_embedding.py          # 节点embedding查询
 │   ├── intent_to_vector.py        # 意图→向量映射层
 │   ├── common_sense_loader.py     # 常识数据加载
-│   ├── config_loader.py           # 配置加载
 │   └── models.py                  # 数据模型
 ├── scripts/                       # 实验脚本
 │   ├── e2e_test.py                # 端到端首跑
@@ -107,9 +106,9 @@ IntCog-R/
 ├── data/
 │   ├── common_sense.json          # 常识知识图谱（36节点/42边）
 │   └── elasticity_map.json        # 8条路径弹性地图
-├── tests/                         # 测试
-│   ├── unit/                      # 38个单元测试
-│   └── integration/               # 集成测试
+├── tests/                         # 测试（38个单元测试）
+│   ├── unit/
+│   └── integration/
 ├── experiment_log.md              # 完整实验日志
 ├── experiment_summary.md          # 实验摘要
 ├── injection_strength_curve.csv   # 控制曲线数据
@@ -133,10 +132,36 @@ IntCog-R/
 
 ---
 
+## 测试结果
+
+| 测试套件 | 通过/总数 | 状态 |
+|----------|:---------:|:----:|
+| 强度调节器（H14b） | 10/10 | ✅ |
+| 对话上下文（H16a） | 8/8 | ✅ |
+| 反馈捕获（H16b） | 10/10 | ✅ |
+| 多轮对话集成（H16c） | 3/3 | ✅ |
+
+---
+
+## 本地提交（暂未推送）
+
+```bash
+732bf4e H14-H16: 弹性地图 + 强度调节器 + 视角转换器 + 多轮对话
+9e79bb5 添加实验日志文件
+d9b7e8b H10-H13: 端到端验证 + 双海波演化 + 控制曲线校准
+```
+
+推送命令：
+```bash
+git push origin main
+```
+
+---
+
 ## 论文 / 参考文献
 
 详见 `docs/references/` 目录。
 
 ## 许可证
 
-MIT License
+Apache 2.0 License
