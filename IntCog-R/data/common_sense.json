@@ -160,6 +160,26 @@
       "id": "emotion_awe",
       "text": "敬畏和崇敬的感觉",
       "category": "情感"
+    },
+    {
+      "id": "concept_loneliness",
+      "text": "孤独寂寥的内心感受",
+      "category": "概念"
+    },
+    {
+      "id": "concept_poetry",
+      "text": "创作诗歌和文字表达",
+      "category": "概念"
+    },
+    {
+      "id": "style_formal",
+      "text": "正式严肃规范的风格",
+      "category": "风格"
+    },
+    {
+      "id": "style_casual",
+      "text": "随意轻松自然的风格",
+      "category": "风格"
     }
   ],
   "edges": [
@@ -377,6 +397,42 @@
       "source": "nature_ocean",
       "target": "emotion_fear",
       "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "nature_ocean",
+      "target": "emotion_joy",
+      "type": "connects",
+      "weight": 0.3
+    },
+    {
+      "source": "nature_ocean",
+      "target": "emotion_sadness",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "concept_loneliness",
+      "target": "emotion_calm",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "concept_loneliness",
+      "target": "emotion_nervous",
+      "type": "evokes",
+      "weight": 0.3
+    },
+    {
+      "source": "concept_poetry",
+      "target": "style_formal",
+      "type": "refines",
+      "weight": 0.3
+    },
+    {
+      "source": "concept_poetry",
+      "target": "style_casual",
+      "type": "refines",
       "weight": 0.3
     }
   ]
