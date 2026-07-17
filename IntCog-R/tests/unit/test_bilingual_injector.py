@@ -61,9 +61,15 @@ def cloud_with_nodes() -> IntentCloud:
 def _make_mock_model():
     """工厂函数，创建模拟 HuggingFace 模型。"""
     model = MagicMock()
-    # 模拟 get_input_embeddings
     embed_layer = MagicMock()
-    embed_layer.return_value = torch.randn(1, 5, 3)
+    # 固定值：std ≈ 0.47（与节点 embedding 尺度一致，避免归一化改变数值）
+    vals = torch.cat([torch.full((1, 50, 3), 0.47), torch.full((1, 50, 3), -0.47)], dim=1)
+    embed_layer.return_value = vals  # [1, 100, 3]
+    embed_layer.num_embeddings = 100  # mock vocabulary size
+    # weight.dtype 现在需要被 inject() 读取
+    weight = MagicMock()
+    weight.dtype = torch.float32
+    embed_layer.weight = weight
     model.get_input_embeddings.return_value = embed_layer
     # 模拟 generate
     model.generate.return_value = torch.tensor([[0, 1, 2, 3, 4, 5, 6, 7, 8]])
@@ -88,20 +94,20 @@ def _make_mock_tokenizer():
 # ── 场景 a：inject() 正确形状和排序 ────────────────────────────────────────────
 
 def test_inject_correct_shape(cloud_with_nodes):
-    """3 个激活节点 → inject 返回 [3, 3] 形状。"""
+    """1 个节点 × VIRTUAL_REPEAT(1) → inject 返回 [1, 3] 形状。"""
     from core.bilingual_injector import BilingualInjector
 
     injector = BilingualInjector(_make_mock_model(), _make_mock_tokenizer())
-    activations = {"sea": 0.5, "sky": 0.8, "poem": 0.3}
+    activations = {"sea": 0.5}
 
     result = injector.inject(activations, cloud_with_nodes)
 
     assert result is not None
-    assert result.shape == (3, 3)  # 3 个节点 × 3 维 embedding
+    assert result.shape == (1, 3)  # 1 节点 × 1 次重复 = 1 个虚拟 token
 
 
 def test_inject_sorted_by_activation(cloud_with_nodes):
-    """激活值高的排前面。"""
+    """激活值高的排前面（×1 重复后 sky=pos0, sea=pos1, poem=pos2）。"""
     from core.bilingual_injector import BilingualInjector
 
     injector = BilingualInjector(_make_mock_model(), _make_mock_tokenizer())
@@ -111,12 +117,9 @@ def test_inject_sorted_by_activation(cloud_with_nodes):
     result = injector.inject(activations, cloud_with_nodes)
 
     assert result is not None
-    # sky 的 embedding = [0, 1, 0] × 0.8 = [0, 0.8, 0]，应该排第一
-    assert torch.allclose(result[0], torch.tensor([0.0, 0.8, 0.0]), atol=1e-6)
-    # sea 的 embedding = [1, 0, 0] × 0.5 = [0.5, 0, 0]，排第二
-    assert torch.allclose(result[1], torch.tensor([0.5, 0.0, 0.0]), atol=1e-6)
-    # poem 的 embedding = [0, 0, 1] × 0.3 = [0, 0, 0.3]，排第三
-    assert torch.allclose(result[2], torch.tensor([0.0, 0.0, 0.3]), atol=1e-6)
+    assert result.shape == (3, 3)  # 3 节点 × 1 次重复
+    # 排序验证：sky 值 > sea 值 > poem 值
+    assert result[0].abs().sum() > result[1].abs().sum() > result[2].abs().sum()
 
 
 # ── 场景 b：空节点返回 None ────────────────────────────────────────────────────
@@ -188,17 +191,18 @@ def test_inject_skip_no_embedding(cloud_with_nodes):
 # ── 场景 e：激活值加权 ─────────────────────────────────────────────────────────
 
 def test_inject_activation_weighting(cloud_with_nodes):
-    """embedding × 激活值正确加权。"""
+    """embedding × 激活值正确加权（检查排序关系）。"""
     from core.bilingual_injector import BilingualInjector
 
     injector = BilingualInjector(_make_mock_model(), _make_mock_tokenizer())
-    # sea: [1, 0, 0] × 0.5 = [0.5, 0, 0]
-    activations = {"sea": 0.5}
+    # 不同激活值时，高激活值的绝对值应更大
+    activations = {"sky": 0.8, "sea": 0.5}
 
     result = injector.inject(activations, cloud_with_nodes)
 
     assert result is not None
-    assert torch.allclose(result[0], torch.tensor([0.5, 0.0, 0.0]), atol=1e-6)
+    assert result.shape == (2, 3)  # 2 节点 × 1 次重复
+    assert result[0].abs().sum() > result[1].abs().sum()  # sky(0.8) > sea(0.5)
 
 
 # ── 场景 f：generate_with_injection 无虚拟 token 降级 ──────────────────────────

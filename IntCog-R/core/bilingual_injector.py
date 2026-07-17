@@ -99,16 +99,36 @@ class BilingualInjector:
         # 按激活值降序排序
         activated.sort(key=lambda x: x[0], reverse=True)
 
-        # 组装加权 embedding 序列
         device = self._get_device()
-        virtual_embeds = []
-        for act, emb in activated:
-            # embedding × 激活值作为加权
-            weighted = emb.to(device) * act
-            virtual_embeds.append(weighted)
 
-        # shape: [num_activated, hidden_dim]
-        return torch.stack(virtual_embeds, dim=0)
+        # 计算输入 embedding 的典型尺度，用于缩放虚拟 token
+        embed_layer = self.model.get_input_embeddings()
+        # 取一批随机 token 的 embedding 估算 std
+        dummy_ids = torch.randint(0, embed_layer.num_embeddings, (100,), device=device)
+        ref_embeds = embed_layer(dummy_ids)  # [100, hidden_dim]
+        ref_std = ref_embeds.std().item()
+
+        # 组装加权 embedding 序列
+        virtual_embeds = []
+        model_dtype = embed_layer.weight.dtype
+        VIRTUAL_REPEAT = 1  # 每个节点重复次数
+        for act, emb in activated:
+            emb = emb.to(device=device, dtype=model_dtype)
+            # 支持单向量 [hidden_dim] 和 多 token [num_tokens, hidden_dim] 两种格式
+            if emb.dim() == 1:
+                emb = emb.unsqueeze(0)  # → [1, hidden_dim]
+            # 缩放虚拟 embedding 到输入 embedding 的尺度
+            num_tokens = emb.shape[0]
+            emb_std = emb.std().item()
+            if emb_std > 0:
+                emb = emb * (ref_std / emb_std)
+            weighted = emb * act
+            # 重复虚拟 token 以增强信号，对抗 RLHF 身份固化
+            for _ in range(VIRTUAL_REPEAT):
+                virtual_embeds.append(weighted)
+
+        # shape: [total_tokens, hidden_dim]
+        return torch.cat(virtual_embeds, dim=0)
 
     def generate_with_injection(
         self,
@@ -158,7 +178,7 @@ class BilingualInjector:
         virtual_embeds = self.inject(activations, cloud)
 
         if virtual_embeds is None:
-            # 无激活节点，直接生成（等同于普通生成）
+            # 无激活节点，直接生成（回退路径：跳过 input tokens）
             outputs = self.model.generate(
                 input_ids=input_ids,
                 max_new_tokens=max_new_tokens,
@@ -168,7 +188,9 @@ class BilingualInjector:
                 pad_token_id=self.tokenizer.eos_token_id,
                 **generate_kwargs,
             )
-            return self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            # 跳过 input 部分，只返回新生成的内容
+            new_tokens = outputs[0][seq_len:]
+            return self.tokenizer.decode(new_tokens, skip_special_tokens=True)
 
         num_virtual = virtual_embeds.shape[0]
 
