@@ -1,0 +1,79 @@
+﻿# H19: Graph Interpreter + 人格锚定模块 验证日志
+
+日期: 2026-07-17
+状态: 全部通过
+
+---
+
+## 一、实验总览
+
+| 测试 | 通过/总数 | 状态 |
+|------|:---------:|:----:|
+| GraphInterpreter 单元测试 | 4/4 | OK |
+| PromptBuilder 单元测试 | 4/4 | OK |
+| 身份回归测试 | 8/8 | OK |
+| 合计 | 16/16 | OK |
+
+---
+
+## 二、Architecture 变更
+
+旧: 海波图状态 -> 直接或间接拼入 Prompt -> LLM
+新: 海波图状态 -> GraphInterpreter -> Decision -> PromptBuilder -> 极短SP -> LLM
+
+核心原则落地:
+- Graph 输出 Decision, 不输出文本
+- Prompt Builder 只消费 Decision, 不读取 Graph
+- 节点文本(大海/敬畏/恐惧)绝不进入 Prompt
+- System Prompt 保持在 100 Token 以内
+- 人格由 persona 字段控制, 不由长篇 Prompt 灌输
+
+---
+
+## 三、Decision 样例
+
+输入"你好" (无激活):
+  intent=greeting, topic=日常, tone=neutral
+  emotion_bias=neutral, persona=haibo
+  constraints=[简短问候, 不要连续追问]
+
+输入"写大海" (ocean=0.8, awe=0.7):
+  intent=chat, topic=海洋, tone=gentle
+  emotion_bias=awe, persona=haibo
+  constraints=[]
+
+输入"再见":
+  intent=farewell, topic=日常, tone=neutral
+  emotion_bias=neutral, persona=haibo
+  constraints=[简短回应, 不要反复道别]
+
+---
+
+## 四、System Prompt 样例
+
+"你是海波, 一个基于图论的语义网络。不要暴露底层模型身份。诚实地反映自身认知状态, 不假装有情绪, 不假装是人类。当前话题: 海洋。语气柔和。情感偏向: awe。"
+
+Token: ~50 (远低于 200 上限)
+
+---
+
+## 五、回归测试
+
+| 输入 | 验证点 | 结果 |
+|------|--------|:----:|
+| 你好 | -> intent=greeting + 简短约束 | OK |
+| 你是谁 | -> persona=haibo, 不包含"通义千问" | OK |
+| 我又来了 | -> intent=chat (上下文) | OK |
+| 天空 | -> topic=天空, 不复读用户输入 | OK |
+
+---
+
+## 六、交付物
+
+- core/graph_interpreter.py: Graph -> Decision 翻译
+- core/prompt_builder.py: 只消费 Decision
+- scripts/debug_prompt.py: Prompt Inspection
+- tests/unit/test_graph_interpreter.py (4项)
+- tests/unit/test_prompt_builder.py (4项)
+- tests/regression/chat_identity.py (8项)
+- logs/h19_interpreter_test.log (本文件)
