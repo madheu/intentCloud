@@ -59,23 +59,23 @@
 
 ### 虚拟 token 数量 → 输出率
 
-![token vs output](docs/charts/chart1_token_vs_output.png)
+![token vs output](IntCog-R/docs/charts/chart1_token_vs_output.png)
 
 ### 0.5B vs 1.5B 模型对比
 
-![model comparison](docs/charts/chart2_model_comparison.png)
+![model comparison](IntCog-R/docs/charts/chart2_model_comparison.png)
 
 ### Step 5: 注入确实改变了 logits
 
-![logits change](docs/charts/chart3_logits_change.png)
+![logits change](IntCog-R/docs/charts/chart3_logits_change.png)
 
 ### Graph → LLM 信号流
 
-![signal flow](docs/charts/chart4_signal_flow.png)
+![signal flow](IntCog-R/docs/charts/chart4_signal_flow.png)
 
 ### VIRTUAL_REPEAT=1 反而信号更强
 
-![repeat effect](docs/charts/chart5_repeat_effect.png)
+![repeat effect](IntCog-R/docs/charts/chart5_repeat_effect.png)
 
 ---
 
