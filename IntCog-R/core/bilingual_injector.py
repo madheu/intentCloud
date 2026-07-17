@@ -98,6 +98,9 @@ class BilingualInjector:
 
         # 按激活值降序排序
         activated.sort(key=lambda x: x[0], reverse=True)
+        # 限制注入数量：过多虚拟 token 会导致模型拒绝生成（尤其在 1.5B 上 >4 即哑）
+        MAX_INJECT = 4
+        activated = activated[:MAX_INJECT]
 
         device = self._get_device()
 

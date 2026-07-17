@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Haibo interactive chat — Qwen2.5-0.5B + 中文双语者注入."""
+"""Graph-visible interactive chat — 图状态 + LLM 输出"""
 from __future__ import annotations
 import sys, time, argparse, torch, re
 from pathlib import Path
@@ -11,39 +11,47 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 MODEL_PATH = r"E:\intentCloud\models\qwen2.5-1.5b"
 
+# 节点中文名映射
+NODE_NAMES = {
+    "nature_ocean":"大海","nature_sky":"天空","nature_life":"生命","nature_wide":"壮丽",
+    "nature_sea":"海洋","nature_change":"变化","nature_world":"世界",
+    "emotion_fear":"恐惧","emotion_joy":"喜悦","emotion_sadness":"悲伤",
+    "emotion_anger":"愤怒","emotion_calm":"宁静","emotion_awe":"敬畏",
+    "emotion_nervous":"紧张","emotion_excited":"兴奋",
+    "concept_poetry":"诗歌","concept_loneliness":"孤独",
+    "concept_beginning":"开端","concept_end":"终结","concept_boundary":"边界",
+    "time_past":"过去","time_future":"未来","time_now":"当下","time_eternity":"永恒",
+    "space_here":"近处","space_there":"远处","space_far":"远方",
+    "logic_cause":"因果","logic_contrast":"对比","logic_progression":"递进",
+    "social_cooperation":"合作","social_conflict":"冲突",
+    "social_trust":"信任","social_doubt":"怀疑",
+    "style_formal":"正式","style_casual":"随意",
+}
 
-def clean_output(text: str, aggressive: bool = False) -> str:
-    """提取有效中文回应。
+TOPIC_MAP = {
+    ("海","大海","海洋","浪","水","鱼","船"):"nature_ocean",
+    ("天空","天","云","星","月"):"nature_sky",
+    ("悲伤","恐惧","害怕","焦虑","担心","怕","紧张","不安"):"emotion_fear",
+    ("快乐","开心","喜悦","爱","敬畏","美丽","美好"):"emotion_joy",
+    ("平静","安宁","宁静","平和"):"emotion_calm",
+    ("诗","诗歌","写诗","押韵","韵"):"concept_poetry",
+    ("孤独","孤单","寂寞"):"concept_loneliness",
+    ("生命","人生","意义","活着","死亡","死"):"nature_life",
+    ("壮丽","宏大","宇宙","星空"):"nature_wide",
+    ("愤怒","生气","怒"):"emotion_anger",
+}
 
-    优先策略：找第一个中文段落。
-    如果段落太短或找不到中文，返回原始输出的截断版本。
-    """
-    if not text or not text.strip():
-        return "..."
-
+def clean_output(text):
+    if not text or not text.strip(): return "..."
     original = text.strip()
-
-    # 策略 1：提取第一个有意义的中文段落（≥8 字）
-    # 按段落分割，找第一个含足够多中文的段落
-    paragraphs = original.split('\n')
-    for para in paragraphs:
-        # 统计中文字符数
-        chinese_count = len(re.findall(r'[\u4e00-\u9fff]', para))
-        if chinese_count >= 8:
+    for para in original.split('\n'):
+        if len(re.findall(r'[\u4e00-\u9fff]', para)) >= 8:
             return para.strip()[:200]
-
-    # 策略 2：直接清理前导杂音
-    # 找到第一个中文字符的位置，从那里开始
     match = re.search(r'[\u4e00-\u9fff]', original)
     if match:
         start = match.start()
-        # 再往前找一句话的合理起始（冒号、引号后，或句首）
-        ctx_before = original[max(0, start-3):start]
-        return original[max(0, start):min(start+200, len(original))].strip()
-
-    # 策略 3：实在找不到中文，返回前 150 字
+        return original[max(0,start):min(start+200,len(original))].strip()
     return original[:150].strip()
-
 
 def main():
     p = argparse.ArgumentParser()
@@ -51,130 +59,101 @@ def main():
     p.add_argument("--data", default=str(PROJECT / "data/common_sense.json"))
     args = p.parse_args()
 
-    print("[海波] 加载模型...", end=" ", flush=True)
+    print("加载模型...", end=" ", flush=True)
     t0 = time.time()
     device = "cuda" if torch.cuda.is_available() else "cpu"
     tok = AutoTokenizer.from_pretrained(args.model)
-    if tok.pad_token is None:
-        tok.pad_token = tok.eos_token
+    if tok.pad_token is None: tok.pad_token = tok.eos_token
     m = AutoModelForCausalLM.from_pretrained(
-        args.model,
-        torch_dtype=torch.float16 if device == "cuda" else torch.float32,
-    )
-    m.to(device)
+        args.model, torch_dtype=torch.float16 if device == "cuda" else torch.float32
+    ).to(device)
     m.eval()
-    layer_idx = 14  # middle of 28 Qwen layers
     print(f"{time.time()-t0:.1f}s ({device})")
 
-    print("[海波] 加载常识图...", end=" ", flush=True)
     from core.intent_cloud import IntentCloud
     from core.intent_cloud_config import IntentCloudConfig
     from core.bilingual_injector import BilingualInjector
     from core.graph_interpreter import GraphInterpreter
 
     cloud = IntentCloud()
-    cloud.load_common_sense(str(args.data), m, tok, layer_idx)
+    cloud.load_common_sense(str(args.data), m, tok, 14)
     cfg = IntentCloudConfig()
-
-    for _ in range(5):
+    for _ in range(3):
         cloud.process_interaction({"nature_ocean": 0.6}, cfg)
 
     inj = BilingualInjector(m, tok, activation_threshold=0.1)
     gi = GraphInterpreter()
 
-    print("OK")
-    print(); print("=" * 50)
-    print("  海波（Hypergraph）交互式聊天")
+    print("=" * 60)
+    print("  IntentCloud 交互 — 图状态可见模式")
     print("  输入 q 退出")
-    print("=" * 50)
-
-    # ═══ 中文话题检测 ═══
-    topic_map = {
-        ("海", "大海", "海洋", "浪", "水", "鱼", "船"): "nature_ocean",
-        ("天空", "天", "云", "星", "月"): "nature_sky",
-        ("悲伤", "恐惧", "害怕", "焦虑", "担心", "怕", "紧张", "不安"): "emotion_fear",
-        ("快乐", "开心", "喜悦", "爱", "敬畏", "美丽", "美好"): "emotion_joy",
-        ("平静", "安宁", "宁静", "平和"): "emotion_calm",
-        ("诗", "诗歌", "写诗", "押韵", "韵"): "concept_poetry",
-        ("孤独", "孤单", "寂寞"): "concept_loneliness",
-        ("生命", "人生", "意义", "活着", "死亡", "死"): "nature_life",
-        ("壮丽", "宏大", "宇宙", "星空"): "nature_wide",
-        ("愤怒", "生气", "怒"): "emotion_anger",
-    }
-    tone_map = {
-        "neutral": "用自然的语气说话。",
-        "warm": "用温暖的语气说话。",
-        "calm": "用平静的语气说话。",
-        "gentle": "用温柔的语气说话。",
-    }
+    print("=" * 60)
 
     while True:
         try:
             user = input("\n[你] ").strip()
         except (EOFError, KeyboardInterrupt):
             print(); break
-        if not user:
-            continue
-        if user.lower() in ("q", "quit", "exit"):
-            break
+        if not user: continue
+        if user.lower() in ("q", "quit", "exit"): break
 
-        # 话题检测 → 意图云激活
+        # 话题检测
         acts = {}
-        for kws, node in topic_map.items():
+        for kws, node in TOPIC_MAP.items():
             if any(kw in user for kw in kws):
                 acts[node] = min(1.0, acts.get(node, 0) + 0.5)
 
-        # 话题检测 → 意图云扩散
-        # 接住扩散结果：原始 acts 只触发 2-3 个节点，扩散后 40+ 个节点被激活
+        # 扩散
         spread = cloud.process_interaction(acts, cfg) if acts else cloud.process_interaction({}, cfg)
 
-        # GraphInterpreter → Decision
-        d = gi.interpret(user, acts)
-
-        # 构建中文系统提示（极短！）
-        sp = "你是海波。"
-        if d.topic:
-            sp += f" 当前话题：{d.topic}。"
-        sp += " " + tone_map.get(d.tone, "用自然的语气说话。")
-
-        # Qwen 聊天模板
-        messages = [
-            {"role": "system", "content": sp},
-            {"role": "user", "content": user},
+        # ── 显示图状态 ──
+        print()
+        print("━" * 60)
+        # 触发节点
+        if acts:
+            trig = ", ".join(f"{NODE_NAMES.get(k,k)}({v:.1f})" for k,v in acts.items())
+            print(f"触发: {trig}")
+        # 扩散后的语义节点（过滤系统节点，只显示有中文名的概念/情感/自然节点）
+        semantic_spread = [
+            (k,v) for k,v in spread.items()
+            if v > 0.05 and k not in acts and k in NODE_NAMES
         ]
-        full_prompt = tok.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        semantic_spread.sort(key=lambda x:x[1], reverse=True)
+        if semantic_spread:
+            parts = []
+            for k, v in semantic_spread[:8]:
+                name = NODE_NAMES.get(k, k)
+                parts.append(f"{name}↑{v:.2f}")
+            print(f"扩散: {', '.join(parts)}")
+        # 统计
+        n_active = sum(1 for v in spread.values() if v > 0.05)
+        n_injected = inj.inject(spread, cloud)
+        nv = n_injected.shape[0] if n_injected is not None else 0
+        print(f"活跃: {n_active}节点 → 注入: {nv}tok")
 
-        # 生成 — 把扩散后的全图激活传给注入器
-        try:
-            torch.manual_seed(int(time.time() * 1000) % 10000)
-            txt = inj.generate_with_injection(
-                full_prompt, activations=spread, cloud=cloud,
-                max_new_tokens=80, temperature=0.7, top_p=0.9,
-                repetition_penalty=1.15, no_repeat_ngram_size=3,
-            )
-            # 截断到第一轮对话结束
-            # Qwen 生成时会继续编造后续对话，遇到 im_end / double newline / 问句 就停
-            raw = txt.strip()
-            # 切掉 <|im_end|> 及之后的所有内容
-            if "<|im_end|>" in raw:
-                raw = raw.split("<|im_end|>")[0]
-            # 如果出现第二个对话轮次（以 \n\n 用户话语开头），截断
-            for marker in ["\n\n你好", "\n\n好", "\n\n我", "\n\n那", "\n\n谢谢", "\n\n嗯"]:
-                if marker in raw:
-                    raw = raw.split(marker)[0]
-                    break
-            out = clean_output(raw)
-            if out == "..." and raw.strip():
-                # clean_output 没找到中文，直接用原始截断
-                out = raw.strip()[:150]
-            print(f"[海波] {out}")
-        except Exception as e:
-            print(f"[海波] 出错了：{e}")
-            import traceback
-            traceback.print_exc()
+        # ── 生成 ──
+        d = gi.interpret(user, acts)
+        sp = "用自然的语气表达。"
+        if d.topic: sp = f"当前话题涉及{d.topic}。{sp}"
+        messages = [{"role":"system","content":sp},{"role":"user","content":user}]
+        prompt = tok.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
-    print("\n[海波] 再见！")
+        raw = inj.generate_with_injection(
+            prompt, activations=spread, cloud=cloud,
+            max_new_tokens=80, temperature=0.7, top_p=0.9,
+            repetition_penalty=1.15, no_repeat_ngram_size=3,
+        )
+        out = raw.strip()
+        if "<|im_end|>" in out: out = out.split("<|im_end|>")[0]
+        for marker in ["\n\n你好","\n\n好","\n\n我","\n\n那","\n\n谢谢"]:
+            if marker in out: out = out.split(marker)[0]; break
+        text = clean_output(out)
+        if text == "..." and out.strip(): text = out.strip()[:150]
 
+        print(f"输出: {text}")
+        print("━" * 60)
+
+    print("\n再见！")
 
 if __name__ == "__main__":
     main()
