@@ -1,0 +1,56 @@
+# 忽略模型文件（太大）
+models/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# 环境
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# 系统
+Thumbs.db
+.DS_Store
+
+# Hermes
+.hermes/
+.reasonix/
+
+# 临时
+*.bin
+*.safetensors
+*.tflite
+*.onnx
+*.incomplete
+
+# 其它独立项目/工具（非 intentCloud 核心）
+IntCog-R-repo/
+IntCog-R-mvp/
+PowerSkills/
+logs/
+tools/
+archive_recovery_sessions.py
+clean_sessions.py
+frontal_lobe_prototype.py
+pydlqwen.py
+restore_sessions.py
+dld1.5b.py
+_gh_contents.json
+reasonix.toml
+
+# 临时实验脚本
+Haibo-Research/06_Experiment/find_tencent_url.py
+Haibo-Research/06_Experiment/search_hf.py
+Haibo-Research/06_Experiment/download_tencent_model.py
+Haibo-Research/06_Experiment/check_data_quality.py
+Haibo-Research/06_Experiment/check_data_detail.py
+Haibo-Research/06_Experiment/check_clean_ratio.py
