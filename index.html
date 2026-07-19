@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haibo · 海波 — 语义涌现研究</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a1a;
+    color: #c8d6e5;
+    font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', monospace;
+    line-height: 1.7;
+  }
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+
+  /* Header */
+  header { text-align: center; padding: 60px 0 40px; }
+  h1 { font-size: 48px; font-weight: 300; color: #fff; letter-spacing: 8px; }
+  h1 span { color: #e94560; }
+  .subtitle { color: #5a6a7e; font-size: 14px; margin-top: 8px; letter-spacing: 2px; }
+  .subtitle span { color: #e94560; }
+
+  /* Status bar */
+  .status-bar {
+    display: flex; gap: 12px; justify-content: center;
+    padding: 16px; margin-bottom: 40px;
+    background: #111128; border-radius: 8px; border: 1px solid #1e1e3a;
+  }
+  .status-item { text-align: center; padding: 0 16px; }
+  .status-item .label { font-size: 11px; color: #5a6a7e; }
+  .status-item .value { font-size: 18px; font-weight: bold; }
+  .status-item .value.green { color: #2ecc71; }
+  .status-item .value.yellow { color: #f39c12; }
+  .status-item .value.red { color: #e74c3c; }
+  .status-item .value.blue { color: #4a9eff; }
+
+  /* Sections */
+  h2 { font-size: 14px; color: #4a9eff; letter-spacing: 3px; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #1e1e3a; text-transform: uppercase; }
+  p { margin-bottom: 14px; font-size: 15px; }
+
+  /* Timeline */
+  .timeline { position: relative; padding-left: 24px; }
+  .timeline::before {
+    content: ''; position: absolute; left: 8px; top: 0; bottom: 0;
+    width: 2px; background: #1e1e3a;
+  }
+  .tl-item { position: relative; margin-bottom: 24px; padding-left: 16px; }
+  .tl-item::before {
+    content: ''; position: absolute; left: -20px; top: 6px;
+    width: 10px; height: 10px; border-radius: 50%; border: 2px solid;
+  }
+  .tl-item.tl-done::before { background: #2ecc71; border-color: #2ecc71; }
+  .tl-item.tl-fail::before { background: #e74c3c; border-color: #e74c3c; }
+  .tl-item.tl-curr::before { background: #f39c12; border-color: #f39c12; }
+  .tl-item .tl-date { font-size: 11px; color: #5a6a7e; }
+  .tl-item .tl-title { font-size: 15px; color: #fff; font-weight: 500; }
+  .tl-item .tl-desc { font-size: 13px; color: #8899aa; }
+
+  /* Data table */
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { padding: 8px 12px; text-align: center; border-bottom: 1px solid #1e1e3a; }
+  th { color: #5a6a7e; font-weight: 400; font-size: 12px; text-transform: uppercase; }
+  td:first-child { text-align: left; color: #fff; }
+  .best { color: #2ecc71; font-weight: bold; }
+
+  /* Footer */
+  footer { text-align: center; padding: 40px 0; color: #3a4a5e; font-size: 12px; }
+
+  /* Cards */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .card {
+    background: #111128; border: 1px solid #1e1e3a; border-radius: 8px; padding: 16px;
+  }
+  .card .num { font-size: 32px; font-weight: 300; }
+  .card .lbl { font-size: 12px; color: #5a6a7e; }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 32px; }
+    .status-bar { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>海<span>波</span></h1>
+  <div class="subtitle"><span>Haibo</span> · Semantic Emergence Research</div>
+  <div class="subtitle" style="margin-top:4px;">从"语义组织"到"语言表达"的双阶段系统</div>
+</header>
+
+<!-- Status -->
+<div class="status-bar">
+  <div class="status-item">
+    <div class="label">Haibo 1.0</div>
+    <div class="value red">Closed</div>
+  </div>
+  <div class="status-item">
+    <div class="label">P0 系列</div>
+    <div class="value red">Done</div>
+  </div>
+  <div class="status-item">
+    <div class="label">P0-A 系列</div>
+    <div class="value yellow">Active</div>
+  </div>
+  <div class="status-item">
+    <div class="label">当前实验</div>
+    <div class="value blue">P0-A-5</div>
+  </div>
+  <div class="status-item">
+    <div class="label">布尔4轴最佳</div>
+    <div class="value green">83%</div>
+  </div>
+</div>
+
+<!-- Core Question -->
+<h2>核心问题</h2>
+<p><strong>Meaning 是如何形成的？</strong> 一个词在句子中的具体含义，是由它周围的哪些词决定的？"苹果"可以是科技公司也可以是水果——人如何瞬间判断，机器如何复现？</p>
+
+<!-- Timeline -->
+<h2>研究时间线</h2>
+<div class="timeline">
+  <div class="tl-item tl-fail">
+    <div class="tl-date">2026-07-18</div>
+    <div class="tl-title">Haibo 1.0：注入路线关闭</div>
+    <div class="tl-desc">36 节点语义图 + embedding 注入 → 控制 LLM。被实验证伪：I(a*; y) ≈ 0。控制信号强度差 33 倍，4 token vs 500+ token。</div>
+  </div>
+  <div class="tl-item tl-fail">
+    <div class="tl-date">P0.1—P0.7</div>
+    <div class="tl-title">词级语义分辨率验证</div>
+    <div class="tl-desc">TF-IDF、char n-gram、200 维词向量——全部 90° 正交。词级静态向量不足以区分语义歧义。</div>
+  </div>
+  <div class="tl-item tl-fail">
+    <div class="tl-date">P0.8</div>
+    <div class="tl-title">Token Graph v0</div>
+    <div class="tl-desc">30 词节点 + 共现边 → 全部"不确定"。中性桥接词污染信号。</div>
+  </div>
+  <div class="tl-item tl-done">
+    <div class="tl-date">P0.9—P0.10</div>
+    <div class="tl-title">Semantics Graph v1</div>
+    <div class="tl-desc">概念节点 + word→concept 归属 + 分层推理。手写版 10/11 (91%) 正确。</div>
+  </div>
+  <div class="tl-item tl-done">
+    <div class="tl-date">P0-A-1/2</div>
+    <div class="tl-title">自动扩展 + 多歧义词</div>
+    <div class="tl-desc">腾讯词向量自动扩展词表。6 歧义词，总正确率 50%。花从 33%→83%，但光和苹果退步。</div>
+  </div>
+  <div class="tl-item tl-curr">
+    <div class="tl-date">P0-A-5</div>
+    <div class="tl-title">布尔向量 4 轴（天/地/人/心）</div>
+    <div class="tl-desc">每个词用 4 个布尔值编码语义。纸 83%，光 50%。需要补词表验证。</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">下一步</div>
+    <div class="tl-title">补布尔词表 + 全量验证</div>
+    <div class="tl-desc">覆盖 jieba 分词结果的所有语境词 → 重新评估布尔 4 轴是否全面优于概念域。</div>
+  </div>
+</div>
+
+<!-- Results Table -->
+<h2>各方法对比</h2>
+<table>
+  <tr>
+    <th>方法</th><th>苹果</th><th>纸</th><th>光</th><th>花</th><th>行</th><th>口</th><th>总计</th>
+  </tr>
+  <tr>
+    <td>手写概念域</td>
+    <td class="best">82%</td><td>17%</td><td>33%</td><td>33%</td><td>0%</td><td class="best">75%</td><td>45%</td>
+  </tr>
+  <tr>
+    <td>词向量自动扩展</td>
+    <td>73%</td><td>17%</td><td>17%</td><td class="best">83%</td><td>20%</td><td class="best">75%</td><td class="best">50%</td>
+  </tr>
+  <tr>
+    <td>布尔 4 轴</td>
+    <td>45%</td><td class="best">83%</td><td class="best">50%</td><td>50%</td><td class="best">40%</td><td>25%</td><td class="best">50%</td>
+  </tr>
+</table>
+
+<!-- Stats Cards -->
+<h2>项目数据</h2>
+<div class="cards">
+  <div class="card">
+    <div class="num" style="color:#2ecc71;">38</div>
+    <div class="lbl">测试用例数</div>
+  </div>
+  <div class="card">
+    <div class="num" style="color:#4a9eff;">6</div>
+    <div class="lbl">歧义词覆盖</div>
+  </div>
+  <div class="card">
+    <div class="num" style="color:#f39c12;">4</div>
+    <div class="lbl">布尔语义轴</div>
+  </div>
+  <div class="card">
+    <div class="num" style="color:#e94560;">83%</div>
+    <div class="lbl">单歧义词最高</div>
+  </div>
+  <div class="card">
+    <div class="num" style="color:#5a6a7e;">226</div>
+    <div class="lbl">Haibo 1.0 测试</div>
+  </div>
+  <div class="card">
+    <div class="num" style="color:#5a6a7e;">~160</div>
+    <div class="lbl">H 系列实验</div>
+  </div>
+</div>
+
+<!-- Philosophy -->
+<h2>哲学</h2>
+<p><strong>语言不是思维本身，而是思维在低维空间的投影。</strong></p>
+<p>一个词的意义不由它自身携带，由同时出现的其他词"围合"出来。"语义组织"不是向量计算，是词与概念之间的归属关系的探索。</p>
+
+<footer>
+  <p>intentCloud / Haibo · Apache 2.0</p>
+  <p style="margin-top:4px;">github.com/madheu/intentCloud</p>
+</footer>
+
+</div>
+</body>
+</html>

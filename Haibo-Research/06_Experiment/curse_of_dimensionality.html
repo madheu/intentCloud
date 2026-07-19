@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { background: #1a1a2e; color: #e0e0e0; font-family: system-ui, sans-serif; margin: 0; padding: 20px; }
+  h1 { font-size: 18px; margin-bottom: 5px; }
+  p { font-size: 14px; color: #aaa; margin-top: 0; }
+  .container { display: flex; gap: 40px; flex-wrap: wrap; }
+  .panel { background: #16213e; padding: 20px; border-radius: 12px; border: 1px solid #2a2a4a; }
+  canvas { background: #0f0f23; border-radius: 8px; }
+  .info { display: flex; gap: 20px; margin-top: 10px; }
+  .stat { background: #0f0f23; padding: 10px 16px; border-radius: 8px; font-size: 13px; }
+  .stat span { color: #ffd700; font-weight: bold; }
+  button { background: #e94560; border: none; color: white; padding: 8px 20px; border-radius: 6px; cursor: pointer; font-size: 13px; margin-top: 10px; }
+  button:hover { background: #ff6b81; }
+  .histogram { margin-top: 15px; height: 60px; display: flex; align-items: flex-end; gap: 2px; }
+  .bar { background: #e94560; width: 6px; border-radius: 2px 2px 0 0; }
+  .bar-label { font-size: 11px; color: #888; text-align: center; margin-top: 4px; }
+</style>
+</head>
+<body>
+
+<h1>高维空间中，为什么所有向量看起来都 ≈ 90°？</h1>
+<p>随机向量的夹角分布随维度变化 | 红色 = "科技"方向 | 蓝色 = "水果"方向 | 灰色 = 随机方向</p>
+
+<div class="container">
+  <div class="panel">
+    <h2>维度 = <span id="dimDisplay">200</span>D</h2>
+    <canvas id="mainCanvas" width="400" height="400"></canvas>
+    <div style="margin-top:12px; display:flex; gap:20px; align-items:center; flex-wrap:wrap;">
+      <div>
+        <label style="font-size:13px;">维度: </label>
+        <input type="range" id="dimSlider" min="2" max="500" value="200" style="width:200px;">
+        <span id="dimValue" style="font-size:13px; color:#ffd700;">200</span>
+      </div>
+      <button onclick="randomize()">随机生成↻</button>
+    </div>
+    <div class="info">
+      <div class="stat">科技↔水果 夹角: <span id="angle1">—</span></div>
+      <div class="stat">鲸鱼↔汽车 夹角: <span id="angle2">—</span></div>
+      <div class="stat">随机↔随机 夹角: <span id="angle3">—</span></div>
+    </div>
+    <div class="stat" style="margin-top:8px;">
+      所有夹角的范围: <span id="angleRange">—</span>
+    </div>
+  </div>
+
+  <div class="panel" style="flex:1; min-width:300px;">
+    <h2>夹角分布（1000对随机向量）</h2>
+    <p>你看到的是一条越来越窄的峰——不是所有方向都相同，而是所有方向都 ≈ 90°</p>
+    <canvas id="histCanvas" width="450" height="200"></canvas>
+    <div class="info">
+      <div class="stat">均值: <span id="histMean">—</span></div>
+      <div class="stat">标准差: <span id="histStd">—</span></div>
+      <div class="stat">在 85°-95° 内的比例: <span id="histPeak">—</span></div>
+    </div>
+  </div>
+</div>
+
+<p style="margin-top:20px; color:#888; font-size:13px; line-height:1.6;">
+🔵 二维空间：两个随机向量可以任意方向，夹角从 0° 到 180° 均匀分布。<br>
+🔵 三维空间：稍微偏向 90°，但仍有各种夹角（东偏北30°、西偏南60°都有）。<br>
+🔵 <strong>200 维空间：所有随机向量几乎都互相垂直。</strong> 不是因为它们"一样"——恰恰相反，在 200 维里有太多"独立方向"可用，任意两个随机向量几乎必然近似正交。<br>
+🔵 这就是"维度诅咒"：在高维空间里，"科技"词组的朝向和"鲸鱼"词组的朝向 ≈ 90°，不是因为它们不相关——<strong>而是因为任何两组随机词组的朝向都是 ≈ 90°。</strong> 这个指标在高维空间里失去了分辨能力。
+</p>
+
+<script>
+const mainCanvas = document.getElementById('mainCanvas');
+const mainCtx = mainCanvas.getContext('2d');
+const histCanvas = document.getElementById('histCanvas');
+const histCtx = histCanvas.getContext('2d');
+const dimSlider = document.getElementById('dimSlider');
+const dimValue = document.getElementById('dimValue');
+const dimDisplay = document.getElementById('dimDisplay');
+
+function randomVec(dim) {
+  const v = new Float64Array(dim);
+  let norm = 0;
+  for (let i = 0; i < dim; i++) {
+    v[i] = Math.random() * 2 - 1;
+    norm += v[i] * v[i];
+  }
+  norm = Math.sqrt(norm);
+  for (let i = 0; i < dim; i++) v[i] /= norm;
+  return v;
+}
+
+function angle(v1, v2) {
+  let dot = 0;
+  for (let i = 0; i < v1.length; i++) dot += v1[i] * v2[i];
+  return Math.acos(Math.max(-1, Math.min(1, dot))) * 180 / Math.PI;
+}
+
+function drawMain(dim) {
+  const W = 400, H = 400;
+  mainCtx.clearRect(0, 0, W, H);
+
+  // 生成向量
+  const tech = randomVec(dim);
+  const fruit = randomVec(dim);
+  const whale = randomVec(dim);
+  const car = randomVec(dim);
+  const rand1 = randomVec(dim);
+  const rand2 = randomVec(dim);
+
+  const a1 = angle(tech, fruit);
+  const a2 = angle(whale, car);
+  const a3 = angle(rand1, rand2);
+
+  document.getElementById('angle1').textContent = a1.toFixed(1) + '°';
+  document.getElementById('angle2').textContent = a2.toFixed(1) + '°';
+  document.getElementById('angle3').textContent = a3.toFixed(1) + '°';
+
+  // 显示所有夹角范围
+  const allAngles = [a1, a2, a3];
+  document.getElementById('angleRange').textContent =
+    Math.min(...allAngles).toFixed(1) + '° ~ ' + Math.max(...allAngles).toFixed(1) + '°';
+
+  // 2D projection for visualization
+  // Project high-dim vectors onto 2D for display
+  // We use first 2 components of a random 2D rotation
+  function projectTo2D(v) {
+    // Simple: use first 2 PCA-like components of the random vector
+    // Actually, just use the vector's components as-is if dim >= 2
+    const x = v[0] || 0;
+    const y = v[1] || 0;
+    return { x, y };
+  }
+
+  const pTech = projectTo2D(tech);
+  const pFruit = projectTo2D(fruit);
+  const pWhale = projectTo2D(whale);
+  const pCar = projectTo2D(car);
+  const pRand1 = projectTo2D(rand1);
+  const pRand2 = projectTo2D(rand2);
+
+  // Draw background
+  mainCtx.strokeStyle = '#2a2a4a';
+  mainCtx.lineWidth = 1;
+  mainCtx.beginPath();
+  mainCtx.arc(W/2, H/2, 150, 0, Math.PI * 2);
+  mainCtx.stroke();
+  mainCtx.beginPath();
+  mainCtx.arc(W/2, H/2, 75, 0, Math.PI * 2);
+  mainCtx.stroke();
+
+  // Draw axes
+  mainCtx.strokeStyle = '#333';
+  mainCtx.lineWidth = 1;
+  mainCtx.beginPath();
+  mainCtx.moveTo(W/2 - 160, H/2);
+  mainCtx.lineTo(W/2 + 160, H/2);
+  mainCtx.stroke();
+  mainCtx.beginPath();
+  mainCtx.moveTo(W/2, H/2 - 160);
+  mainCtx.lineTo(W/2, H/2 + 160);
+  mainCtx.stroke();
+
+  function drawArrow(v, label, color, scale=130) {
+    const endX = W/2 + v[0] * scale;
+    const endY = H/2 + v[1] * scale;
+    mainCtx.strokeStyle = color;
+    mainCtx.lineWidth = 2.5;
+    mainCtx.beginPath();
+    mainCtx.moveTo(W/2, H/2);
+    mainCtx.lineTo(endX, endY);
+    mainCtx.stroke();
+    // Label
+    mainCtx.fillStyle = color;
+    mainCtx.font = '13px system-ui';
+    mainCtx.fillText(label, endX + 8, endY + 4);
+  }
+
+  if (dim > 3) {
+    // High-D: show all 6 vectors
+    drawArrow(tech, '科技', '#ff6b6b');
+    drawArrow(fruit, '水果', '#4ecdc4');
+    drawArrow(whale, '鲸鱼', '#a8a8a8');
+    drawArrow(car, '汽车', '#a8a8a8');
+  } else {
+    drawArrow(tech, '科技', '#ff6b6b');
+    drawArrow(fruit, '水果', '#4ecdc4');
+  }
+
+  // Annotations
+  mainCtx.fillStyle = '#888';
+  mainCtx.font = '12px system-ui';
+  mainCtx.fillText('维度 = ' + dim, 15, 25);
+  if (dim > 3) {
+    mainCtx.fillStyle = '#ffd700';
+    mainCtx.font = '12px system-ui';
+    mainCtx.fillText('⚠️ 高维: 所有向量无法在2D中准确显示', 15, 45);
+    mainCtx.fillStyle = '#888';
+    mainCtx.font = '11px system-ui';
+    mainCtx.fillText('（投影到2D会丢失信息，看起来更靠近）', 15, 62);
+  }
+}
+
+function drawHistogram(dim) {
+  const W = 450, H = 200;
+  histCtx.clearRect(0, 0, W, H);
+
+  // Generate 1000 pairs of random vectors and compute angles
+  const angles = [];
+  for (let i = 0; i < 1000; i++) {
+    const v1 = randomVec(dim);
+    const v2 = randomVec(dim);
+    angles.push(angle(v1, v2));
+  }
+
+  // Histogram bins (0-180°, bin width = 5°)
+  const bins = 36;
+  const binWidth = 180 / bins;
+  const hist = new Array(bins).fill(0);
+  for (const a of angles) {
+    const idx = Math.min(Math.floor(a / binWidth), bins - 1);
+    hist[idx]++;
+  }
+
+  const maxCount = Math.max(...hist);
+  const barWidth = (W - 40) / bins;
+
+  histCtx.clearRect(0, 0, W, H);
+  histCtx.fillStyle = '#0f0f23';
+  histCtx.fillRect(0, 0, W, H);
+
+  // Draw bars
+  for (let i = 0; i < bins; i++) {
+    const h = (hist[i] / maxCount) * (H - 50);
+    const x = 20 + i * barWidth;
+    const y = H - 20 - h;
+
+    // Color the peak region (85-95°)
+    const angleCenter = i * binWidth + binWidth / 2;
+    const isPeak = angleCenter >= 80 && angleCenter <= 100;
+    histCtx.fillStyle = isPeak ? '#e94560' : '#2a2a4a';
+    histCtx.fillRect(x, y, barWidth - 1, h);
+  }
+
+  // Stats
+  const mean = angles.reduce((s, a) => s + a, 0) / angles.length;
+  const std = Math.sqrt(angles.reduce((s, a) => s + (a - mean) ** 2, 0) / angles.length);
+  const peakCount = angles.filter(a => a >= 85 && a <= 95).length;
+  
+  document.getElementById('histMean').textContent = mean.toFixed(1) + '°';
+  document.getElementById('histStd').textContent = std.toFixed(1) + '°';
+  document.getElementById('histPeak').textContent = (peakCount / angles.length * 100).toFixed(1) + '%';
+
+  // Axis labels
+  histCtx.fillStyle = '#888';
+  histCtx.font = '11px system-ui';
+  histCtx.fillText('0°', 18, H - 5);
+  histCtx.fillText('90°', W/2 - 8, H - 5);
+  histCtx.fillText('180°', W - 30, H - 5);
+  histCtx.fillText('(夹角)', W/2 - 15, H - 5);
+}
+
+function update() {
+  const dim = parseInt(dimSlider.value);
+  dimValue.textContent = dim;
+  dimDisplay.textContent = dim;
+  drawMain(dim);
+  drawHistogram(dim);
+}
+
+function randomize() {
+  update();
+}
+
+dimSlider.addEventListener('input', update);
+update();
+</script>
+</body>
+</html>
