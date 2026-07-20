@@ -105,12 +105,12 @@
     <div class="value yellow">Active</div>
   </div>
   <div class="status-item">
-    <div class="label">当前实验</div>
-    <div class="value blue">P0-A-5</div>
+    <div class="label">P0-R 阶段</div>
+    <div class="value green">58.3%</div>
   </div>
   <div class="status-item">
-    <div class="label">布尔4轴最佳</div>
-    <div class="value green">83%</div>
+    <div class="label">盲测集</div>
+    <div class="value blue">60句</div>
   </div>
 </div>
 
@@ -151,10 +151,15 @@
     <div class="tl-title">布尔向量 4 轴（天/地/人/心）</div>
     <div class="tl-desc">每个词用 4 个布尔值编码语义。纸 83%，光 50%。需要补词表验证。</div>
   </div>
+  <div class="tl-item tl-done">
+    <div class="tl-date">P0-R</div>
+    <div class="tl-title">评测修复 + HowNet 级联</div>
+    <div class="tl-desc">60句盲测集，目标锚定修复污染。层间级联 58.3%，首次超 MFS 基线 (+3.3pp)。</div>
+  </div>
   <div class="tl-item">
     <div class="tl-date">下一步</div>
-    <div class="tl-title">补布尔词表 + 全量验证</div>
-    <div class="tl-desc">覆盖 jieba 分词结果的所有语境词 → 重新评估布尔 4 轴是否全面优于概念域。</div>
+    <div class="tl-title">BriLLM 底座 + Semantic Graph</div>
+    <div class="tl-desc">Token 活动→Semantic Node 跃迁，H-SG-1 分区实验。</div>
   </div>
 </div>
 

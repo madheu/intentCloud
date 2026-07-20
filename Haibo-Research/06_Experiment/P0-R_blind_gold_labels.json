@@ -1,0 +1,402 @@
+{
+  "门": [
+    {
+      "sentence": "专业能力提升后，进阶门径需要专门指导。",
+      "label": "B",
+      "sense_name": "领域",
+      "ambiguous_word": "门"
+    },
+    {
+      "sentence": "为进入房间，工作人员从大门通过。",
+      "label": "A",
+      "sense_name": "实体",
+      "ambiguous_word": "门"
+    },
+    {
+      "sentence": "为区分门类，资料被放入专门领域目录。",
+      "label": "B",
+      "sense_name": "领域",
+      "ambiguous_word": "门"
+    },
+    {
+      "sentence": "铁门上锁后，保安无法直接推开。",
+      "label": "A",
+      "sense_name": "实体",
+      "ambiguous_word": "门"
+    }
+  ],
+  "纸": [
+    {
+      "sentence": "纸杯由顾客用纸巾擦拭后放入纸箱。",
+      "label": "B",
+      "sense_name": "日用包装",
+      "ambiguous_word": "纸"
+    },
+    {
+      "sentence": "为方便包装，店员折叠纸杯并装入纸箱。",
+      "label": "B",
+      "sense_name": "日用包装",
+      "ambiguous_word": "纸"
+    }
+  ],
+  "结": [
+    {
+      "sentence": "水手发现绳结成了死结，只好解开。",
+      "label": "A",
+      "sense_name": "具体",
+      "ambiguous_word": "结"
+    },
+    {
+      "sentence": "结果支持结论，二者结合形成总结。",
+      "label": "B",
+      "sense_name": "抽象",
+      "ambiguous_word": "结"
+    },
+    {
+      "sentence": "线结绑定绳索后形成牢固绳结。",
+      "label": "A",
+      "sense_name": "具体",
+      "ambiguous_word": "结"
+    },
+    {
+      "sentence": "研究结论在实验结束后写入总结。",
+      "label": "B",
+      "sense_name": "抽象",
+      "ambiguous_word": "结"
+    }
+  ],
+  "心": [
+    {
+      "sentence": "运动医疗评估会同时记录心率与心跳。",
+      "label": "A",
+      "sense_name": "器官",
+      "ambiguous_word": "心"
+    },
+    {
+      "sentence": "医疗人员依据心跳判断心脏供血情况。",
+      "label": "A",
+      "sense_name": "器官",
+      "ambiguous_word": "心"
+    },
+    {
+      "sentence": "开心活动改善心理状态和日常心情。",
+      "label": "B",
+      "sense_name": "抽象",
+      "ambiguous_word": "心"
+    },
+    {
+      "sentence": "伤心情绪会影响心态与心理判断。",
+      "label": "B",
+      "sense_name": "抽象",
+      "ambiguous_word": "心"
+    }
+  ],
+  "方": [
+    {
+      "sentence": "长方形方块需要标明面积和边长。",
+      "label": "A",
+      "sense_name": "形状",
+      "ambiguous_word": "方"
+    },
+    {
+      "sentence": "我方根据方向选择绕行方式。",
+      "label": "B",
+      "sense_name": "方向",
+      "ambiguous_word": "方"
+    },
+    {
+      "sentence": "正方形面积等于边长的平方。",
+      "label": "A",
+      "sense_name": "形状",
+      "ambiguous_word": "方"
+    },
+    {
+      "sentence": "地方道路向远方延伸，方位朝东。",
+      "label": "B",
+      "sense_name": "方向",
+      "ambiguous_word": "方"
+    }
+  ],
+  "口": [
+    {
+      "sentence": "学校门口的大门分设入口和出口。",
+      "label": "B",
+      "sense_name": "空间",
+      "ambiguous_word": "口"
+    },
+    {
+      "sentence": "地铁入口设在路口东侧，出入口共用通道。",
+      "label": "B",
+      "sense_name": "空间",
+      "ambiguous_word": "口"
+    },
+    {
+      "sentence": "吃饭前清洁口腔，可保护牙齿和嘴唇。",
+      "label": "A",
+      "sense_name": "人体",
+      "ambiguous_word": "口"
+    }
+  ],
+  "界": [
+    {
+      "sentence": "界线标牌用于说明分界和边界。",
+      "label": "A",
+      "sense_name": "边界",
+      "ambiguous_word": "界"
+    },
+    {
+      "sentence": "世界经济让业界拓宽业务范围。",
+      "label": "B",
+      "sense_name": "领域",
+      "ambiguous_word": "界"
+    },
+    {
+      "sentence": "各界按地理区域划分行业责任。",
+      "label": "A",
+      "sense_name": "边界",
+      "ambiguous_word": "界"
+    },
+    {
+      "sentence": "交界区域同时受到疆界界限约束。",
+      "label": "A",
+      "sense_name": "边界",
+      "ambiguous_word": "界"
+    }
+  ],
+  "苹果": [
+    {
+      "sentence": "苹果通过专利保护芯片设计。",
+      "label": "A",
+      "sense_name": "科技公司",
+      "ambiguous_word": "苹果"
+    },
+    {
+      "sentence": "苹果开发者为系统制作新版应用。",
+      "label": "A",
+      "sense_name": "科技公司",
+      "ambiguous_word": "苹果"
+    },
+    {
+      "sentence": "苹果采摘后需要冷藏保鲜。",
+      "label": "B",
+      "sense_name": "水果",
+      "ambiguous_word": "苹果"
+    },
+    {
+      "sentence": "苹果果肉中的维生素构成部分营养。",
+      "label": "B",
+      "sense_name": "水果",
+      "ambiguous_word": "苹果"
+    }
+  ],
+  "华为": [
+    {
+      "sentence": "叫华为的毕业生在研究领域获得职位。",
+      "label": "B",
+      "sense_name": "个人",
+      "ambiguous_word": "华为"
+    },
+    {
+      "sentence": "叫华为者以名字申领并获得证书。",
+      "label": "B",
+      "sense_name": "个人",
+      "ambiguous_word": "华为"
+    },
+    {
+      "sentence": "终端产品采用华为5G技术方案。",
+      "label": "A",
+      "sense_name": "科技",
+      "ambiguous_word": "华为"
+    },
+    {
+      "sentence": "华为研发通信设备和网络基站。",
+      "label": "A",
+      "sense_name": "科技",
+      "ambiguous_word": "华为"
+    }
+  ],
+  "杜鹃": [
+    {
+      "sentence": "杜鹃春季会在山林寻找巢址筑巢。",
+      "label": "B",
+      "sense_name": "鸟",
+      "ambiguous_word": "杜鹃"
+    },
+    {
+      "sentence": "花园为杜鹃盆栽提供种植和养护空间。",
+      "label": "A",
+      "sense_name": "花",
+      "ambiguous_word": "杜鹃"
+    },
+    {
+      "sentence": "志愿者把受伤杜鹃鸟送往森林保护站。",
+      "label": "B",
+      "sense_name": "鸟",
+      "ambiguous_word": "杜鹃"
+    },
+    {
+      "sentence": "观赏者记录杜鹃春季花期与开花过程。",
+      "label": "A",
+      "sense_name": "花",
+      "ambiguous_word": "杜鹃"
+    }
+  ],
+  "花": [
+    {
+      "sentence": "消费者付款后会收到购买花费账单。",
+      "label": "B",
+      "sense_name": "消费",
+      "ambiguous_word": "花"
+    },
+    {
+      "sentence": "盆栽品种开花时会散发淡淡花香。",
+      "label": "A",
+      "sense_name": "植物",
+      "ambiguous_word": "花"
+    }
+  ],
+  "季节": [
+    {
+      "sentence": "季节气候影响春夏秋冬的降雨频率。",
+      "label": "A",
+      "sense_name": "自然",
+      "ambiguous_word": "季节"
+    },
+    {
+      "sentence": "食用旺季所在季节需要营销刺激消费。",
+      "label": "B",
+      "sense_name": "行业",
+      "ambiguous_word": "季节"
+    },
+    {
+      "sentence": "这个季节进入淡季，营销团队调整相关商业活动。",
+      "label": "B",
+      "sense_name": "行业",
+      "ambiguous_word": "季节"
+    },
+    {
+      "sentence": "降雨停止后，季节天气适合自然生长。",
+      "label": "A",
+      "sense_name": "自然",
+      "ambiguous_word": "季节"
+    }
+  ],
+  "行": [
+    {
+      "sentence": "队伍先横排再竖行，排列始终整齐。",
+      "label": "B",
+      "sense_name": "排列",
+      "ambiguous_word": "行"
+    },
+    {
+      "sentence": "会议确认工具能用，认可方案可行并通过。",
+      "label": "A",
+      "sense_name": "评价",
+      "ambiguous_word": "行"
+    }
+  ],
+  "角": [
+    {
+      "sentence": "三角图中每个角度都需要测量。",
+      "label": "A",
+      "sense_name": "几何",
+      "ambiguous_word": "角"
+    },
+    {
+      "sentence": "鹿角并非角质结构，但骨质尖角很坚硬。",
+      "label": "C",
+      "sense_name": "动物角",
+      "ambiguous_word": "角"
+    }
+  ],
+  "小米": [
+    {
+      "sentence": "农民用农业方法稳定小米亩产。",
+      "label": "B",
+      "sense_name": "谷物",
+      "ambiguous_word": "小米"
+    },
+    {
+      "sentence": "小米品牌通过生态服务手机用户。",
+      "label": "A",
+      "sense_name": "科技",
+      "ambiguous_word": "小米"
+    }
+  ],
+  "光": [
+    {
+      "sentence": "为家庭争光的成绩让门楣增光又有光彩。",
+      "label": "B",
+      "sense_name": "修辞评价",
+      "ambiguous_word": "光"
+    },
+    {
+      "sentence": "可见光谱与紫外光由同一光源照射。",
+      "label": "A",
+      "sense_name": "物理光线",
+      "ambiguous_word": "光"
+    }
+  ],
+  "头": [
+    {
+      "sentence": "作者从头修改开头，逐步理清全文头绪。",
+      "label": "C",
+      "sense_name": "起始",
+      "ambiguous_word": "头"
+    },
+    {
+      "sentence": "医生检查头发下的头顶和头部皮肤。",
+      "label": "A",
+      "sense_name": "人体",
+      "ambiguous_word": "头"
+    },
+    {
+      "sentence": "头儿获得领导授权，作为头领带头。",
+      "label": "B",
+      "sense_name": "领导",
+      "ambiguous_word": "头"
+    }
+  ],
+  "长城": [
+    {
+      "sentence": "长城电脑产品进入工业客户采购目录。",
+      "label": "B",
+      "sense_name": "公司",
+      "ambiguous_word": "长城"
+    },
+    {
+      "sentence": "长城的万里城墙体现防御历史。",
+      "label": "A",
+      "sense_name": "建筑",
+      "ambiguous_word": "长城"
+    },
+    {
+      "sentence": "出口订单推动长城工厂研发产品。",
+      "label": "B",
+      "sense_name": "公司",
+      "ambiguous_word": "长城"
+    }
+  ],
+  "面": [
+    {
+      "sentence": "片面方案无法全面回应面向群众的需求。",
+      "label": "B",
+      "sense_name": "抽象",
+      "ambiguous_word": "面"
+    }
+  ],
+  "点": [
+    {
+      "sentence": "位置偏移使原有定点坐标失效。",
+      "label": "A",
+      "sense_name": "空间",
+      "ambiguous_word": "点"
+    },
+    {
+      "sentence": "经理根据时刻确认预定时间及时间点。",
+      "label": "B",
+      "sense_name": "时间",
+      "ambiguous_word": "点"
+    }
+  ]
+}

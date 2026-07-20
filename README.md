@@ -109,6 +109,14 @@ flowchart LR
 | 手写概念域 | 82% | 17% | 33% | 33% | 0% | 75% | 45% |
 | 词向量自动扩展 | 73% | 17% | 17% | 83% | 20% | 75% | 50% |
 | **布尔4轴** | 45% | **83%** | **50%** | 50% | **40%** | 25% | **50%** |
+| **P0-R 级联** | — | — | — | — | — | — | **58.3%** ✅ |
+
+**P0-R 结论（2026-07-21）**：修复评测基础（60句盲测+目标锚定+HowNet级联），首次超过MFS基线（55%→58.3%）。语义层有增量信号但弱（+3.3pp）。
+
+<div style="text-align:center; margin:20px 0;">
+  <img src="assets/chart_p0r_layers.png" alt="P0-R 5层基线" style="max-width:100%; border-radius:8px; border:1px solid #1e1e3a; margin-bottom:12px;">
+  <img src="assets/chart_p0_to_p0r.png" alt="P0系列进化" style="max-width:100%; border-radius:8px; border:1px solid #1e1e3a;">
+</div>
 
 **当前方向**：4轴布尔向量（天/地/人/心）——每个词用4个布尔值编码语义，歧义消解=语境词向量累加→点积比较候选义项。需要补词表后验证是否全面优于概念域方法。
 
