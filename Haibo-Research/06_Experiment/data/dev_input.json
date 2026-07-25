@@ -1,0 +1,387 @@
+[
+  {
+    "id": 1,
+    "sentence": "这个苹果比上一代便宜了五百块",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 2,
+    "sentence": "苹果发布了新款手机",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 3,
+    "sentence": "今年苹果的芯片性能提升很大",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 4,
+    "sentence": "苹果的屏幕显示效果很好",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 5,
+    "sentence": "苹果应用商店的规则更新了",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 6,
+    "sentence": "这个苹果比上一代更甜",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 7,
+    "sentence": "苹果的采摘季节到了",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 8,
+    "sentence": "今年的苹果果肉很甜",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 9,
+    "sentence": "苹果正在开花",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 10,
+    "sentence": "苹果的含糖量很高",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 11,
+    "sentence": "这个苹果很好吃，而且设计也很漂亮",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司",
+      "水果"
+    ]
+  },
+  {
+    "id": 12,
+    "sentence": "打印机没纸了",
+    "target_word": "纸",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "文书办公",
+      "日用包装"
+    ]
+  },
+  {
+    "id": 13,
+    "sentence": "这张纸的质量很好",
+    "target_word": "纸",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "文书办公",
+      "日用包装"
+    ]
+  },
+  {
+    "id": 14,
+    "sentence": "把协议落实到纸面上",
+    "target_word": "纸",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "文书办公",
+      "日用包装"
+    ]
+  },
+  {
+    "id": 15,
+    "sentence": "论文的摘要写在一张纸上",
+    "target_word": "纸",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "文书办公",
+      "日用包装"
+    ]
+  },
+  {
+    "id": 16,
+    "sentence": "用纸包住花束",
+    "target_word": "纸",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "文书办公",
+      "日用包装"
+    ]
+  },
+  {
+    "id": 17,
+    "sentence": "纸抽用完了",
+    "target_word": "纸",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "文书办公",
+      "日用包装"
+    ]
+  },
+  {
+    "id": 18,
+    "sentence": "太阳的光很强烈",
+    "target_word": "光",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "物理光线",
+      "修辞评价"
+    ]
+  },
+  {
+    "id": 19,
+    "sentence": "光在水面发生折射",
+    "target_word": "光",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "物理光线",
+      "修辞评价"
+    ]
+  },
+  {
+    "id": 20,
+    "sentence": "钱都花光了",
+    "target_word": "光",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "物理光线",
+      "修辞评价"
+    ]
+  },
+  {
+    "id": 21,
+    "sentence": "光说不做",
+    "target_word": "光",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "物理光线",
+      "修辞评价"
+    ]
+  },
+  {
+    "id": 22,
+    "sentence": "他为国争光",
+    "target_word": "光",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "物理光线",
+      "修辞评价"
+    ]
+  },
+  {
+    "id": 23,
+    "sentence": "光的速度是每秒钟三十万公里",
+    "target_word": "光",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "物理光线",
+      "修辞评价"
+    ]
+  },
+  {
+    "id": 24,
+    "sentence": "花园里的花开了",
+    "target_word": "花",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "植物",
+      "消费"
+    ]
+  },
+  {
+    "id": 25,
+    "sentence": "这盆花需要浇水",
+    "target_word": "花",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "植物",
+      "消费"
+    ]
+  },
+  {
+    "id": 26,
+    "sentence": "花了很多钱",
+    "target_word": "花",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "植物",
+      "消费"
+    ]
+  },
+  {
+    "id": 27,
+    "sentence": "花钱如流水",
+    "target_word": "花",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "植物",
+      "消费"
+    ]
+  },
+  {
+    "id": 28,
+    "sentence": "花时间学习",
+    "target_word": "花",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "植物",
+      "消费"
+    ]
+  },
+  {
+    "id": 29,
+    "sentence": "花开得很鲜艳",
+    "target_word": "花",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "植物",
+      "消费"
+    ]
+  },
+  {
+    "id": 30,
+    "sentence": "往前走三行",
+    "target_word": "行",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "评价可以",
+      "排列行列",
+      "行业银行"
+    ]
+  },
+  {
+    "id": 31,
+    "sentence": "行，就这样吧",
+    "target_word": "行",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "评价可以",
+      "排列行列",
+      "行业银行"
+    ]
+  },
+  {
+    "id": 32,
+    "sentence": "这个办法行不通",
+    "target_word": "行",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "评价可以",
+      "排列行列",
+      "行业银行"
+    ]
+  },
+  {
+    "id": 33,
+    "sentence": "他在银行工作",
+    "target_word": "行",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "评价可以",
+      "排列行列",
+      "行业银行"
+    ]
+  },
+  {
+    "id": 34,
+    "sentence": "一行代码",
+    "target_word": "行",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "评价可以",
+      "排列行列",
+      "行业银行"
+    ]
+  },
+  {
+    "id": 35,
+    "sentence": "他张开了口",
+    "target_word": "口",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "人体嘴巴",
+      "出入口空间"
+    ]
+  },
+  {
+    "id": 36,
+    "sentence": "入口在左边",
+    "target_word": "口",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "人体嘴巴",
+      "出入口空间"
+    ]
+  },
+  {
+    "id": 37,
+    "sentence": "三口之家",
+    "target_word": "口",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "人体嘴巴",
+      "出入口空间"
+    ]
+  },
+  {
+    "id": 38,
+    "sentence": "伤口很深",
+    "target_word": "口",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "人体嘴巴",
+      "出入口空间"
+    ]
+  }
+]

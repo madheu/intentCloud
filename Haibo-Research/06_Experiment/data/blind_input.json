@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "sentence": "专业能力提升后，进阶门径需要专门指导。",
+    "target_word": "门",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "领域"
+    ]
+  },
+  {
+    "id": 2,
+    "sentence": "为进入房间，工作人员从大门通过。",
+    "target_word": "门",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "实体"
+    ]
+  },
+  {
+    "id": 3,
+    "sentence": "为区分门类，资料被放入专门领域目录。",
+    "target_word": "门",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "领域"
+    ]
+  },
+  {
+    "id": 4,
+    "sentence": "铁门上锁后，保安无法直接推开。",
+    "target_word": "门",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "实体"
+    ]
+  },
+  {
+    "id": 5,
+    "sentence": "纸杯由顾客用纸巾擦拭后放入纸箱。",
+    "target_word": "纸",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "日用包装"
+    ]
+  },
+  {
+    "id": 6,
+    "sentence": "为方便包装，店员折叠纸杯并装入纸箱。",
+    "target_word": "纸",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "日用包装"
+    ]
+  },
+  {
+    "id": 7,
+    "sentence": "水手发现绳结成了死结，只好解开。",
+    "target_word": "结",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "具体"
+    ]
+  },
+  {
+    "id": 8,
+    "sentence": "结果支持结论，二者结合形成总结。",
+    "target_word": "结",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "抽象"
+    ]
+  },
+  {
+    "id": 9,
+    "sentence": "线结绑定绳索后形成牢固绳结。",
+    "target_word": "结",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "具体"
+    ]
+  },
+  {
+    "id": 10,
+    "sentence": "研究结论在实验结束后写入总结。",
+    "target_word": "结",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "抽象"
+    ]
+  },
+  {
+    "id": 11,
+    "sentence": "运动医疗评估会同时记录心率与心跳。",
+    "target_word": "心",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "器官"
+    ]
+  },
+  {
+    "id": 12,
+    "sentence": "医疗人员依据心跳判断心脏供血情况。",
+    "target_word": "心",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "器官"
+    ]
+  },
+  {
+    "id": 13,
+    "sentence": "开心活动改善心理状态和日常心情。",
+    "target_word": "心",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "抽象"
+    ]
+  },
+  {
+    "id": 14,
+    "sentence": "伤心情绪会影响心态与心理判断。",
+    "target_word": "心",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "抽象"
+    ]
+  },
+  {
+    "id": 15,
+    "sentence": "长方形方块需要标明面积和边长。",
+    "target_word": "方",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "形状"
+    ]
+  },
+  {
+    "id": 16,
+    "sentence": "我方根据方向选择绕行方式。",
+    "target_word": "方",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "方向"
+    ]
+  },
+  {
+    "id": 17,
+    "sentence": "正方形面积等于边长的平方。",
+    "target_word": "方",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "形状"
+    ]
+  },
+  {
+    "id": 18,
+    "sentence": "地方道路向远方延伸，方位朝东。",
+    "target_word": "方",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "方向"
+    ]
+  },
+  {
+    "id": 19,
+    "sentence": "学校门口的大门分设入口和出口。",
+    "target_word": "口",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "空间"
+    ]
+  },
+  {
+    "id": 20,
+    "sentence": "地铁入口设在路口东侧，出入口共用通道。",
+    "target_word": "口",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "空间"
+    ]
+  },
+  {
+    "id": 21,
+    "sentence": "吃饭前清洁口腔，可保护牙齿和嘴唇。",
+    "target_word": "口",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "人体"
+    ]
+  },
+  {
+    "id": 22,
+    "sentence": "界线标牌用于说明分界和边界。",
+    "target_word": "界",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "边界"
+    ]
+  },
+  {
+    "id": 23,
+    "sentence": "世界经济让业界拓宽业务范围。",
+    "target_word": "界",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "领域"
+    ]
+  },
+  {
+    "id": 24,
+    "sentence": "各界按地理区域划分行业责任。",
+    "target_word": "界",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "边界"
+    ]
+  },
+  {
+    "id": 25,
+    "sentence": "交界区域同时受到疆界界限约束。",
+    "target_word": "界",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "边界"
+    ]
+  },
+  {
+    "id": 26,
+    "sentence": "苹果通过专利保护芯片设计。",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司"
+    ]
+  },
+  {
+    "id": 27,
+    "sentence": "苹果开发者为系统制作新版应用。",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技公司"
+    ]
+  },
+  {
+    "id": 28,
+    "sentence": "苹果采摘后需要冷藏保鲜。",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "水果"
+    ]
+  },
+  {
+    "id": 29,
+    "sentence": "苹果果肉中的维生素构成部分营养。",
+    "target_word": "苹果",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "水果"
+    ]
+  },
+  {
+    "id": 30,
+    "sentence": "叫华为的毕业生在研究领域获得职位。",
+    "target_word": "华为",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "个人"
+    ]
+  },
+  {
+    "id": 31,
+    "sentence": "叫华为者以名字申领并获得证书。",
+    "target_word": "华为",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "个人"
+    ]
+  },
+  {
+    "id": 32,
+    "sentence": "终端产品采用华为5G技术方案。",
+    "target_word": "华为",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技"
+    ]
+  },
+  {
+    "id": 33,
+    "sentence": "华为研发通信设备和网络基站。",
+    "target_word": "华为",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技"
+    ]
+  },
+  {
+    "id": 34,
+    "sentence": "杜鹃春季会在山林寻找巢址筑巢。",
+    "target_word": "杜鹃",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "鸟"
+    ]
+  },
+  {
+    "id": 35,
+    "sentence": "花园为杜鹃盆栽提供种植和养护空间。",
+    "target_word": "杜鹃",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "花"
+    ]
+  },
+  {
+    "id": 36,
+    "sentence": "志愿者把受伤杜鹃鸟送往森林保护站。",
+    "target_word": "杜鹃",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "鸟"
+    ]
+  },
+  {
+    "id": 37,
+    "sentence": "观赏者记录杜鹃春季花期与开花过程。",
+    "target_word": "杜鹃",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "花"
+    ]
+  },
+  {
+    "id": 38,
+    "sentence": "消费者付款后会收到购买花费账单。",
+    "target_word": "花",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "消费"
+    ]
+  },
+  {
+    "id": 39,
+    "sentence": "盆栽品种开花时会散发淡淡花香。",
+    "target_word": "花",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "植物"
+    ]
+  },
+  {
+    "id": 40,
+    "sentence": "季节气候影响春夏秋冬的降雨频率。",
+    "target_word": "季节",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "自然"
+    ]
+  },
+  {
+    "id": 41,
+    "sentence": "食用旺季所在季节需要营销刺激消费。",
+    "target_word": "季节",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "行业"
+    ]
+  },
+  {
+    "id": 42,
+    "sentence": "这个季节进入淡季，营销团队调整相关商业活动。",
+    "target_word": "季节",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "行业"
+    ]
+  },
+  {
+    "id": 43,
+    "sentence": "降雨停止后，季节天气适合自然生长。",
+    "target_word": "季节",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "自然"
+    ]
+  },
+  {
+    "id": 44,
+    "sentence": "队伍先横排再竖行，排列始终整齐。",
+    "target_word": "行",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "排列"
+    ]
+  },
+  {
+    "id": 45,
+    "sentence": "会议确认工具能用，认可方案可行并通过。",
+    "target_word": "行",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "评价"
+    ]
+  },
+  {
+    "id": 46,
+    "sentence": "三角图中每个角度都需要测量。",
+    "target_word": "角",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "几何"
+    ]
+  },
+  {
+    "id": 47,
+    "sentence": "鹿角并非角质结构，但骨质尖角很坚硬。",
+    "target_word": "角",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "动物角"
+    ]
+  },
+  {
+    "id": 48,
+    "sentence": "农民用农业方法稳定小米亩产。",
+    "target_word": "小米",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "谷物"
+    ]
+  },
+  {
+    "id": 49,
+    "sentence": "小米品牌通过生态服务手机用户。",
+    "target_word": "小米",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "科技"
+    ]
+  },
+  {
+    "id": 50,
+    "sentence": "为家庭争光的成绩让门楣增光又有光彩。",
+    "target_word": "光",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "修辞评价"
+    ]
+  },
+  {
+    "id": 51,
+    "sentence": "可见光谱与紫外光由同一光源照射。",
+    "target_word": "光",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "物理光线"
+    ]
+  },
+  {
+    "id": 52,
+    "sentence": "作者从头修改开头，逐步理清全文头绪。",
+    "target_word": "头",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "起始"
+    ]
+  },
+  {
+    "id": 53,
+    "sentence": "医生检查头发下的头顶和头部皮肤。",
+    "target_word": "头",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "人体"
+    ]
+  },
+  {
+    "id": 54,
+    "sentence": "头儿获得领导授权，作为头领带头。",
+    "target_word": "头",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "领导"
+    ]
+  },
+  {
+    "id": 55,
+    "sentence": "长城电脑产品进入工业客户采购目录。",
+    "target_word": "长城",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "公司"
+    ]
+  },
+  {
+    "id": 56,
+    "sentence": "长城的万里城墙体现防御历史。",
+    "target_word": "长城",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "建筑"
+    ]
+  },
+  {
+    "id": 57,
+    "sentence": "出口订单推动长城工厂研发产品。",
+    "target_word": "长城",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "公司"
+    ]
+  },
+  {
+    "id": 58,
+    "sentence": "片面方案无法全面回应面向群众的需求。",
+    "target_word": "面",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "抽象"
+    ]
+  },
+  {
+    "id": 59,
+    "sentence": "位置偏移使原有定点坐标失效。",
+    "target_word": "点",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "空间"
+    ]
+  },
+  {
+    "id": 60,
+    "sentence": "经理根据时刻确认预定时间及时间点。",
+    "target_word": "点",
+    "target_occurrence": 1,
+    "candidate_senses": [
+      "时间"
+    ]
+  }
+]

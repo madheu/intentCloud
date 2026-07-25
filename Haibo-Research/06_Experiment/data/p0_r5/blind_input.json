@@ -1,0 +1,1478 @@
+[
+  {
+    "id": "p0r5-0001",
+    "sentence": "头痛的种类有超过二百种以上，有些是无害的，有些则会威胁生命。",
+    "target_surface": "头",
+    "target_start": 0,
+    "target_end": 1,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-001"
+  },
+  {
+    "id": "p0r5-0002",
+    "sentence": "苹果酱直接冷藏后可作为甜点食用，也可作为优格的配料食用。",
+    "target_surface": "苹果",
+    "target_start": 0,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-002"
+  },
+  {
+    "id": "p0r5-0003",
+    "sentence": "到农村去工作是非常必要的和极其光荣的。",
+    "target_surface": "光",
+    "target_start": 15,
+    "target_end": 16,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-003"
+  },
+  {
+    "id": "p0r5-0004",
+    "sentence": "利用停产时间和生产任务不饱满的时间，抓紧对职工进行政治的和技术的培训，这是一种花费很小收益很大的智力开发。",
+    "target_surface": "花",
+    "target_start": 39,
+    "target_end": 40,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-004"
+  },
+  {
+    "id": "p0r5-0005",
+    "sentence": "头领交厚，尝有书信往来。",
+    "target_surface": "头",
+    "target_start": 0,
+    "target_end": 1,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-005"
+  },
+  {
+    "id": "p0r5-0006",
+    "sentence": "2015年10月，苹果公司收购了设备端人工智能建模公司Perceptio。",
+    "target_surface": "苹果",
+    "target_start": 9,
+    "target_end": 11,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-006"
+  },
+  {
+    "id": "p0r5-0007",
+    "sentence": "在一些发展中国家，日常食物主要是以大米、小麦、玉米、小米为主，在发达国家，谷物消耗量较少，但仍然是食物中不可少的一部分。",
+    "target_surface": "小米",
+    "target_start": 26,
+    "target_end": 28,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-007"
+  },
+  {
+    "id": "p0r5-0008",
+    "sentence": "新教徒处在反对国王和反对国教的双重斗争、以及需要对宗教和国家体制同时改革的危险困境中，因此他们在开头有点游移。",
+    "target_surface": "头",
+    "target_start": 49,
+    "target_end": 50,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-008"
+  },
+  {
+    "id": "p0r5-0009",
+    "sentence": "呼吸系统感染：危重患者的口腔护理可降低呼吸机相关性肺炎的风险。",
+    "target_surface": "口",
+    "target_start": 12,
+    "target_end": 13,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-009"
+  },
+  {
+    "id": "p0r5-0010",
+    "sentence": "毛主席教导我们，各行各业都要学政治。",
+    "target_surface": "行",
+    "target_start": 9,
+    "target_end": 10,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-010"
+  },
+  {
+    "id": "p0r5-0011",
+    "sentence": "只要符合两个超级大国率先裁减核武器和常规武器这一根本原则，一切切实可行的裁军建议，我们都支持。",
+    "target_surface": "行",
+    "target_start": 34,
+    "target_end": 35,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-011"
+  },
+  {
+    "id": "p0r5-0012",
+    "sentence": "吉林美术出版社曾经大力推行“正名”工作，在45集单行本的结尾与大长篇的开头都有“请叫我哆啦A梦”专栏。",
+    "target_surface": "头",
+    "target_start": 36,
+    "target_end": 37,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-012"
+  },
+  {
+    "id": "p0r5-0013",
+    "sentence": "贫穷家庭常将红薯与大米、小米混合安置以延长红薯保存时间。",
+    "target_surface": "小米",
+    "target_start": 12,
+    "target_end": 14,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-013"
+  },
+  {
+    "id": "p0r5-0014",
+    "sentence": "繁殖期时，雄花分泌较多荷尔蒙，过度使用可能导致假性受孕。",
+    "target_surface": "花",
+    "target_start": 6,
+    "target_end": 7,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-014"
+  },
+  {
+    "id": "p0r5-0015",
+    "sentence": "完善行业协会商会反腐倡廉制度，深化整治不正之风和腐败问题，一体推进不敢腐、不能腐、不想腐。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-015"
+  },
+  {
+    "id": "p0r5-0016",
+    "sentence": "本科植物花色美丽，被广泛用于栽培观赏。",
+    "target_surface": "花",
+    "target_start": 4,
+    "target_end": 5,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-016"
+  },
+  {
+    "id": "p0r5-0017",
+    "sentence": "随后的8月22日，小米在印度首都新德里发布了该系列的首款智能手机—POCO F1。",
+    "target_surface": "小米",
+    "target_start": 9,
+    "target_end": 11,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-017"
+  },
+  {
+    "id": "p0r5-0018",
+    "sentence": "它广泛运用在iPhone、iPad、Mac和Apple Watch以及HomePod和Apple TV等苹果公司产品。",
+    "target_surface": "苹果",
+    "target_start": 52,
+    "target_end": 54,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-018"
+  },
+  {
+    "id": "p0r5-0019",
+    "sentence": "单结十分牢固，故所用之处应该是永久不解的。",
+    "target_surface": "结",
+    "target_start": 1,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-019"
+  },
+  {
+    "id": "p0r5-0020",
+    "sentence": "口腔变得疼痛，而且无故或容易出血。",
+    "target_surface": "口",
+    "target_start": 0,
+    "target_end": 1,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-020"
+  },
+  {
+    "id": "p0r5-0021",
+    "sentence": "鼓励开展产学研用联合攻关，吸引制造业龙头企业、跨国公司等在普陀设立研发中心。",
+    "target_surface": "头",
+    "target_start": 19,
+    "target_end": 20,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-021"
+  },
+  {
+    "id": "p0r5-0022",
+    "sentence": "杜鹃花科的模式属是欧石楠属。",
+    "target_surface": "杜鹃",
+    "target_start": 0,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-022"
+  },
+  {
+    "id": "p0r5-0023",
+    "sentence": "七、加强两地在跨境数据流动方面的交流，组成合作专责小组共同研究可行的政策措施安排。",
+    "target_surface": "行",
+    "target_start": 32,
+    "target_end": 33,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-023"
+  },
+  {
+    "id": "p0r5-0024",
+    "sentence": "70%的杜鹃花种类生长在海拔1700～3700米的地区。",
+    "target_surface": "杜鹃",
+    "target_start": 4,
+    "target_end": 6,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-024"
+  },
+  {
+    "id": "p0r5-0025",
+    "sentence": "传统八宝即红小豆、小米、绿豆、核桃仁、花生、红枣、山药和莲子。",
+    "target_surface": "小米",
+    "target_start": 9,
+    "target_end": 11,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-025"
+  },
+  {
+    "id": "p0r5-0026",
+    "sentence": "表格，是把信息或数据整理成行与列，或是更为复杂的结构。",
+    "target_surface": "行",
+    "target_start": 13,
+    "target_end": 14,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-026"
+  },
+  {
+    "id": "p0r5-0027",
+    "sentence": "实际上换行字符根据不同的硬件平台或操作系统平台会有不同的编码方式。",
+    "target_surface": "行",
+    "target_start": 4,
+    "target_end": 5,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-027"
+  },
+  {
+    "id": "p0r5-0028",
+    "sentence": "除了大多数水果都富含的维生素C之外，苹果汁也含有硼等有益于骨骼健康的矿物质。",
+    "target_surface": "苹果",
+    "target_start": 18,
+    "target_end": 20,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-028"
+  },
+  {
+    "id": "p0r5-0029",
+    "sentence": "在澳大利亚，Gala苹果通常于1月下旬开始采收。",
+    "target_surface": "苹果",
+    "target_start": 10,
+    "target_end": 12,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-029"
+  },
+  {
+    "id": "p0r5-0030",
+    "sentence": "2020年1月17日，小米集团印度区总裁马努·贾殷宣布POCO将独立运营。",
+    "target_surface": "小米",
+    "target_start": 11,
+    "target_end": 13,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-017"
+  },
+  {
+    "id": "p0r5-0031",
+    "sentence": "有研究显示，七成五的口腔癌个案与香烟有关系。",
+    "target_surface": "口",
+    "target_start": 10,
+    "target_end": 11,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-020"
+  },
+  {
+    "id": "p0r5-0032",
+    "sentence": "第五层：颅骨膜（Pericranium）是头骨的骨膜，提供骨质的养分和修复的空间。",
+    "target_surface": "头",
+    "target_start": 21,
+    "target_end": 22,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-030"
+  },
+  {
+    "id": "p0r5-0033",
+    "sentence": "钢索、绳索、扁带、线等都能用来作为绳结的材料，实用上因使用环境不同而选择合适的材质。",
+    "target_surface": "结",
+    "target_start": 18,
+    "target_end": 19,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-031"
+  },
+  {
+    "id": "p0r5-0034",
+    "sentence": "二次文献具有明显的汇集性、系统性和可检索性，它的重要性在于使查找一次文献所花费的时间大大减少。",
+    "target_surface": "花",
+    "target_start": 37,
+    "target_end": 38,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-032"
+  },
+  {
+    "id": "p0r5-0035",
+    "sentence": "雄性中杜鹃的叫声是一系列低沉的双音符，poo-poo，两个音符都同样强调。",
+    "target_surface": "杜鹃",
+    "target_start": 3,
+    "target_end": 5,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-033"
+  },
+  {
+    "id": "p0r5-0036",
+    "sentence": "这是确保科学结论可靠性的基础。",
+    "target_surface": "结",
+    "target_start": 6,
+    "target_end": 7,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-034"
+  },
+  {
+    "id": "p0r5-0037",
+    "sentence": "通过控制变量产生不同的结果，实验有助于人们理解现象之间的因果关系。",
+    "target_surface": "结",
+    "target_start": 11,
+    "target_end": 12,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-035"
+  },
+  {
+    "id": "p0r5-0038",
+    "sentence": "支持研究粤澳共同推进知识产权交易与融资，探讨粤澳两地合作开展知识产权评估互认等业务的可行性。",
+    "target_surface": "行",
+    "target_start": 43,
+    "target_end": 44,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-036"
+  },
+  {
+    "id": "p0r5-0039",
+    "sentence": "拿自己的模式作标准，去评判其他国家，把自己的模式强加于人，既不恰当，也根本行不通。",
+    "target_surface": "行",
+    "target_start": 37,
+    "target_end": 38,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-037"
+  },
+  {
+    "id": "p0r5-0040",
+    "sentence": "据长江日报反映：江西上饶某区第二十五村斗出一千多斤粮食，全部吃光，并且超过（估计必有贪污者）。",
+    "target_surface": "光",
+    "target_start": 31,
+    "target_end": 32,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-038"
+  },
+  {
+    "id": "p0r5-0041",
+    "sentence": "2023年8月14日，小米集团CEO雷军追加发布了Redmi K60至尊版，至此该系列共包含四款手机产品。",
+    "target_surface": "小米",
+    "target_start": 11,
+    "target_end": 13,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-039"
+  },
+  {
+    "id": "p0r5-0042",
+    "sentence": "而在2007年，则是以花卉陈设的优良作品，作为展示主题。",
+    "target_surface": "花",
+    "target_start": 11,
+    "target_end": 12,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-040"
+  },
+  {
+    "id": "p0r5-0043",
+    "sentence": "对于某些熟悉并且使用外文学习绳结的人来说，使用原文沟通不失为一种相对较为精确的方式。",
+    "target_surface": "结",
+    "target_start": 15,
+    "target_end": 16,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-031"
+  },
+  {
+    "id": "p0r5-0044",
+    "sentence": "中国结由线或绳编成。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-041"
+  },
+  {
+    "id": "p0r5-0045",
+    "sentence": "杜鹃花分布非常广泛，北半球大部分地方都有分布，南半球分布于东南亚和北澳大利亚。",
+    "target_surface": "杜鹃",
+    "target_start": 0,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-024"
+  },
+  {
+    "id": "p0r5-0046",
+    "sentence": "象的头骨因为要附着颈和躯干的肌肉而非常巨大，但它的重量出乎意料得轻。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-042"
+  },
+  {
+    "id": "p0r5-0047",
+    "sentence": "对孙小果、陈辉民、尚同军、黄鸿发等黑恶势力犯罪组织头目依法判处死刑，一批涉黑涉恶犯罪分子受到法律严惩。",
+    "target_surface": "头",
+    "target_start": 25,
+    "target_end": 26,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-043"
+  },
+  {
+    "id": "p0r5-0048",
+    "sentence": "在剥头皮时，就是移除这一层及较表层的组织。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-030"
+  },
+  {
+    "id": "p0r5-0049",
+    "sentence": "三款沿用前代拥有的小米影像大脑。",
+    "target_surface": "小米",
+    "target_start": 9,
+    "target_end": 11,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-044"
+  },
+  {
+    "id": "p0r5-0050",
+    "sentence": "科学探究是迭代和非线性的：结论可能引发新的问题，而新证据可能迫使研究者修改甚至放弃原有的假说。",
+    "target_surface": "结",
+    "target_start": 13,
+    "target_end": 14,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-034"
+  },
+  {
+    "id": "p0r5-0051",
+    "sentence": "在本标准中，某一量的光谱密集度通常表示为波长的函数。",
+    "target_surface": "光",
+    "target_start": 10,
+    "target_end": 11,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-045"
+  },
+  {
+    "id": "p0r5-0052",
+    "sentence": "日本学者川上泷弥最早在1910年记录丁香杜鹃分布于台湾。",
+    "target_surface": "杜鹃",
+    "target_start": 20,
+    "target_end": 22,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-046"
+  },
+  {
+    "id": "p0r5-0053",
+    "sentence": "但有的国家对行业有分类规定。",
+    "target_surface": "行",
+    "target_start": 6,
+    "target_end": 7,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-047"
+  },
+  {
+    "id": "p0r5-0054",
+    "sentence": "促进工业经济平稳运行，加强原材料、关键零部件等供给保障，实施龙头企业保链稳链工程，维护产业链供应链安全稳定。",
+    "target_surface": "头",
+    "target_start": 31,
+    "target_end": 32,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-048"
+  },
+  {
+    "id": "p0r5-0055",
+    "sentence": "粥（又称糜、稀饭），是一种用稻米、小米或玉米等粮食煮成的稠糊的食物。",
+    "target_surface": "小米",
+    "target_start": 17,
+    "target_end": 19,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-049"
+  },
+  {
+    "id": "p0r5-0056",
+    "sentence": "樱花的野生品种主要广泛分布在北半球。",
+    "target_surface": "花",
+    "target_start": 1,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-050"
+  },
+  {
+    "id": "p0r5-0057",
+    "sentence": "依照操作系统的不同，有时会配合换行字符\\n使用。",
+    "target_surface": "行",
+    "target_start": 16,
+    "target_end": 17,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-051"
+  },
+  {
+    "id": "p0r5-0058",
+    "sentence": "过去几十年中，以制造业为基础的行业将业务迁移到“发展中国家”经济体，其生产成本明显低于在“发达国家”经济体。",
+    "target_surface": "行",
+    "target_start": 15,
+    "target_end": 16,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-052"
+  },
+  {
+    "id": "p0r5-0059",
+    "sentence": "2004年总统选举花费了6.93亿美元，当时曾是历史最高。",
+    "target_surface": "花",
+    "target_start": 9,
+    "target_end": 10,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-053"
+  },
+  {
+    "id": "p0r5-0060",
+    "sentence": "2022年6月10日凌晨，河北唐山一家烧烤店门口发生一起暴力打人事件。",
+    "target_surface": "口",
+    "target_start": 23,
+    "target_end": 24,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-054"
+  },
+  {
+    "id": "p0r5-0061",
+    "sentence": "苹果公司和OpenAI并没有对此评价做出回应。",
+    "target_surface": "苹果",
+    "target_start": 0,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-006"
+  },
+  {
+    "id": "p0r5-0062",
+    "sentence": "苹果公司不具有生产芯片的业务，所有Apple芯片均由其他芯片代工企业，如三星、台积电进行制造。",
+    "target_surface": "苹果",
+    "target_start": 0,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-018"
+  },
+  {
+    "id": "p0r5-0063",
+    "sentence": "12年来受买方一直被迫到外租房，因为购房将几代人积蓄都耗光，加上银行按揭货款压力巨大。",
+    "target_surface": "光",
+    "target_start": 28,
+    "target_end": 29,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-055"
+  },
+  {
+    "id": "p0r5-0064",
+    "sentence": "但后来发现原设想行不通，就多次修改计划。",
+    "target_surface": "行",
+    "target_start": 8,
+    "target_end": 9,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-056"
+  },
+  {
+    "id": "p0r5-0065",
+    "sentence": "在繁殖季节，大杜鹃经常落在开阔的栖息处，翅膀下垂，尾巴上翘。",
+    "target_surface": "杜鹃",
+    "target_start": 7,
+    "target_end": 9,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-057"
+  },
+  {
+    "id": "p0r5-0066",
+    "sentence": "一般来说，一个事件是很多原因综合产生的结果，而且原因都发生在较早时间点，而该事件又可以成为其他事件的原因。",
+    "target_surface": "结",
+    "target_start": 19,
+    "target_end": 20,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-058"
+  },
+  {
+    "id": "p0r5-0067",
+    "sentence": "标准标题中的“光”指“可见辐射”，“有关电磁辐射”指“红外辐射”和“紫外辐射”。",
+    "target_surface": "光",
+    "target_start": 7,
+    "target_end": 8,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-045"
+  },
+  {
+    "id": "p0r5-0068",
+    "sentence": "至于容纳座及其开口的具体设置位置以及齿条的具体设置位置是本领域技术人员根据实际需求所作出的常规设计，无需付出创造性劳动。",
+    "target_surface": "口",
+    "target_start": 8,
+    "target_end": 9,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-059"
+  },
+  {
+    "id": "p0r5-0069",
+    "sentence": "有些植物的花瓣退化了，或根本消失了。",
+    "target_surface": "花",
+    "target_start": 5,
+    "target_end": 6,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-060"
+  },
+  {
+    "id": "p0r5-0070",
+    "sentence": "这是一种中等大小的杜鹃，两性相似。",
+    "target_surface": "杜鹃",
+    "target_start": 9,
+    "target_end": 11,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-061"
+  },
+  {
+    "id": "p0r5-0071",
+    "sentence": "四声杜鹃是巢寄生动物。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-061"
+  },
+  {
+    "id": "p0r5-0072",
+    "sentence": "2021年10月19日，苹果发布第三代AirPods。",
+    "target_surface": "苹果",
+    "target_start": 12,
+    "target_end": 14,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-062"
+  },
+  {
+    "id": "p0r5-0073",
+    "sentence": "频繁的头痛会影响人际关系及工作。",
+    "target_surface": "头",
+    "target_start": 3,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-001"
+  },
+  {
+    "id": "p0r5-0074",
+    "sentence": "头骨的功能是支持并保护脑部和特殊感觉器官，并构成消化与呼吸系统的起始部，在一些动物中还起到辅助发声的作用。",
+    "target_surface": "头",
+    "target_start": 0,
+    "target_end": 1,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-042"
+  },
+  {
+    "id": "p0r5-0075",
+    "sentence": "在电视剧、动画里通常会再区分为片头曲和片尾曲，电视剧的歌曲有些是专门为该剧创作，歌词内容与剧情紧密联系。",
+    "target_surface": "头",
+    "target_start": 16,
+    "target_end": 17,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-063"
+  },
+  {
+    "id": "p0r5-0076",
+    "sentence": "每个记录严格定为70个字符长，此外还包括与机器有关的回车/换行符。",
+    "target_surface": "行",
+    "target_start": 30,
+    "target_end": 31,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-064"
+  },
+  {
+    "id": "p0r5-0077",
+    "sentence": "口腔通过嘴与外部世界相通，它不是一个无菌的地方。",
+    "target_surface": "口",
+    "target_start": 0,
+    "target_end": 1,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-065"
+  },
+  {
+    "id": "p0r5-0078",
+    "sentence": "大多数杜鹃花科植物有毒，如羊踯躅，但部分如蔓越莓、蓝莓、越橘等却是常见的可食用果物。",
+    "target_surface": "杜鹃",
+    "target_start": 3,
+    "target_end": 5,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-022"
+  },
+  {
+    "id": "p0r5-0079",
+    "sentence": "在政治生活完全商业化的美国，要在国家权力机关中谋求公职，需要花大量的金钱，离开金钱，竞选总统、议员等公职就寸步难行。",
+    "target_surface": "花",
+    "target_start": 30,
+    "target_end": 31,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-066"
+  },
+  {
+    "id": "p0r5-0080",
+    "sentence": "此外，将齿条设置在第一固定元件的与开口对置的后部侧壁上并不是容易想到的。",
+    "target_surface": "口",
+    "target_start": 18,
+    "target_end": 19,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-059"
+  },
+  {
+    "id": "p0r5-0081",
+    "sentence": "每一个基本结根据其形、意命名。",
+    "target_surface": "结",
+    "target_start": 5,
+    "target_end": 6,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-041"
+  },
+  {
+    "id": "p0r5-0082",
+    "sentence": "针叶林下层有竹林，山区则有刺柏、红豆杉和杜鹃花。",
+    "target_surface": "杜鹃",
+    "target_start": 20,
+    "target_end": 22,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-067"
+  },
+  {
+    "id": "p0r5-0083",
+    "sentence": "每次暂停之前，被上诉人都得从头开始为上诉人提供服务，这也无疑让被上诉人耗费了大量的师资力量。",
+    "target_surface": "头",
+    "target_start": 14,
+    "target_end": 15,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-068"
+  },
+  {
+    "id": "p0r5-0084",
+    "sentence": "各位代表，做好“十四五”时期人民法院工作，责任重大，使命光荣。",
+    "target_surface": "光",
+    "target_start": 28,
+    "target_end": 29,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-043"
+  },
+  {
+    "id": "p0r5-0085",
+    "sentence": "两岸同胞要和衷共济，共创民族复兴的光荣伟业。",
+    "target_surface": "光",
+    "target_start": 17,
+    "target_end": 18,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-048"
+  },
+  {
+    "id": "p0r5-0086",
+    "sentence": "两个矩阵可以相乘，当且仅当第一个矩阵的列数等于第二个矩阵的行数。",
+    "target_surface": "行",
+    "target_start": 29,
+    "target_end": 30,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-069"
+  },
+  {
+    "id": "p0r5-0087",
+    "sentence": "直接因素是直接影响结果的因素，也即无需任何介入因素（介入因素有时又称中介因素）。",
+    "target_surface": "结",
+    "target_start": 9,
+    "target_end": 10,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-058"
+  },
+  {
+    "id": "p0r5-0088",
+    "sentence": "部分建筑物，例如学校，经常以火警演习来学习利用紧急出口逃生。",
+    "target_surface": "口",
+    "target_start": 26,
+    "target_end": 27,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-070"
+  },
+  {
+    "id": "p0r5-0089",
+    "sentence": "弋阳某村没收一百多只鸡，全叫干部及积极分子吃光了。",
+    "target_surface": "光",
+    "target_start": 22,
+    "target_end": 23,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-038"
+  },
+  {
+    "id": "p0r5-0090",
+    "sentence": "采集原始记录数据后，从太阳光度计MICROTOPS II将原始数据文件导入计算机。",
+    "target_surface": "光",
+    "target_start": 13,
+    "target_end": 14,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-071"
+  },
+  {
+    "id": "p0r5-0091",
+    "sentence": "[1]因为演出人员的片酬很高，加之某些场景花费巨大，主体拍摄通常是整个电影拍摄过程中耗资最多的环节。",
+    "target_surface": "花",
+    "target_start": 21,
+    "target_end": 22,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-072"
+  },
+  {
+    "id": "p0r5-0092",
+    "sentence": "与会者因饮用受唐菖蒲伯克氏菌（Burkholderia gladioli）污染的私酿小米啤酒（pombe）而中毒。",
+    "target_surface": "小米",
+    "target_start": 42,
+    "target_end": 44,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-073"
+  },
+  {
+    "id": "p0r5-0093",
+    "sentence": "于是开堂审讯，一开头便对其中一个犯人大施侮辱。",
+    "target_surface": "头",
+    "target_start": 9,
+    "target_end": 10,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-074"
+  },
+  {
+    "id": "p0r5-0094",
+    "sentence": "第二代的AirPods改用H1芯片，这是苹果公司专为无线耳机开发的第一款芯片。",
+    "target_surface": "苹果",
+    "target_start": 20,
+    "target_end": 22,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-062"
+  },
+  {
+    "id": "p0r5-0095",
+    "sentence": "以榆林、延安、绥德为代表，主食小米和荞麦。",
+    "target_surface": "小米",
+    "target_start": 15,
+    "target_end": 17,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-075"
+  },
+  {
+    "id": "p0r5-0096",
+    "sentence": "口腔健康与全身健康之间存在密切关联。",
+    "target_surface": "口",
+    "target_start": 0,
+    "target_end": 1,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-009"
+  },
+  {
+    "id": "p0r5-0097",
+    "sentence": "】如今有三个好汉在那里扎寨：为头的唤做白衣秀士王伦，第二个唤做摸著天杜迁，第三个唤做云里金刚宋万。",
+    "target_surface": "头",
+    "target_start": 15,
+    "target_end": 16,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-005"
+  },
+  {
+    "id": "p0r5-0098",
+    "sentence": "很多公司会花费大笔资金在企业识别系统的建设方面，期望能设计出与众不同的识别，使它能更吸引目标群众。",
+    "target_surface": "花",
+    "target_start": 5,
+    "target_end": 6,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-076"
+  },
+  {
+    "id": "p0r5-0099",
+    "sentence": "口腔内部温度恒定、湿度高，有许多狭窄的地方，是微生物生长的理想地方。",
+    "target_surface": "口",
+    "target_start": 0,
+    "target_end": 1,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-065"
+  },
+  {
+    "id": "p0r5-0100",
+    "sentence": "（六）债务人的经营方案具有可行性。",
+    "target_surface": "行",
+    "target_start": 14,
+    "target_end": 15,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-077"
+  },
+  {
+    "id": "p0r5-0101",
+    "sentence": "其最顶层的叶是火红色、红色或白色的，因此经常被误会为花朵。",
+    "target_surface": "花",
+    "target_start": 26,
+    "target_end": 27,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "source_id": "source-078"
+  },
+  {
+    "id": "p0r5-0102",
+    "sentence": "Redmi K60、Redmi K60 Pro及K60至尊版搭载小米自研的“狂暴引擎”，即FEAS 2.2智能稳帧技术。",
+    "target_surface": "小米",
+    "target_start": 32,
+    "target_end": 34,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-039"
+  },
+  {
+    "id": "p0r5-0103",
+    "sentence": "噪鹃像许多与其相关的杜鹃一样，是一种巢寄生者，会将其卵产在乌鸦和其他寄主的巢中，由寄主养育其幼鸟。",
+    "target_surface": "杜鹃",
+    "target_start": 10,
+    "target_end": 12,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-079"
+  },
+  {
+    "id": "p0r5-0104",
+    "sentence": "在不少地方，办公室大楼会有平面图展示出口的位置。",
+    "target_surface": "口",
+    "target_start": 19,
+    "target_end": 20,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-070"
+  },
+  {
+    "id": "p0r5-0105",
+    "sentence": "历史上，这一实验由英国科学家艾萨克·牛顿爵士于1666年完成，使得人们第一次接触到了光的客观的和定量的特征。",
+    "target_surface": "光",
+    "target_start": 42,
+    "target_end": 43,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-080"
+  },
+  {
+    "id": "p0r5-0106",
+    "sentence": "领结（Bow tie），为一种围绕颈部的饰物，通常与较隆重的衣着如西装或礼服一起穿着。",
+    "target_surface": "结",
+    "target_start": 1,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-081"
+  },
+  {
+    "id": "p0r5-0107",
+    "sentence": "把各行各业都办成亦工亦农、亦文亦武的革命化的大学校，这是毛主席的一贯思想。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-010"
+  },
+  {
+    "id": "p0r5-0108",
+    "sentence": "当光线穿过水面时会产生折射，这是由于水的折射率为1.33而空气的折射率是1的缘故。",
+    "target_surface": "光",
+    "target_start": 1,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-082"
+  },
+  {
+    "id": "p0r5-0109",
+    "sentence": "在开头、片尾没有使用歌曲的作品，有的会在剧中加入插曲，亦有完全不使用的情形。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-063"
+  },
+  {
+    "id": "p0r5-0110",
+    "sentence": "根据光照强度，洞穴可大致分为三个区域：洞口带、弱光带和黑暗带[2]。",
+    "target_surface": "口",
+    "target_start": 20,
+    "target_end": 21,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ],
+    "source_id": "source-083"
+  },
+  {
+    "id": "p0r5-0111",
+    "sentence": "苹果酱是多种菜肴的原料之一。",
+    "target_surface": "苹果",
+    "target_start": 0,
+    "target_end": 2,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-002"
+  },
+  {
+    "id": "p0r5-0112",
+    "sentence": "红米K70和K70Pro采用光影猎人800，即小米定制款豪威50E，达到5000万像素。",
+    "target_surface": "小米",
+    "target_start": 23,
+    "target_end": 25,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "source_id": "source-044"
+  },
+  {
+    "id": "p0r5-0113",
+    "sentence": "大杜鹃每年换羽两次：夏季部分换羽，冬季完全换羽。",
+    "target_surface": "杜鹃",
+    "target_start": 1,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "source_id": "source-057"
+  },
+  {
+    "id": "p0r5-0114",
+    "sentence": "Gala 是一种无性繁殖的苹果品种。",
+    "target_surface": "苹果",
+    "target_start": 13,
+    "target_end": 15,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-029"
+  },
+  {
+    "id": "p0r5-0115",
+    "sentence": "建立健全行业协会商会负责人提名、审核、公示、监督、退出等制度。",
+    "target_surface": "行",
+    "target_start": 4,
+    "target_end": 5,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-015"
+  },
+  {
+    "id": "p0r5-0116",
+    "sentence": "实验的目标各有不同，尺度也有大有小，但实验总是依赖可重复的操作，以及对结果的逻辑分析。",
+    "target_surface": "结",
+    "target_start": 35,
+    "target_end": 36,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ],
+    "source_id": "source-035"
+  },
+  {
+    "id": "p0r5-0117",
+    "sentence": "另外，苹果汁也可以作为某些鸡尾酒的成分。",
+    "target_surface": "苹果",
+    "target_start": 3,
+    "target_end": 5,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "source_id": "source-028"
+  },
+  {
+    "id": "p0r5-0118",
+    "sentence": "特别是光受激发射及其应用发展很快，预计在定位、探测、追踪，以及武器方面的应用，将有广阔的前景。",
+    "target_surface": "光",
+    "target_start": 3,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "source_id": "source-084"
+  },
+  {
+    "id": "p0r5-0119",
+    "sentence": "事实与理由：洁柔公司成立于1999年，是国内领先的生活用纸巨头，是首家A股上市的生活用纸企业。",
+    "target_surface": "头",
+    "target_start": 30,
+    "target_end": 31,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "source_id": "source-085"
+  },
+  {
+    "id": "p0r5-0120",
+    "sentence": "它会显示由一系列行与列构成的网格。",
+    "target_surface": "行",
+    "target_start": 8,
+    "target_end": 9,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "source_id": "source-086"
+  }
+]

@@ -1,0 +1,1116 @@
+{
+  "evaluation": "P0-R5-final",
+  "overall": {
+    "correct": 66,
+    "total": 120,
+    "accuracy": 0.55
+  },
+  "targets": {
+    "光": {
+      "correct": 10,
+      "total": 12,
+      "accuracy": 0.8333333333333334
+    },
+    "口": {
+      "correct": 5,
+      "total": 12,
+      "accuracy": 0.4166666666666667
+    },
+    "头": {
+      "correct": 6,
+      "total": 18,
+      "accuracy": 0.3333333333333333
+    },
+    "小米": {
+      "correct": 11,
+      "total": 12,
+      "accuracy": 0.9166666666666666
+    },
+    "杜鹃": {
+      "correct": 6,
+      "total": 12,
+      "accuracy": 0.5
+    },
+    "结": {
+      "correct": 7,
+      "total": 12,
+      "accuracy": 0.5833333333333334
+    },
+    "花": {
+      "correct": 5,
+      "total": 12,
+      "accuracy": 0.4166666666666667
+    },
+    "苹果": {
+      "correct": 10,
+      "total": 12,
+      "accuracy": 0.8333333333333334
+    },
+    "行": {
+      "correct": 6,
+      "total": 18,
+      "accuracy": 0.3333333333333333
+    }
+  },
+  "senses": {
+    "apple.company": {
+      "correct": 4,
+      "total": 6,
+      "recall": 0.6666666666666666
+    },
+    "apple.fruit": {
+      "correct": 6,
+      "total": 6,
+      "recall": 1.0
+    },
+    "cuckoo.bird": {
+      "correct": 6,
+      "total": 6,
+      "recall": 1.0
+    },
+    "cuckoo.flower": {
+      "correct": 0,
+      "total": 6,
+      "recall": 0.0
+    },
+    "guang.figurative": {
+      "correct": 4,
+      "total": 6,
+      "recall": 0.6666666666666666
+    },
+    "guang.physical": {
+      "correct": 6,
+      "total": 6,
+      "recall": 1.0
+    },
+    "hua.plant": {
+      "correct": 4,
+      "total": 6,
+      "recall": 0.6666666666666666
+    },
+    "hua.spend": {
+      "correct": 1,
+      "total": 6,
+      "recall": 0.16666666666666666
+    },
+    "jie.abstract": {
+      "correct": 1,
+      "total": 6,
+      "recall": 0.16666666666666666
+    },
+    "jie.concrete": {
+      "correct": 6,
+      "total": 6,
+      "recall": 1.0
+    },
+    "kou.body": {
+      "correct": 0,
+      "total": 6,
+      "recall": 0.0
+    },
+    "kou.space": {
+      "correct": 5,
+      "total": 6,
+      "recall": 0.8333333333333334
+    },
+    "tou.beginning": {
+      "correct": 5,
+      "total": 5,
+      "recall": 1.0
+    },
+    "tou.body": {
+      "correct": 1,
+      "total": 7,
+      "recall": 0.14285714285714285
+    },
+    "tou.leader": {
+      "correct": 0,
+      "total": 6,
+      "recall": 0.0
+    },
+    "xiaomi.company": {
+      "correct": 6,
+      "total": 7,
+      "recall": 0.8571428571428571
+    },
+    "xiaomi.grain": {
+      "correct": 5,
+      "total": 5,
+      "recall": 1.0
+    },
+    "xing.approval": {
+      "correct": 0,
+      "total": 6,
+      "recall": 0.0
+    },
+    "xing.industry": {
+      "correct": 0,
+      "total": 5,
+      "recall": 0.0
+    },
+    "xing.row": {
+      "correct": 6,
+      "total": 7,
+      "recall": 0.8571428571428571
+    }
+  },
+  "confusion_matrix": {
+    "orientation": "gold sense_id x predicted sense_id",
+    "sense_id_order": [
+      "apple.company",
+      "apple.fruit",
+      "cuckoo.bird",
+      "cuckoo.flower",
+      "guang.figurative",
+      "guang.physical",
+      "hua.plant",
+      "hua.spend",
+      "jie.abstract",
+      "jie.concrete",
+      "kou.body",
+      "kou.space",
+      "tou.beginning",
+      "tou.body",
+      "tou.leader",
+      "xiaomi.company",
+      "xiaomi.grain",
+      "xing.approval",
+      "xing.industry",
+      "xing.row"
+    ],
+    "matrix": {
+      "apple.company": {
+        "apple.company": 4,
+        "apple.fruit": 2,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "apple.fruit": {
+        "apple.company": 0,
+        "apple.fruit": 6,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "cuckoo.bird": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 6,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "cuckoo.flower": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 6,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "guang.figurative": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 4,
+        "guang.physical": 2,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "guang.physical": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 6,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "hua.plant": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 4,
+        "hua.spend": 2,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "hua.spend": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 5,
+        "hua.spend": 1,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "jie.abstract": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 1,
+        "jie.concrete": 5,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "jie.concrete": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 6,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "kou.body": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 6,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "kou.space": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 1,
+        "kou.space": 5,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "tou.beginning": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 5,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "tou.body": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 6,
+        "tou.body": 1,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "tou.leader": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 6,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "xiaomi.company": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 6,
+        "xiaomi.grain": 1,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "xiaomi.grain": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 5,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 0
+      },
+      "xing.approval": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 6
+      },
+      "xing.industry": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 0,
+        "xing.industry": 0,
+        "xing.row": 5
+      },
+      "xing.row": {
+        "apple.company": 0,
+        "apple.fruit": 0,
+        "cuckoo.bird": 0,
+        "cuckoo.flower": 0,
+        "guang.figurative": 0,
+        "guang.physical": 0,
+        "hua.plant": 0,
+        "hua.spend": 0,
+        "jie.abstract": 0,
+        "jie.concrete": 0,
+        "kou.body": 0,
+        "kou.space": 0,
+        "tou.beginning": 0,
+        "tou.body": 0,
+        "tou.leader": 0,
+        "xiaomi.company": 0,
+        "xiaomi.grain": 0,
+        "xing.approval": 1,
+        "xing.industry": 0,
+        "xing.row": 6
+      }
+    }
+  },
+  "prediction_paths": {
+    "MFS": {
+      "correct": 27,
+      "total": 71,
+      "accuracy": 0.38028169014084506
+    },
+    "L3": {
+      "correct": 12,
+      "total": 20,
+      "accuracy": 0.6
+    },
+    "L4": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "L5": {
+      "correct": 23,
+      "total": 24,
+      "accuracy": 0.9583333333333334
+    }
+  },
+  "errors": [
+    {
+      "id": "p0r5-0001",
+      "sentence": "头痛的种类有超过二百种以上，有些是无害的，有些则会威胁生命。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.body",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0004",
+      "sentence": "利用停产时间和生产任务不饱满的时间，抓紧对职工进行政治的和技术的培训，这是一种花费很小收益很大的智力开发。",
+      "target_surface": "花",
+      "gold_sense_id": "hua.spend",
+      "predicted_sense_id": "hua.plant",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0005",
+      "sentence": "头领交厚，尝有书信往来。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.leader",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0007",
+      "sentence": "在一些发展中国家，日常食物主要是以大米、小麦、玉米、小米为主，在发达国家，谷物消耗量较少，但仍然是食物中不可少的一部分。",
+      "target_surface": "小米",
+      "gold_sense_id": "xiaomi.company",
+      "predicted_sense_id": "xiaomi.grain",
+      "prediction_path": "L5"
+    },
+    {
+      "id": "p0r5-0008",
+      "sentence": "新教徒处在反对国王和反对国教的双重斗争、以及需要对宗教和国家体制同时改革的危险困境中，因此他们在开头有点游移。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.body",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0009",
+      "sentence": "呼吸系统感染：危重患者的口腔护理可降低呼吸机相关性肺炎的风险。",
+      "target_surface": "口",
+      "gold_sense_id": "kou.body",
+      "predicted_sense_id": "kou.space",
+      "prediction_path": "L3"
+    },
+    {
+      "id": "p0r5-0010",
+      "sentence": "毛主席教导我们，各行各业都要学政治。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.approval",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0015",
+      "sentence": "完善行业协会商会反腐倡廉制度，深化整治不正之风和腐败问题，一体推进不敢腐、不能腐、不想腐。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.industry",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0020",
+      "sentence": "口腔变得疼痛，而且无故或容易出血。",
+      "target_surface": "口",
+      "gold_sense_id": "kou.body",
+      "predicted_sense_id": "kou.space",
+      "prediction_path": "L3"
+    },
+    {
+      "id": "p0r5-0021",
+      "sentence": "鼓励开展产学研用联合攻关，吸引制造业龙头企业、跨国公司等在普陀设立研发中心。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.leader",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0022",
+      "sentence": "杜鹃花科的模式属是欧石楠属。",
+      "target_surface": "杜鹃",
+      "gold_sense_id": "cuckoo.flower",
+      "predicted_sense_id": "cuckoo.bird",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0023",
+      "sentence": "七、加强两地在跨境数据流动方面的交流，组成合作专责小组共同研究可行的政策措施安排。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.approval",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0024",
+      "sentence": "70%的杜鹃花种类生长在海拔1700～3700米的地区。",
+      "target_surface": "杜鹃",
+      "gold_sense_id": "cuckoo.flower",
+      "predicted_sense_id": "cuckoo.bird",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0031",
+      "sentence": "有研究显示，七成五的口腔癌个案与香烟有关系。",
+      "target_surface": "口",
+      "gold_sense_id": "kou.body",
+      "predicted_sense_id": "kou.space",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0032",
+      "sentence": "第五层：颅骨膜（Pericranium）是头骨的骨膜，提供骨质的养分和修复的空间。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.body",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0034",
+      "sentence": "二次文献具有明显的汇集性、系统性和可检索性，它的重要性在于使查找一次文献所花费的时间大大减少。",
+      "target_surface": "花",
+      "gold_sense_id": "hua.spend",
+      "predicted_sense_id": "hua.plant",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0037",
+      "sentence": "通过控制变量产生不同的结果，实验有助于人们理解现象之间的因果关系。",
+      "target_surface": "结",
+      "gold_sense_id": "jie.abstract",
+      "predicted_sense_id": "jie.concrete",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0038",
+      "sentence": "支持研究粤澳共同推进知识产权交易与融资，探讨粤澳两地合作开展知识产权评估互认等业务的可行性。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.approval",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0039",
+      "sentence": "拿自己的模式作标准，去评判其他国家，把自己的模式强加于人，既不恰当，也根本行不通。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.approval",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0040",
+      "sentence": "据长江日报反映：江西上饶某区第二十五村斗出一千多斤粮食，全部吃光，并且超过（估计必有贪污者）。",
+      "target_surface": "光",
+      "gold_sense_id": "guang.figurative",
+      "predicted_sense_id": "guang.physical",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0045",
+      "sentence": "杜鹃花分布非常广泛，北半球大部分地方都有分布，南半球分布于东南亚和北澳大利亚。",
+      "target_surface": "杜鹃",
+      "gold_sense_id": "cuckoo.flower",
+      "predicted_sense_id": "cuckoo.bird",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0047",
+      "sentence": "对孙小果、陈辉民、尚同军、黄鸿发等黑恶势力犯罪组织头目依法判处死刑，一批涉黑涉恶犯罪分子受到法律严惩。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.leader",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0048",
+      "sentence": "在剥头皮时，就是移除这一层及较表层的组织。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.body",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0050",
+      "sentence": "科学探究是迭代和非线性的：结论可能引发新的问题，而新证据可能迫使研究者修改甚至放弃原有的假说。",
+      "target_surface": "结",
+      "gold_sense_id": "jie.abstract",
+      "predicted_sense_id": "jie.concrete",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0052",
+      "sentence": "日本学者川上泷弥最早在1910年记录丁香杜鹃分布于台湾。",
+      "target_surface": "杜鹃",
+      "gold_sense_id": "cuckoo.flower",
+      "predicted_sense_id": "cuckoo.bird",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0053",
+      "sentence": "但有的国家对行业有分类规定。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.industry",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0054",
+      "sentence": "促进工业经济平稳运行，加强原材料、关键零部件等供给保障，实施龙头企业保链稳链工程，维护产业链供应链安全稳定。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.leader",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0058",
+      "sentence": "过去几十年中，以制造业为基础的行业将业务迁移到“发展中国家”经济体，其生产成本明显低于在“发达国家”经济体。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.industry",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0059",
+      "sentence": "2004年总统选举花费了6.93亿美元，当时曾是历史最高。",
+      "target_surface": "花",
+      "gold_sense_id": "hua.spend",
+      "predicted_sense_id": "hua.plant",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0061",
+      "sentence": "苹果公司和OpenAI并没有对此评价做出回应。",
+      "target_surface": "苹果",
+      "gold_sense_id": "apple.company",
+      "predicted_sense_id": "apple.fruit",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0063",
+      "sentence": "12年来受买方一直被迫到外租房，因为购房将几代人积蓄都耗光，加上银行按揭货款压力巨大。",
+      "target_surface": "光",
+      "gold_sense_id": "guang.figurative",
+      "predicted_sense_id": "guang.physical",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0064",
+      "sentence": "但后来发现原设想行不通，就多次修改计划。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.approval",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0066",
+      "sentence": "一般来说，一个事件是很多原因综合产生的结果，而且原因都发生在较早时间点，而该事件又可以成为其他事件的原因。",
+      "target_surface": "结",
+      "gold_sense_id": "jie.abstract",
+      "predicted_sense_id": "jie.concrete",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0069",
+      "sentence": "有些植物的花瓣退化了，或根本消失了。",
+      "target_surface": "花",
+      "gold_sense_id": "hua.plant",
+      "predicted_sense_id": "hua.spend",
+      "prediction_path": "L3"
+    },
+    {
+      "id": "p0r5-0072",
+      "sentence": "2021年10月19日，苹果发布第三代AirPods。",
+      "target_surface": "苹果",
+      "gold_sense_id": "apple.company",
+      "predicted_sense_id": "apple.fruit",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0073",
+      "sentence": "频繁的头痛会影响人际关系及工作。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.body",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0074",
+      "sentence": "头骨的功能是支持并保护脑部和特殊感觉器官，并构成消化与呼吸系统的起始部，在一些动物中还起到辅助发声的作用。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.body",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0077",
+      "sentence": "口腔通过嘴与外部世界相通，它不是一个无菌的地方。",
+      "target_surface": "口",
+      "gold_sense_id": "kou.body",
+      "predicted_sense_id": "kou.space",
+      "prediction_path": "L3"
+    },
+    {
+      "id": "p0r5-0078",
+      "sentence": "大多数杜鹃花科植物有毒，如羊踯躅，但部分如蔓越莓、蓝莓、越橘等却是常见的可食用果物。",
+      "target_surface": "杜鹃",
+      "gold_sense_id": "cuckoo.flower",
+      "predicted_sense_id": "cuckoo.bird",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0082",
+      "sentence": "针叶林下层有竹林，山区则有刺柏、红豆杉和杜鹃花。",
+      "target_surface": "杜鹃",
+      "gold_sense_id": "cuckoo.flower",
+      "predicted_sense_id": "cuckoo.bird",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0087",
+      "sentence": "直接因素是直接影响结果的因素，也即无需任何介入因素（介入因素有时又称中介因素）。",
+      "target_surface": "结",
+      "gold_sense_id": "jie.abstract",
+      "predicted_sense_id": "jie.concrete",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0091",
+      "sentence": "因为演出人员的片酬很高，加之某些场景花费巨大，主体拍摄通常是整个电影拍摄过程中耗资最多的环节。",
+      "target_surface": "花",
+      "gold_sense_id": "hua.spend",
+      "predicted_sense_id": "hua.plant",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0096",
+      "sentence": "口腔健康与全身健康之间存在密切关联。",
+      "target_surface": "口",
+      "gold_sense_id": "kou.body",
+      "predicted_sense_id": "kou.space",
+      "prediction_path": "L3"
+    },
+    {
+      "id": "p0r5-0097",
+      "sentence": "如今有三个好汉在那里扎寨：为头的唤做白衣秀士王伦，第二个唤做摸著天杜迁，第三个唤做云里金刚宋万。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.leader",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0098",
+      "sentence": "很多公司会花费大笔资金在企业识别系统的建设方面，期望能设计出与众不同的识别，使它能更吸引目标群众。",
+      "target_surface": "花",
+      "gold_sense_id": "hua.spend",
+      "predicted_sense_id": "hua.plant",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0099",
+      "sentence": "口腔内部温度恒定、湿度高，有许多狭窄的地方，是微生物生长的理想地方。",
+      "target_surface": "口",
+      "gold_sense_id": "kou.body",
+      "predicted_sense_id": "kou.space",
+      "prediction_path": "L3"
+    },
+    {
+      "id": "p0r5-0100",
+      "sentence": "债务人的经营方案具有可行性。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.approval",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0101",
+      "sentence": "其最顶层的叶是火红色、红色或白色的，因此经常被误会为花朵。",
+      "target_surface": "花",
+      "gold_sense_id": "hua.plant",
+      "predicted_sense_id": "hua.spend",
+      "prediction_path": "L3"
+    },
+    {
+      "id": "p0r5-0107",
+      "sentence": "把各行各业都办成亦工亦农、亦文亦武的革命化的大学校，这是毛主席的一贯思想。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.industry",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0110",
+      "sentence": "根据光照强度，洞穴可大致分为三个区域：洞口带、弱光带和黑暗带\\[2]。",
+      "target_surface": "口",
+      "gold_sense_id": "kou.space",
+      "predicted_sense_id": "kou.body",
+      "prediction_path": "L3"
+    },
+    {
+      "id": "p0r5-0115",
+      "sentence": "建立健全行业协会商会负责人提名、审核、公示、监督、退出等制度。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.industry",
+      "predicted_sense_id": "xing.row",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0116",
+      "sentence": "实验的目标各有不同，尺度也有大有小，但实验总是依赖可重复的操作，以及对结果的逻辑分析。",
+      "target_surface": "结",
+      "gold_sense_id": "jie.abstract",
+      "predicted_sense_id": "jie.concrete",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0119",
+      "sentence": "事实与理由：洁柔公司成立于1999年，是国内领先的生活用纸巨头，是首家A股上市的生活用纸企业。",
+      "target_surface": "头",
+      "gold_sense_id": "tou.leader",
+      "predicted_sense_id": "tou.beginning",
+      "prediction_path": "MFS"
+    },
+    {
+      "id": "p0r5-0120",
+      "sentence": "它会显示由一系列行与列构成的网格。",
+      "target_surface": "行",
+      "gold_sense_id": "xing.row",
+      "predicted_sense_id": "xing.approval",
+      "prediction_path": "L4"
+    }
+  ],
+  "macro_target_accuracy": 0.5740740740740741,
+  "macro_sense_recall": 0.5511904761904762,
+  "wilson_95_ci": {
+    "confidence": 0.95,
+    "lower": 0.4608154341968757,
+    "upper": 0.6360826491612539
+  },
+  "data_integrity": {
+    "prediction_sha256_matches_expected": true,
+    "prediction_sha256": "34e57b7d1e1b3d133cfa3865fe8878c416c5154b9c556f79c21a27a3870fdf66",
+    "expected_prediction_sha256": "34e57b7d1e1b3d133cfa3865fe8878c416c5154b9c556f79c21a27a3870fdf66",
+    "gold_record_count": 120,
+    "prediction_record_count": 120,
+    "gold_count_is_120": true,
+    "prediction_count_is_120": true,
+    "aligned_by_id": true,
+    "expected_id_range": "p0r5-0001..p0r5-0120",
+    "gold_ids_complete_unique_and_exact": true,
+    "prediction_ids_complete_unique_and_exact": true,
+    "all_gold_sense_ids_in_candidates": true,
+    "all_predicted_sense_ids_in_candidates": true,
+    "unparseable_pending_or_illegal_gold_labels": 0,
+    "target_count": 9,
+    "sense_id_count": 20,
+    "prediction_path_field": "resolved_by"
+  },
+  "provenance": {
+    "runtime_hownet_singleton_wrapper_used": true,
+    "prediction_sha256_before_wrapper": "34e57b7d1e1b3d133cfa3865fe8878c416c5154b9c556f79c21a27a3870fdf66",
+    "prediction_sha256_after_wrapper": "34e57b7d1e1b3d133cfa3865fe8878c416c5154b9c556f79c21a27a3870fdf66",
+    "prediction_output_sha_identical_before_and_after_wrapper": true,
+    "reran_predictions": false,
+    "retuned_parameters": false,
+    "modified_input_data": false,
+    "note": "Scoring used the frozen prediction output only."
+  }
+}
