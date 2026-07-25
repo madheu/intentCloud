@@ -1,0 +1,9 @@
+{
+  "jieba": "0.42.1",
+  "gensim": "4.4.0",
+  "numpy": "2.2.6",
+  "OpenHowNet": "2.0",
+  "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "wordvec": "Tencent_AILab_ChineseEmbedding light 143613x200",
+  "hownet": "OpenHowNet bundled"
+}

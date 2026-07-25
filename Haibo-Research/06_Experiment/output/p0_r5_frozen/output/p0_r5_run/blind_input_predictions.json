@@ -1,0 +1,5039 @@
+[
+  {
+    "id": "p0r5-0001",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "头痛",
+      "target_pos": null,
+      "context_tokens": [
+        "种类",
+        "超过",
+        "二百",
+        "种",
+        "以上",
+        "有些",
+        "无害",
+        "有些",
+        "则",
+        "威胁",
+        "生命"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.8040991425514221,
+        "tou.leader": 0.7234281897544861,
+        "tou.beginning": 0.7525206208229065
+      },
+      "L5_best_margin": 0.08067095279693604,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0002",
+    "prediction": "apple.fruit",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": "apple.fruit",
+      "L4": null,
+      "L5_forced": "apple.fruit",
+      "L5_selective": "apple.fruit"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "苹果酱",
+      "target_pos": null,
+      "context_tokens": [
+        "直接",
+        "冷藏",
+        "后",
+        "可",
+        "作为",
+        "食用",
+        "可",
+        "作为",
+        "优格",
+        "配料",
+        "食用"
+      ],
+      "context_oov_tokens": [
+        "甜点"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6863535046577454,
+        "apple.fruit": 0.8667634725570679
+      },
+      "L5_best_margin": 0.1804099678993225,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "p0r5-0003",
+    "prediction": "guang.figurative",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": "guang.figurative",
+      "L4": null,
+      "L5_forced": "guang.figurative",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "光荣",
+      "target_pos": null,
+      "context_tokens": [
+        "农村",
+        "工作",
+        "非常",
+        "必要",
+        "极其"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6689944267272949,
+        "guang.figurative": 0.7458643913269043
+      },
+      "L5_best_margin": 0.07686996459960938,
+      "cascade_A": "guang.figurative",
+      "cascade_B": "guang.figurative"
+    }
+  },
+  {
+    "id": "p0r5-0004",
+    "prediction": "hua.plant",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "hua.spend",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "花费",
+      "target_pos": null,
+      "context_tokens": [
+        "利用",
+        "停产",
+        "时间",
+        "生产",
+        "任务",
+        "饱满",
+        "时间",
+        "抓紧",
+        "职工",
+        "进行",
+        "政治",
+        "技术",
+        "培训",
+        "一种",
+        "很小",
+        "收益",
+        "很大",
+        "智力开发"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.821408212184906,
+        "hua.spend": 0.8315988779067993
+      },
+      "L5_best_margin": 0.01019066572189331,
+      "cascade_A": "hua.plant",
+      "cascade_B": "hua.plant"
+    }
+  },
+  {
+    "id": "p0r5-0005",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": null,
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "头领",
+      "target_pos": null,
+      "context_tokens": [],
+      "context_oov_tokens": [
+        "交厚",
+        "尝有",
+        "书信往来"
+      ],
+      "L5_computable": false,
+      "L5_scores": {},
+      "L5_best_margin": 0,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0006",
+    "prediction": "apple.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": "apple.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "苹果公司",
+      "target_pos": null,
+      "context_tokens": [
+        "年",
+        "月",
+        "收购",
+        "设备",
+        "端",
+        "人工智能",
+        "公司"
+      ],
+      "context_oov_tokens": [
+        "建模",
+        "Perceptio"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.8609324097633362,
+        "apple.fruit": 0.6795153617858887
+      },
+      "L5_best_margin": 0.1814170479774475,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.company"
+    }
+  },
+  {
+    "id": "p0r5-0007",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.grain",
+      "L5_selective": "xiaomi.grain"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "一些",
+        "发展中国家",
+        "日常",
+        "食物",
+        "主要",
+        "以",
+        "大米",
+        "小麦",
+        "玉米",
+        "为主",
+        "发达国家",
+        "谷物",
+        "消耗量",
+        "较",
+        "少",
+        "仍然",
+        "食物",
+        "中",
+        "不可",
+        "少",
+        "一部分"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.7497601509094238,
+        "xiaomi.grain": 0.9198882579803467
+      },
+      "L5_best_margin": 0.17012810707092285,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "p0r5-0008",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.leader",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "开头",
+      "target_pos": null,
+      "context_tokens": [
+        "处在",
+        "反对",
+        "国王",
+        "反对",
+        "双重",
+        "斗争",
+        "以及",
+        "需要",
+        "宗教",
+        "国家",
+        "体制",
+        "同时",
+        "改革",
+        "危险",
+        "困境",
+        "中",
+        "因此",
+        "他们",
+        "有点",
+        "游移"
+      ],
+      "context_oov_tokens": [
+        "新教徒",
+        "国教"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.8082948923110962,
+        "tou.leader": 0.829386830329895,
+        "tou.beginning": 0.8122456073760986
+      },
+      "L5_best_margin": 0.021091938018798828,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0009",
+    "prediction": "kou.space",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": "kou.space",
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": "kou.body"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "口腔",
+      "target_pos": null,
+      "context_tokens": [
+        "呼吸系统",
+        "感染",
+        "危重",
+        "患者",
+        "护理",
+        "可",
+        "降低",
+        "呼吸机",
+        "相关",
+        "性肺炎",
+        "风险"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.74174964427948,
+        "kou.space": 0.5857241749763489
+      },
+      "L5_best_margin": 0.1560254693031311,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0010",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.industry",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "各行各业",
+      "target_pos": null,
+      "context_tokens": [
+        "毛主席",
+        "教导",
+        "我们",
+        "学",
+        "政治"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6867806911468506,
+        "xing.row": 0.5590662360191345,
+        "xing.industry": 0.7371752858161926
+      },
+      "L5_best_margin": 0.1781090497970581,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0011",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "切实可行",
+      "target_pos": null,
+      "context_tokens": [
+        "只要",
+        "符合",
+        "两个",
+        "超级大国",
+        "率先",
+        "裁减",
+        "核武器",
+        "常规武器",
+        "一",
+        "根本",
+        "原则",
+        "一切",
+        "裁军",
+        "建议",
+        "我们",
+        "支持"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.8689466118812561,
+        "xing.row": 0.7202461361885071,
+        "xing.industry": 0.8342138528823853
+      },
+      "L5_best_margin": 0.14870047569274902,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0012",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "开头",
+      "target_pos": null,
+      "context_tokens": [
+        "吉林",
+        "美术",
+        "出版社",
+        "曾经",
+        "大力",
+        "推行",
+        "“",
+        "正名",
+        "”",
+        "工作",
+        "集",
+        "结尾",
+        "“",
+        "请",
+        "叫",
+        "梦",
+        "”",
+        "专栏"
+      ],
+      "context_oov_tokens": [
+        "单行本",
+        "大长篇",
+        "哆啦",
+        "A"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.7689146995544434,
+        "tou.leader": 0.8092828392982483,
+        "tou.beginning": 0.8269678950309753
+      },
+      "L5_best_margin": 0.05805319547653198,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0013",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.grain",
+      "L5_selective": "xiaomi.grain"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "贫穷",
+        "家庭",
+        "常",
+        "将",
+        "红薯",
+        "大米",
+        "混合",
+        "安置",
+        "以",
+        "延长",
+        "红薯",
+        "保存",
+        "时间"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.742944061756134,
+        "xiaomi.grain": 0.8979945182800293
+      },
+      "L5_best_margin": 0.15505045652389526,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "p0r5-0014",
+    "prediction": "hua.plant",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": "hua.plant",
+      "L4": null,
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "雄花",
+      "target_pos": null,
+      "context_tokens": [
+        "繁殖期",
+        "时",
+        "分泌",
+        "较",
+        "多",
+        "荷尔蒙",
+        "过度",
+        "使用",
+        "可能",
+        "导致",
+        "受孕"
+      ],
+      "context_oov_tokens": [
+        "假性"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.8041919469833374,
+        "hua.spend": 0.7174739837646484
+      },
+      "L5_best_margin": 0.08671796321868896,
+      "cascade_A": "hua.plant",
+      "cascade_B": "hua.plant"
+    }
+  },
+  {
+    "id": "p0r5-0015",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.industry",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "行业协会",
+      "target_pos": null,
+      "context_tokens": [
+        "完善",
+        "商会",
+        "制度",
+        "深化",
+        "整治",
+        "不正之风",
+        "腐败问题",
+        "一体",
+        "推进",
+        "不敢",
+        "腐",
+        "不能",
+        "腐",
+        "不想",
+        "腐"
+      ],
+      "context_oov_tokens": [
+        "反腐倡廉"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.7107327580451965,
+        "xing.row": 0.6042071580886841,
+        "xing.industry": 0.7248494029045105
+      },
+      "L5_best_margin": 0.12064224481582642,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0016",
+    "prediction": "hua.plant",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "hua.plant",
+      "L5_selective": "hua.plant"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "花色",
+      "target_pos": null,
+      "context_tokens": [
+        "本科",
+        "植物",
+        "美丽",
+        "广泛",
+        "用于",
+        "栽培",
+        "观赏"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.8427861928939819,
+        "hua.spend": 0.6446775197982788
+      },
+      "L5_best_margin": 0.19810867309570312,
+      "cascade_A": "hua.plant",
+      "cascade_B": "hua.plant"
+    }
+  },
+  {
+    "id": "p0r5-0017",
+    "prediction": "xiaomi.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": "xiaomi.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "随后",
+        "月",
+        "日",
+        "印度",
+        "首都",
+        "新德里",
+        "发布",
+        "该",
+        "系列",
+        "首款",
+        "智能手机"
+      ],
+      "context_oov_tokens": [
+        "POCO",
+        " ",
+        "F1"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.8000683188438416,
+        "xiaomi.grain": 0.6324513554573059
+      },
+      "L5_best_margin": 0.16761696338653564,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.company"
+    }
+  },
+  {
+    "id": "p0r5-0018",
+    "prediction": "apple.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": "apple.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "苹果公司",
+      "target_pos": null,
+      "context_tokens": [
+        "广泛",
+        "运用",
+        "以及",
+        "等",
+        "产品"
+      ],
+      "context_oov_tokens": [
+        "iPhone",
+        "iPad",
+        "Mac",
+        "Apple",
+        " ",
+        "Watch",
+        "HomePod",
+        "Apple",
+        " ",
+        "TV"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.8278467655181885,
+        "apple.fruit": 0.7022789120674133
+      },
+      "L5_best_margin": 0.12556785345077515,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.company"
+    }
+  },
+  {
+    "id": "p0r5-0019",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.concrete",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "单结",
+      "target_pos": null,
+      "context_tokens": [
+        "十分",
+        "牢固",
+        "故",
+        "所用",
+        "之",
+        "处",
+        "应该",
+        "永久",
+        "不解"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.8350014090538025,
+        "jie.abstract": 0.799191415309906
+      },
+      "L5_best_margin": 0.035809993743896484,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0020",
+    "prediction": "kou.space",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": "kou.space",
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": "kou.body"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "口腔",
+      "target_pos": null,
+      "context_tokens": [
+        "变得",
+        "疼痛",
+        "而且",
+        "无故",
+        "容易",
+        "出血"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.8397718667984009,
+        "kou.space": 0.6360776424407959
+      },
+      "L5_best_margin": 0.20369422435760498,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0021",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.leader",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "龙头企业",
+      "target_pos": null,
+      "context_tokens": [
+        "鼓励",
+        "开展",
+        "产学研",
+        "联合攻关",
+        "吸引",
+        "制造业",
+        "跨国公司",
+        "等",
+        "普陀",
+        "设立",
+        "研发",
+        "中心"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5821466445922852,
+        "tou.leader": 0.6923474669456482,
+        "tou.beginning": 0.653569221496582
+      },
+      "L5_best_margin": 0.11020082235336304,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0022",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.bird",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "杜鹃花",
+      "target_pos": null,
+      "context_tokens": [
+        "科",
+        "模式",
+        "属",
+        "欧",
+        "属"
+      ],
+      "context_oov_tokens": [
+        "石楠"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.655841588973999,
+        "cuckoo.bird": 0.7001597881317139
+      },
+      "L5_best_margin": 0.044318199157714844,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0023",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "可行",
+      "target_pos": null,
+      "context_tokens": [
+        "七",
+        "加强",
+        "两地",
+        "跨境",
+        "数据",
+        "流动",
+        "方面",
+        "交流",
+        "组成",
+        "合作",
+        "专责",
+        "小组",
+        "共同",
+        "研究",
+        "政策措施",
+        "安排"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.8394565582275391,
+        "xing.row": 0.6964173316955566,
+        "xing.industry": 0.8136329650878906
+      },
+      "L5_best_margin": 0.14303922653198242,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0024",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.bird",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "杜鹃花",
+      "target_pos": null,
+      "context_tokens": [
+        "%",
+        "种类",
+        "生长",
+        "海拔",
+        "米",
+        "地区"
+      ],
+      "context_oov_tokens": [
+        "～"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.7521322965621948,
+        "cuckoo.bird": 0.7950670719146729
+      },
+      "L5_best_margin": 0.04293477535247803,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0025",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.grain",
+      "L5_selective": "xiaomi.grain"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "传统",
+        "八宝",
+        "即",
+        "绿豆",
+        "核桃仁",
+        "花生",
+        "红枣",
+        "山药",
+        "莲子"
+      ],
+      "context_oov_tokens": [
+        "红小豆"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.48754647374153137,
+        "xiaomi.grain": 0.7637204527854919
+      },
+      "L5_best_margin": 0.27617397904396057,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "p0r5-0026",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "成行",
+      "target_pos": null,
+      "context_tokens": [
+        "表格",
+        "信息",
+        "数据",
+        "整理",
+        "列",
+        "或是",
+        "更为",
+        "复杂",
+        "结构"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.8023620247840881,
+        "xing.row": 0.7861146926879883,
+        "xing.industry": 0.7753011584281921
+      },
+      "L5_best_margin": 0.027060866355895996,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0027",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "换行",
+      "target_pos": null,
+      "context_tokens": [
+        "实际上",
+        "字符",
+        "根据",
+        "不同",
+        "硬件平台",
+        "操作系统",
+        "平台",
+        "不同"
+      ],
+      "context_oov_tokens": [
+        "编码方式"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.7733516097068787,
+        "xing.row": 0.7259899973869324,
+        "xing.industry": 0.7415010929107666
+      },
+      "L5_best_margin": 0.04736161231994629,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0028",
+    "prediction": "apple.fruit",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.fruit",
+      "L5_selective": "apple.fruit"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "苹果汁",
+      "target_pos": null,
+      "context_tokens": [
+        "除了",
+        "大多数",
+        "水果",
+        "富含",
+        "维生素",
+        "之外",
+        "含有",
+        "硼",
+        "等",
+        "骨骼",
+        "健康",
+        "矿物质"
+      ],
+      "context_oov_tokens": [
+        "C",
+        "有益于"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6490476131439209,
+        "apple.fruit": 0.8077022433280945
+      },
+      "L5_best_margin": 0.15865463018417358,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "p0r5-0029",
+    "prediction": "apple.fruit",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.fruit",
+      "L5_selective": "apple.fruit"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "澳大利亚",
+        "通常",
+        "于",
+        "月",
+        "下旬",
+        "开始",
+        "采收"
+      ],
+      "context_oov_tokens": [
+        "Gala"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6797692179679871,
+        "apple.fruit": 0.7827708721160889
+      },
+      "L5_best_margin": 0.1030016541481018,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "p0r5-0030",
+    "prediction": "xiaomi.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": "xiaomi.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "年",
+        "月",
+        "日",
+        "集团",
+        "印度",
+        "区",
+        "总裁",
+        "马努",
+        "宣布",
+        "将",
+        "独立",
+        "运营"
+      ],
+      "context_oov_tokens": [
+        "贾殷",
+        "POCO"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.7833675742149353,
+        "xiaomi.grain": 0.658507764339447
+      },
+      "L5_best_margin": 0.12485980987548828,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.company"
+    }
+  },
+  {
+    "id": "p0r5-0031",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "口腔癌",
+      "target_pos": null,
+      "context_tokens": [
+        "研究",
+        "显示",
+        "七成",
+        "五",
+        "个案",
+        "香烟",
+        "关系"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.7300341129302979,
+        "kou.space": 0.6928002238273621
+      },
+      "L5_best_margin": 0.03723388910293579,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0032",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "头骨",
+      "target_pos": null,
+      "context_tokens": [
+        "颅骨",
+        "膜",
+        "提供",
+        "骨质",
+        "养分",
+        "修复",
+        "空间"
+      ],
+      "context_oov_tokens": [
+        "第五层",
+        "Pericranium",
+        "骨膜"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.6869170665740967,
+        "tou.leader": 0.5446064472198486,
+        "tou.beginning": 0.6173944473266602
+      },
+      "L5_best_margin": 0.14231061935424805,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0033",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.concrete",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "绳结",
+      "target_pos": null,
+      "context_tokens": [
+        "绳索",
+        "线",
+        "等",
+        "用来",
+        "作为",
+        "材料",
+        "实用",
+        "因",
+        "使用",
+        "环境",
+        "不同",
+        "选择",
+        "合适",
+        "材质"
+      ],
+      "context_oov_tokens": [
+        "钢索",
+        "扁带"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.8700998425483704,
+        "jie.abstract": 0.8215301036834717
+      },
+      "L5_best_margin": 0.04856973886489868,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0034",
+    "prediction": "hua.plant",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "hua.spend",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "花费",
+      "target_pos": null,
+      "context_tokens": [
+        "二次",
+        "文献",
+        "具有",
+        "明显",
+        "汇集",
+        "性",
+        "系统性",
+        "可",
+        "检索",
+        "性",
+        "重要性",
+        "在于",
+        "使",
+        "查找",
+        "一次",
+        "文献",
+        "所",
+        "时间",
+        "大大减少"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.7797877192497253,
+        "hua.spend": 0.7940608263015747
+      },
+      "L5_best_margin": 0.014273107051849365,
+      "cascade_A": "hua.plant",
+      "cascade_B": "hua.plant"
+    }
+  },
+  {
+    "id": "p0r5-0035",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.bird",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "中",
+        "叫声",
+        "一系列",
+        "低沉",
+        "双",
+        "音符",
+        "-",
+        "两个",
+        "音符",
+        "同样",
+        "强调"
+      ],
+      "context_oov_tokens": [
+        "雄性",
+        "poo",
+        "poo"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.756862223148346,
+        "cuckoo.bird": 0.817333459854126
+      },
+      "L5_best_margin": 0.06047123670578003,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0036",
+    "prediction": "jie.abstract",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": "jie.abstract"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "结论",
+      "target_pos": null,
+      "context_tokens": [
+        "确保",
+        "科学",
+        "可靠性",
+        "基础"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6859570145606995,
+        "jie.abstract": 0.7879990935325623
+      },
+      "L5_best_margin": 0.10204207897186279,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.abstract"
+    }
+  },
+  {
+    "id": "p0r5-0037",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "结果",
+      "target_pos": null,
+      "context_tokens": [
+        "通过",
+        "产生",
+        "不同",
+        "实验",
+        "人们",
+        "理解",
+        "现象",
+        "之间",
+        "因果关系"
+      ],
+      "context_oov_tokens": [
+        "控制变量",
+        "有助于"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.8004158735275269,
+        "jie.abstract": 0.8688691854476929
+      },
+      "L5_best_margin": 0.06845331192016602,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0038",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "可行性",
+      "target_pos": null,
+      "context_tokens": [
+        "支持",
+        "研究",
+        "粤",
+        "澳",
+        "共同",
+        "推进",
+        "知识产权",
+        "交易",
+        "融资",
+        "探讨",
+        "粤",
+        "澳",
+        "两地",
+        "合作",
+        "开展",
+        "知识产权",
+        "评估",
+        "等",
+        "业务"
+      ],
+      "context_oov_tokens": [
+        "互认"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.804868221282959,
+        "xing.row": 0.602607250213623,
+        "xing.industry": 0.7846327424049377
+      },
+      "L5_best_margin": 0.20226097106933594,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0039",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "行不通",
+      "target_pos": null,
+      "context_tokens": [
+        "拿",
+        "模式",
+        "作",
+        "标准",
+        "评判",
+        "其他",
+        "国家",
+        "模式",
+        "强加于人",
+        "既",
+        "恰当",
+        "根本"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.8663824200630188,
+        "xing.row": 0.7040606737136841,
+        "xing.industry": 0.8478808999061584
+      },
+      "L5_best_margin": 0.16232174634933472,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0040",
+    "prediction": "guang.physical",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "guang.figurative",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "吃光",
+      "target_pos": null,
+      "context_tokens": [
+        "据",
+        "长江日报",
+        "反映",
+        "江西",
+        "上饶",
+        "第二十五",
+        "出",
+        "一千多",
+        "斤",
+        "粮食",
+        "全部",
+        "并且",
+        "超过",
+        "估计",
+        "必",
+        "贪污",
+        "者"
+      ],
+      "context_oov_tokens": [
+        "某区",
+        "村斗"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.7181972861289978,
+        "guang.figurative": 0.802554190158844
+      },
+      "L5_best_margin": 0.08435690402984619,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "p0r5-0041",
+    "prediction": "xiaomi.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": "xiaomi.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "年",
+        "月",
+        "日",
+        "集团",
+        "雷军",
+        "追加",
+        "发布",
+        "至此",
+        "该",
+        "系列",
+        "共",
+        "包含",
+        "四款",
+        "手机",
+        "产品"
+      ],
+      "context_oov_tokens": [
+        "CEO",
+        "Redmi",
+        " ",
+        "K60",
+        "至尊版"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.8482455015182495,
+        "xiaomi.grain": 0.6899800300598145
+      },
+      "L5_best_margin": 0.15826547145843506,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.company"
+    }
+  },
+  {
+    "id": "p0r5-0042",
+    "prediction": "hua.plant",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": "hua.plant",
+      "L4": null,
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "花卉",
+      "target_pos": null,
+      "context_tokens": [
+        "年",
+        "则",
+        "以",
+        "陈设",
+        "优良",
+        "作品",
+        "作为",
+        "展示",
+        "主题"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.8002840280532837,
+        "hua.spend": 0.7358980178833008
+      },
+      "L5_best_margin": 0.06438601016998291,
+      "cascade_A": "hua.plant",
+      "cascade_B": "hua.plant"
+    }
+  },
+  {
+    "id": "p0r5-0043",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "绳结",
+      "target_pos": null,
+      "context_tokens": [
+        "对于",
+        "某些",
+        "熟悉",
+        "并且",
+        "使用",
+        "外文",
+        "学习",
+        "来说",
+        "使用",
+        "原文",
+        "沟通",
+        "一种",
+        "相对",
+        "较为",
+        "精确",
+        "方式"
+      ],
+      "context_oov_tokens": [
+        "不失为"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.8285188674926758,
+        "jie.abstract": 0.8720752596855164
+      },
+      "L5_best_margin": 0.043556392192840576,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0044",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.concrete",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "结由",
+      "target_pos": null,
+      "context_tokens": [
+        "中国",
+        "绳",
+        "编成"
+      ],
+      "context_oov_tokens": [
+        "线或"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.7129749655723572,
+        "jie.abstract": 0.6152929663658142
+      },
+      "L5_best_margin": 0.09768199920654297,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0045",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.bird",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "杜鹃花",
+      "target_pos": null,
+      "context_tokens": [
+        "分布",
+        "非常",
+        "广泛",
+        "北半球",
+        "大部分",
+        "地方",
+        "分布",
+        "分布",
+        "于",
+        "东南亚",
+        "北",
+        "澳大利亚"
+      ],
+      "context_oov_tokens": [
+        "南半球"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.7522368431091309,
+        "cuckoo.bird": 0.8213596343994141
+      },
+      "L5_best_margin": 0.0691227912902832,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0046",
+    "prediction": "tou.body",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.body",
+      "L5_selective": "tou.body"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "头骨",
+      "target_pos": null,
+      "context_tokens": [
+        "象",
+        "附着",
+        "颈",
+        "躯干",
+        "肌肉",
+        "非常",
+        "巨大",
+        "重量",
+        "出乎意料",
+        "轻"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.8086181282997131,
+        "tou.leader": 0.6264006495475769,
+        "tou.beginning": 0.6734986901283264
+      },
+      "L5_best_margin": 0.18221747875213623,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.body"
+    }
+  },
+  {
+    "id": "p0r5-0047",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.leader",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "头目",
+      "target_pos": null,
+      "context_tokens": [
+        "等",
+        "黑恶势力",
+        "犯罪",
+        "组织",
+        "依法",
+        "判处死刑",
+        "一批",
+        "涉黑",
+        "涉恶",
+        "犯罪分子",
+        "受到",
+        "法律",
+        "严惩"
+      ],
+      "context_oov_tokens": [
+        "孙小果",
+        "陈辉民",
+        "尚同军",
+        "黄鸿发"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5781821608543396,
+        "tou.leader": 0.7037839293479919,
+        "tou.beginning": 0.6214611530303955
+      },
+      "L5_best_margin": 0.12560176849365234,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0048",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "头皮",
+      "target_pos": null,
+      "context_tokens": [
+        "剥",
+        "时",
+        "就是",
+        "移除",
+        "一层",
+        "及",
+        "较",
+        "表层",
+        "组织"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.7925503253936768,
+        "tou.leader": 0.7206470966339111,
+        "tou.beginning": 0.7525529265403748
+      },
+      "L5_best_margin": 0.07190322875976562,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0049",
+    "prediction": "xiaomi.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": "xiaomi.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "三款",
+        "沿用",
+        "前",
+        "代",
+        "拥有",
+        "影像",
+        "大脑"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.8207229971885681,
+        "xiaomi.grain": 0.6758591532707214
+      },
+      "L5_best_margin": 0.14486384391784668,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.company"
+    }
+  },
+  {
+    "id": "p0r5-0050",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "结论",
+      "target_pos": null,
+      "context_tokens": [
+        "科学",
+        "探究",
+        "可能",
+        "引发",
+        "新",
+        "问题",
+        "新",
+        "证据",
+        "可能",
+        "迫使",
+        "研究者",
+        "修改",
+        "甚至",
+        "放弃",
+        "原有",
+        "假说"
+      ],
+      "context_oov_tokens": [
+        "迭代",
+        "非线性"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.8332253694534302,
+        "jie.abstract": 0.9062218070030212
+      },
+      "L5_best_margin": 0.07299643754959106,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0051",
+    "prediction": "guang.physical",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": "guang.physical",
+      "L4": null,
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "光谱",
+      "target_pos": null,
+      "context_tokens": [
+        "本",
+        "标准",
+        "中",
+        "某",
+        "一量",
+        "通常",
+        "表示",
+        "波长",
+        "函数"
+      ],
+      "context_oov_tokens": [
+        "密集度"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.8246386647224426,
+        "guang.figurative": 0.7415294051170349
+      },
+      "L5_best_margin": 0.08310925960540771,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "p0r5-0052",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.bird",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "日本",
+        "学者",
+        "泷",
+        "弥",
+        "最早",
+        "年",
+        "记录",
+        "丁香",
+        "分布",
+        "于",
+        "台湾"
+      ],
+      "context_oov_tokens": [
+        "川上"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.7597959041595459,
+        "cuckoo.bird": 0.7993046045303345
+      },
+      "L5_best_margin": 0.039508700370788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0053",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "行业",
+      "target_pos": null,
+      "context_tokens": [
+        "国家",
+        "分类",
+        "规定"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.7171290516853333,
+        "xing.row": 0.6663820743560791,
+        "xing.industry": 0.676277756690979
+      },
+      "L5_best_margin": 0.05074697732925415,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0054",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "龙头企业",
+      "target_pos": null,
+      "context_tokens": [
+        "促进",
+        "工业",
+        "经济",
+        "平稳",
+        "运行",
+        "加强",
+        "原材料",
+        "关键",
+        "零部件",
+        "等",
+        "供给",
+        "保障",
+        "实施",
+        "工程",
+        "维护",
+        "产业链",
+        "供应链",
+        "安全",
+        "稳定"
+      ],
+      "context_oov_tokens": [
+        "保链",
+        "稳链"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.6788890957832336,
+        "tou.leader": 0.7238532304763794,
+        "tou.beginning": 0.7274898290634155
+      },
+      "L5_best_margin": 0.048600733280181885,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0055",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.grain",
+      "L5_selective": "xiaomi.grain"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "粥",
+        "又称",
+        "糜",
+        "稀饭",
+        "一种",
+        "稻米",
+        "玉米",
+        "等",
+        "粮食",
+        "煮成",
+        "食物"
+      ],
+      "context_oov_tokens": [
+        "稠糊"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5637926459312439,
+        "xiaomi.grain": 0.8776842355728149
+      },
+      "L5_best_margin": 0.31389158964157104,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "p0r5-0056",
+    "prediction": "hua.plant",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": "hua.plant",
+      "L4": null,
+      "L5_forced": "hua.plant",
+      "L5_selective": "hua.plant"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "樱花",
+      "target_pos": null,
+      "context_tokens": [
+        "野生",
+        "品种",
+        "主要",
+        "广泛",
+        "分布",
+        "北半球"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.7983994483947754,
+        "hua.spend": 0.5987707376480103
+      },
+      "L5_best_margin": 0.19962871074676514,
+      "cascade_A": "hua.plant",
+      "cascade_B": "hua.plant"
+    }
+  },
+  {
+    "id": "p0r5-0057",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.row",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "换行",
+      "target_pos": null,
+      "context_tokens": [
+        "依照",
+        "操作系统",
+        "不同",
+        "有时",
+        "配合",
+        "字符",
+        "\\",
+        "n",
+        "使用"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.78099524974823,
+        "xing.row": 0.7966704964637756,
+        "xing.industry": 0.7400785684585571
+      },
+      "L5_best_margin": 0.056591928005218506,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0058",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.industry",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "行业",
+      "target_pos": null,
+      "context_tokens": [
+        "过去",
+        "几十年",
+        "中",
+        "以",
+        "制造业",
+        "基础",
+        "将",
+        "业务",
+        "迁移",
+        "“",
+        "发展中国家",
+        "”",
+        "经济体",
+        "其",
+        "生产成本",
+        "明显",
+        "低于",
+        "“",
+        "发达国家",
+        "”",
+        "经济体"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.8295207023620605,
+        "xing.row": 0.6701992154121399,
+        "xing.industry": 0.8424025177955627
+      },
+      "L5_best_margin": 0.17220330238342285,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0059",
+    "prediction": "hua.plant",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "hua.spend",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "花费",
+      "target_pos": null,
+      "context_tokens": [
+        "年",
+        "总统",
+        "选举",
+        "亿美元",
+        "当时",
+        "曾",
+        "历史",
+        "最高"
+      ],
+      "context_oov_tokens": [
+        "6.93"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.6730574369430542,
+        "hua.spend": 0.7415614128112793
+      },
+      "L5_best_margin": 0.0685039758682251,
+      "cascade_A": "hua.plant",
+      "cascade_B": "hua.plant"
+    }
+  },
+  {
+    "id": "p0r5-0060",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "店门口",
+      "target_pos": null,
+      "context_tokens": [
+        "年",
+        "月",
+        "日",
+        "凌晨",
+        "河北",
+        "唐山",
+        "一家",
+        "烧烤",
+        "发生",
+        "一起",
+        "暴力",
+        "打人",
+        "事件"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.7252898216247559,
+        "kou.space": 0.7091230750083923
+      },
+      "L5_best_margin": 0.016166746616363525,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0061",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "苹果公司",
+      "target_pos": null,
+      "context_tokens": [
+        "并",
+        "对此",
+        "评价",
+        "做出",
+        "回应"
+      ],
+      "context_oov_tokens": [
+        "OpenAI"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.680834949016571,
+        "apple.fruit": 0.6135054230690002
+      },
+      "L5_best_margin": 0.0673295259475708,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "p0r5-0062",
+    "prediction": "apple.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": "apple.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "苹果公司",
+      "target_pos": null,
+      "context_tokens": [
+        "具有",
+        "生产",
+        "芯片",
+        "业务",
+        "所有",
+        "芯片",
+        "均",
+        "由",
+        "其他",
+        "芯片",
+        "代工",
+        "企业",
+        "如",
+        "三星",
+        "电",
+        "进行",
+        "制造"
+      ],
+      "context_oov_tokens": [
+        "Apple",
+        "台积"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.9167877435684204,
+        "apple.fruit": 0.7397486567497253
+      },
+      "L5_best_margin": 0.17703908681869507,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.company"
+    }
+  },
+  {
+    "id": "p0r5-0063",
+    "prediction": "guang.physical",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "guang.figurative",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "耗光",
+      "target_pos": null,
+      "context_tokens": [
+        "年来",
+        "受",
+        "买方",
+        "一直",
+        "被迫",
+        "外",
+        "租房",
+        "购房",
+        "将",
+        "几代人",
+        "积蓄",
+        "加上",
+        "银行",
+        "按揭",
+        "货款",
+        "压力",
+        "巨大"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6972476243972778,
+        "guang.figurative": 0.7859788537025452
+      },
+      "L5_best_margin": 0.08873122930526733,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "p0r5-0064",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "行不通",
+      "target_pos": null,
+      "context_tokens": [
+        "后来",
+        "发现",
+        "原",
+        "设想",
+        "多次",
+        "修改",
+        "计划"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.874191403388977,
+        "xing.row": 0.6791489720344543,
+        "xing.industry": 0.7962871789932251
+      },
+      "L5_best_margin": 0.1950424313545227,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0065",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "繁殖",
+        "季节",
+        "大",
+        "经常",
+        "落",
+        "开阔",
+        "翅膀",
+        "下垂",
+        "尾巴",
+        "翘"
+      ],
+      "context_oov_tokens": [
+        "栖息处"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.8096110224723816,
+        "cuckoo.bird": 0.8059571385383606
+      },
+      "L5_best_margin": 0.003653883934020996,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0066",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "结果",
+      "target_pos": null,
+      "context_tokens": [
+        "事件",
+        "很多",
+        "原因",
+        "综合",
+        "产生",
+        "而且",
+        "原因",
+        "发生",
+        "较早",
+        "时间",
+        "点",
+        "该",
+        "事件",
+        "成为",
+        "其他",
+        "事件",
+        "原因"
+      ],
+      "context_oov_tokens": [
+        "一般来说"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.8118489384651184,
+        "jie.abstract": 0.8816176056861877
+      },
+      "L5_best_margin": 0.06976866722106934,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0067",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "标准",
+        "标题",
+        "中",
+        "“",
+        "”",
+        "指",
+        "“",
+        "可见",
+        "辐射",
+        "”",
+        "“",
+        "有关",
+        "电磁辐射",
+        "”",
+        "指",
+        "“",
+        "红外",
+        "辐射",
+        "”",
+        "“",
+        "紫外",
+        "辐射",
+        "”"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.8210985064506531,
+        "guang.figurative": 0.7675178050994873
+      },
+      "L5_best_margin": 0.05358070135116577,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "p0r5-0068",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.space",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "开口",
+      "target_pos": null,
+      "context_tokens": [
+        "至于",
+        "容纳",
+        "座",
+        "及其",
+        "具体",
+        "设置",
+        "位置",
+        "以及",
+        "齿条",
+        "具体",
+        "设置",
+        "位置",
+        "本",
+        "领域",
+        "技术人员",
+        "根据",
+        "实际",
+        "需求",
+        "所",
+        "作出",
+        "常规",
+        "设计",
+        "无需",
+        "付出",
+        "创造性",
+        "劳动"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.7606568932533264,
+        "kou.space": 0.8172099590301514
+      },
+      "L5_best_margin": 0.05655306577682495,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0069",
+    "prediction": "hua.spend",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": "hua.spend",
+      "L4": null,
+      "L5_forced": "hua.plant",
+      "L5_selective": "hua.plant"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "花瓣",
+      "target_pos": null,
+      "context_tokens": [
+        "有些",
+        "植物",
+        "退化",
+        "根本",
+        "消失"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.7792937159538269,
+        "hua.spend": 0.6369143128395081
+      },
+      "L5_best_margin": 0.14237940311431885,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "p0r5-0070",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "一种",
+        "中等",
+        "大小",
+        "两性",
+        "相似"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.7294679880142212,
+        "cuckoo.bird": 0.7247073650360107
+      },
+      "L5_best_margin": 0.004760622978210449,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0071",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.bird",
+      "L5_selective": "cuckoo.bird"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "巢",
+        "寄生",
+        "动物"
+      ],
+      "context_oov_tokens": [
+        "四声"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.6144752502441406,
+        "cuckoo.bird": 0.7329258918762207
+      },
+      "L5_best_margin": 0.11845064163208008,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0072",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "年",
+        "月",
+        "日",
+        "发布",
+        "第三代"
+      ],
+      "context_oov_tokens": [
+        "AirPods"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6786696314811707,
+        "apple.fruit": 0.5908085703849792
+      },
+      "L5_best_margin": 0.0878610610961914,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "p0r5-0073",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "头痛",
+      "target_pos": null,
+      "context_tokens": [
+        "频繁",
+        "影响",
+        "人际关系",
+        "及",
+        "工作"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.7148209810256958,
+        "tou.leader": 0.712990939617157,
+        "tou.beginning": 0.7029152512550354
+      },
+      "L5_best_margin": 0.0119057297706604,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0074",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "头骨",
+      "target_pos": null,
+      "context_tokens": [
+        "功能",
+        "支持",
+        "并",
+        "保护",
+        "脑部",
+        "特殊",
+        "并",
+        "构成",
+        "消化",
+        "呼吸系统",
+        "起始",
+        "部",
+        "一些",
+        "动物",
+        "中",
+        "起到",
+        "辅助",
+        "发声",
+        "作用"
+      ],
+      "context_oov_tokens": [
+        "感觉器官"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.8127604722976685,
+        "tou.leader": 0.7650030851364136,
+        "tou.beginning": 0.7955004572868347
+      },
+      "L5_best_margin": 0.04775738716125488,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0075",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "片头曲",
+      "target_pos": null,
+      "context_tokens": [
+        "电视剧",
+        "动画",
+        "里",
+        "通常",
+        "区分",
+        "片尾曲",
+        "电视剧",
+        "歌曲",
+        "有些",
+        "专门",
+        "该剧",
+        "创作",
+        "歌词",
+        "内容",
+        "剧情",
+        "紧密联系"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.6971309185028076,
+        "tou.leader": 0.6681006550788879,
+        "tou.beginning": 0.7535855770111084
+      },
+      "L5_best_margin": 0.08548492193222046,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0076",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "换行符",
+      "target_pos": null,
+      "context_tokens": [
+        "每个",
+        "记录",
+        "严格",
+        "定为",
+        "长",
+        "此外",
+        "包括",
+        "机器",
+        "有关",
+        "回车",
+        "/"
+      ],
+      "context_oov_tokens": [
+        "个字符"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.8578032851219177,
+        "xing.row": 0.7990779280662537,
+        "xing.industry": 0.8176807761192322
+      },
+      "L5_best_margin": 0.05872535705566406,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0077",
+    "prediction": "kou.space",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": "kou.space",
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "口腔",
+      "target_pos": null,
+      "context_tokens": [
+        "通过",
+        "嘴",
+        "外部",
+        "世界",
+        "相通",
+        "不是",
+        "无菌",
+        "地方"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.8176254630088806,
+        "kou.space": 0.8054451942443848
+      },
+      "L5_best_margin": 0.01218026876449585,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0078",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "杜鹃花",
+      "target_pos": null,
+      "context_tokens": [
+        "大多数",
+        "科",
+        "植物",
+        "有毒",
+        "如",
+        "部分",
+        "如",
+        "蔓越",
+        "莓",
+        "蓝莓",
+        "等",
+        "却是",
+        "常见"
+      ],
+      "context_oov_tokens": [
+        "羊踯躅",
+        "越橘",
+        "可食用",
+        "果物"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.8328313827514648,
+        "cuckoo.bird": 0.8108539581298828
+      },
+      "L5_best_margin": 0.02197742462158203,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0079",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.spend",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "政治",
+        "生活",
+        "完全",
+        "商业化",
+        "美国",
+        "国家",
+        "权力",
+        "机关",
+        "中",
+        "谋求",
+        "公职",
+        "需要",
+        "大量",
+        "金钱",
+        "离开",
+        "金钱",
+        "竞选",
+        "总统",
+        "议员",
+        "等",
+        "公职",
+        "寸步难行"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.7157991528511047,
+        "hua.spend": 0.7823948860168457
+      },
+      "L5_best_margin": 0.06659573316574097,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "p0r5-0080",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.space",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "开口",
+      "target_pos": null,
+      "context_tokens": [
+        "此外",
+        "将",
+        "齿条",
+        "设置",
+        "第一",
+        "固定",
+        "元件",
+        "后部",
+        "侧壁",
+        "并",
+        "不是",
+        "容易",
+        "想到"
+      ],
+      "context_oov_tokens": [
+        "对置"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.7912191152572632,
+        "kou.space": 0.7983078956604004
+      },
+      "L5_best_margin": 0.007088780403137207,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0081",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "每",
+        "基本",
+        "根据",
+        "其",
+        "形",
+        "意",
+        "命名"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.781774640083313,
+        "jie.abstract": 0.80146324634552
+      },
+      "L5_best_margin": 0.01968860626220703,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0082",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.bird",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "杜鹃花",
+      "target_pos": null,
+      "context_tokens": [
+        "下层",
+        "竹林",
+        "山区",
+        "则",
+        "红豆杉"
+      ],
+      "context_oov_tokens": [
+        "针叶林",
+        "刺柏"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.7527961134910583,
+        "cuckoo.bird": 0.8029301166534424
+      },
+      "L5_best_margin": 0.05013400316238403,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0083",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "从头开始",
+      "target_pos": null,
+      "context_tokens": [
+        "每次",
+        "暂停",
+        "之前",
+        "提供",
+        "服务",
+        "无疑",
+        "耗费",
+        "大量",
+        "师资",
+        "力量"
+      ],
+      "context_oov_tokens": [
+        "被上诉人",
+        "上诉人",
+        "被上诉人"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.7639276385307312,
+        "tou.leader": 0.7642982602119446,
+        "tou.beginning": 0.7827513217926025
+      },
+      "L5_best_margin": 0.018823683261871338,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0084",
+    "prediction": "guang.figurative",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": "guang.figurative",
+      "L4": null,
+      "L5_forced": "guang.figurative",
+      "L5_selective": "guang.figurative"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "光荣",
+      "target_pos": null,
+      "context_tokens": [
+        "各位",
+        "代表",
+        "做好",
+        "“",
+        "”",
+        "时期",
+        "人民法院",
+        "工作",
+        "责任重大",
+        "使命"
+      ],
+      "context_oov_tokens": [
+        "十四五"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6931389570236206,
+        "guang.figurative": 0.8343061804771423
+      },
+      "L5_best_margin": 0.14116722345352173,
+      "cascade_A": "guang.figurative",
+      "cascade_B": "guang.figurative"
+    }
+  },
+  {
+    "id": "p0r5-0085",
+    "prediction": "guang.figurative",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": "guang.figurative",
+      "L4": null,
+      "L5_forced": "guang.figurative",
+      "L5_selective": "guang.figurative"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "光荣",
+      "target_pos": null,
+      "context_tokens": [
+        "两岸",
+        "同胞",
+        "共创",
+        "民族",
+        "复兴",
+        "伟业"
+      ],
+      "context_oov_tokens": [
+        "和衷共济"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.5272274017333984,
+        "guang.figurative": 0.7035744786262512
+      },
+      "L5_best_margin": 0.17634707689285278,
+      "cascade_A": "guang.figurative",
+      "cascade_B": "guang.figurative"
+    }
+  },
+  {
+    "id": "p0r5-0086",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.row",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "行数",
+      "target_pos": null,
+      "context_tokens": [
+        "两个",
+        "矩阵",
+        "相乘",
+        "当",
+        "当",
+        "第一个",
+        "矩阵",
+        "等于",
+        "矩阵"
+      ],
+      "context_oov_tokens": [
+        "且仅",
+        "列数",
+        "第二个"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.7082732915878296,
+        "xing.row": 0.7164363861083984,
+        "xing.industry": 0.702366054058075
+      },
+      "L5_best_margin": 0.014070332050323486,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0087",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "结果",
+      "target_pos": null,
+      "context_tokens": [
+        "直接",
+        "因素",
+        "直接",
+        "影响",
+        "因素",
+        "即",
+        "无需",
+        "任何",
+        "介入",
+        "因素",
+        "介入",
+        "因素",
+        "有时",
+        "又称",
+        "中介",
+        "因素"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.7739232182502747,
+        "jie.abstract": 0.8414103388786316
+      },
+      "L5_best_margin": 0.06748712062835693,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0088",
+    "prediction": "kou.space",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": "kou.space",
+      "L4": null,
+      "L5_forced": "kou.space",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "出口",
+      "target_pos": null,
+      "context_tokens": [
+        "部分",
+        "建筑物",
+        "例如",
+        "学校",
+        "经常",
+        "以",
+        "火警",
+        "演习",
+        "学习",
+        "利用",
+        "紧急",
+        "逃生"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.7641323804855347,
+        "kou.space": 0.7906683087348938
+      },
+      "L5_best_margin": 0.02653592824935913,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0089",
+    "prediction": "guang.figurative",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "guang.figurative",
+      "L5_selective": "guang.figurative"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "吃光",
+      "target_pos": null,
+      "context_tokens": [
+        "某村",
+        "没收",
+        "鸡",
+        "全",
+        "叫",
+        "干部",
+        "及",
+        "积极分子"
+      ],
+      "context_oov_tokens": [
+        "弋阳",
+        "一百多只"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6467936038970947,
+        "guang.figurative": 0.747505784034729
+      },
+      "L5_best_margin": 0.10071218013763428,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.figurative"
+    }
+  },
+  {
+    "id": "p0r5-0090",
+    "prediction": "guang.physical",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "光度计",
+      "target_pos": null,
+      "context_tokens": [
+        "采集",
+        "数据",
+        "后",
+        "太阳",
+        "将",
+        "文件",
+        "导入",
+        "计算机"
+      ],
+      "context_oov_tokens": [
+        "原始记录",
+        "MICROTOPS",
+        " ",
+        "II",
+        "原始数据"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.7961731553077698,
+        "guang.figurative": 0.7191562056541443
+      },
+      "L5_best_margin": 0.07701694965362549,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "p0r5-0091",
+    "prediction": "hua.plant",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "hua.spend",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "花费",
+      "target_pos": null,
+      "context_tokens": [
+        "演出",
+        "人员",
+        "片酬",
+        "高",
+        "加之",
+        "某些",
+        "场景",
+        "巨大",
+        "主体",
+        "拍摄",
+        "通常",
+        "整个",
+        "电影",
+        "拍摄",
+        "过程",
+        "中",
+        "耗资",
+        "最多",
+        "环节"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.8043494820594788,
+        "hua.spend": 0.8171799778938293
+      },
+      "L5_best_margin": 0.012830495834350586,
+      "cascade_A": "hua.plant",
+      "cascade_B": "hua.plant"
+    }
+  },
+  {
+    "id": "p0r5-0092",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.grain",
+      "L5_selective": "xiaomi.grain"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "与会者",
+        "因",
+        "饮用",
+        "受",
+        "菌",
+        "污染",
+        "啤酒",
+        "中毒"
+      ],
+      "context_oov_tokens": [
+        "唐菖蒲",
+        "伯克氏",
+        "Burkholderia",
+        " ",
+        "gladioli",
+        "私酿",
+        "pombe"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.6626327037811279,
+        "xiaomi.grain": 0.7801443338394165
+      },
+      "L5_best_margin": 0.11751163005828857,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "p0r5-0093",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.leader",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "开头",
+      "target_pos": null,
+      "context_tokens": [
+        "于是",
+        "审讯",
+        "一",
+        "便",
+        "其中",
+        "犯人",
+        "侮辱"
+      ],
+      "context_oov_tokens": [
+        "开堂",
+        "大施"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.7770636081695557,
+        "tou.leader": 0.7864389419555664,
+        "tou.beginning": 0.7756470441818237
+      },
+      "L5_best_margin": 0.010791897773742676,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0094",
+    "prediction": "apple.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": "apple.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "苹果公司",
+      "target_pos": null,
+      "context_tokens": [
+        "第二代",
+        "改用",
+        "芯片",
+        "专",
+        "无线耳机",
+        "开发",
+        "第一款",
+        "芯片"
+      ],
+      "context_oov_tokens": [
+        "AirPods",
+        "H1"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.8537131547927856,
+        "apple.fruit": 0.6130281090736389
+      },
+      "L5_best_margin": 0.24068504571914673,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.company"
+    }
+  },
+  {
+    "id": "p0r5-0095",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.grain",
+      "L5_selective": "xiaomi.grain"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "以",
+        "榆林",
+        "延安",
+        "绥德",
+        "代表",
+        "主食",
+        "荞麦"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5458067655563354,
+        "xiaomi.grain": 0.7305282950401306
+      },
+      "L5_best_margin": 0.18472152948379517,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "p0r5-0096",
+    "prediction": "kou.space",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": "kou.space",
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "口腔",
+      "target_pos": null,
+      "context_tokens": [
+        "健康",
+        "全身",
+        "健康",
+        "之间",
+        "存在",
+        "密切",
+        "关联"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.7547319531440735,
+        "kou.space": 0.6694856286048889
+      },
+      "L5_best_margin": 0.08524632453918457,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0097",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "如今",
+        "三个",
+        "好汉",
+        "那里",
+        "唤",
+        "唤",
+        "唤"
+      ],
+      "context_oov_tokens": [
+        "扎寨",
+        "白衣秀士",
+        "王伦",
+        "第二个",
+        "摸著",
+        "天杜迁",
+        "第三个",
+        "云里金刚",
+        "宋万"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.6939289569854736,
+        "tou.leader": 0.6694701910018921,
+        "tou.beginning": 0.6541053056716919
+      },
+      "L5_best_margin": 0.03982365131378174,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0098",
+    "prediction": "hua.plant",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "hua.spend",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "花费",
+      "target_pos": null,
+      "context_tokens": [
+        "很多",
+        "公司",
+        "大笔",
+        "资金",
+        "企业",
+        "识别系统",
+        "建设",
+        "方面",
+        "期望",
+        "设计",
+        "出",
+        "与众不同",
+        "识别",
+        "使",
+        "更",
+        "吸引",
+        "目标",
+        "群众"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.8144024610519409,
+        "hua.spend": 0.8485050797462463
+      },
+      "L5_best_margin": 0.03410261869430542,
+      "cascade_A": "hua.plant",
+      "cascade_B": "hua.plant"
+    }
+  },
+  {
+    "id": "p0r5-0099",
+    "prediction": "kou.space",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": "kou.space",
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "口腔",
+      "target_pos": null,
+      "context_tokens": [
+        "内部",
+        "温度",
+        "恒定",
+        "湿度",
+        "高",
+        "许多",
+        "狭窄",
+        "地方",
+        "微生物",
+        "生长",
+        "理想",
+        "地方"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.7486594319343567,
+        "kou.space": 0.7375904321670532
+      },
+      "L5_best_margin": 0.011068999767303467,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0100",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "可行性",
+      "target_pos": null,
+      "context_tokens": [
+        "六",
+        "债务人",
+        "经营",
+        "方案",
+        "具有"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.8261187076568604,
+        "xing.row": 0.6551388502120972,
+        "xing.industry": 0.7687678933143616
+      },
+      "L5_best_margin": 0.17097985744476318,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0101",
+    "prediction": "hua.spend",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": "hua.spend",
+      "L4": null,
+      "L5_forced": "hua.plant",
+      "L5_selective": "hua.plant"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "花朵",
+      "target_pos": null,
+      "context_tokens": [
+        "其",
+        "最",
+        "顶层",
+        "叶",
+        "红色",
+        "白色",
+        "因此",
+        "经常",
+        "误会"
+      ],
+      "context_oov_tokens": [
+        "火红色"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.8425392508506775,
+        "hua.spend": 0.7083544731140137
+      },
+      "L5_best_margin": 0.13418477773666382,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "p0r5-0102",
+    "prediction": "xiaomi.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": "xiaomi.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "及",
+        "搭载",
+        "“",
+        "狂暴",
+        "引擎",
+        "”",
+        "即",
+        "2.2",
+        "智能",
+        "稳",
+        "帧",
+        "技术"
+      ],
+      "context_oov_tokens": [
+        "Redmi",
+        " ",
+        "K60",
+        "Redmi",
+        " ",
+        "K60",
+        " ",
+        "Pro",
+        "K60",
+        "至尊版",
+        "自研",
+        "FEAS",
+        " "
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.8694080710411072,
+        "xiaomi.grain": 0.7014901041984558
+      },
+      "L5_best_margin": 0.16791796684265137,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.company"
+    }
+  },
+  {
+    "id": "p0r5-0103",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.bird",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "像",
+        "许多",
+        "与其",
+        "相关",
+        "一样",
+        "一种",
+        "巢",
+        "寄生",
+        "者",
+        "将",
+        "其",
+        "乌鸦",
+        "其他",
+        "寄主",
+        "由",
+        "寄主",
+        "养育",
+        "其"
+      ],
+      "context_oov_tokens": [
+        "噪鹃",
+        "卵产",
+        "巢中",
+        "幼鸟"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.8106374144554138,
+        "cuckoo.bird": 0.8807587027549744
+      },
+      "L5_best_margin": 0.07012128829956055,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0104",
+    "prediction": "kou.space",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": "kou.space",
+      "L4": null,
+      "L5_forced": "kou.space",
+      "L5_selective": "kou.space"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "出口",
+      "target_pos": null,
+      "context_tokens": [
+        "不少",
+        "地方",
+        "办公室",
+        "大楼",
+        "平面图",
+        "展示",
+        "位置"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.6852670311927795,
+        "kou.space": 0.811022162437439
+      },
+      "L5_best_margin": 0.12575513124465942,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "p0r5-0105",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.figurative",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "历史",
+        "一",
+        "实验",
+        "由",
+        "英国",
+        "科学家",
+        "牛顿",
+        "爵士",
+        "于",
+        "年",
+        "完成",
+        "使得",
+        "人们",
+        "第一次",
+        "接触",
+        "客观",
+        "定量",
+        "特征"
+      ],
+      "context_oov_tokens": [
+        "艾萨克"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.8350732922554016,
+        "guang.figurative": 0.8380967378616333
+      },
+      "L5_best_margin": 0.0030234456062316895,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "p0r5-0106",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.concrete",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "领结",
+      "target_pos": null,
+      "context_tokens": [
+        "tie",
+        "一种",
+        "围绕",
+        "颈部",
+        "饰物",
+        "通常",
+        "较",
+        "隆重",
+        "衣着",
+        "如",
+        "西装",
+        "礼服",
+        "一起",
+        "穿着"
+      ],
+      "context_oov_tokens": [
+        "Bow",
+        " "
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.77557373046875,
+        "jie.abstract": 0.705239474773407
+      },
+      "L5_best_margin": 0.07033425569534302,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0107",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.industry",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "各行各业",
+      "target_pos": null,
+      "context_tokens": [
+        "办成",
+        "革命化",
+        "大",
+        "学校",
+        "毛主席",
+        "一贯",
+        "思想"
+      ],
+      "context_oov_tokens": [
+        "亦工亦农",
+        "亦文亦武"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.7123832106590271,
+        "xing.row": 0.5954961180686951,
+        "xing.industry": 0.7233734726905823
+      },
+      "L5_best_margin": 0.1278773546218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0108",
+    "prediction": "guang.physical",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": "guang.physical",
+      "L4": null,
+      "L5_forced": "guang.physical",
+      "L5_selective": "guang.physical"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "光线",
+      "target_pos": null,
+      "context_tokens": [
+        "当",
+        "穿过",
+        "水面",
+        "时会",
+        "产生",
+        "折射",
+        "由于",
+        "水",
+        "折射率",
+        "1.33",
+        "空气",
+        "折射率",
+        "缘故"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.8812875747680664,
+        "guang.figurative": 0.699110209941864
+      },
+      "L5_best_margin": 0.1821773648262024,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "p0r5-0109",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "开头",
+      "target_pos": null,
+      "context_tokens": [
+        "使用",
+        "歌曲",
+        "作品",
+        "剧中",
+        "加入",
+        "插曲",
+        "亦",
+        "完全",
+        "使用",
+        "情形"
+      ],
+      "context_oov_tokens": [
+        "片尾"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.7542064189910889,
+        "tou.leader": 0.7399581670761108,
+        "tou.beginning": 0.772901177406311
+      },
+      "L5_best_margin": 0.032943010330200195,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0110",
+    "prediction": "kou.body",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": "kou.body",
+      "L4": null,
+      "L5_forced": "kou.space",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "洞口",
+      "target_pos": null,
+      "context_tokens": [
+        "根据",
+        "洞穴",
+        "可",
+        "大致",
+        "分为",
+        "三个",
+        "区域",
+        "带",
+        "带",
+        "黑暗",
+        "带"
+      ],
+      "context_oov_tokens": [
+        "光照强度",
+        "弱光"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.7637842893600464,
+        "kou.space": 0.8041670322418213
+      },
+      "L5_best_margin": 0.0403827428817749,
+      "cascade_A": "kou.body",
+      "cascade_B": "kou.body"
+    }
+  },
+  {
+    "id": "p0r5-0111",
+    "prediction": "apple.fruit",
+    "resolved_by": "L3",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": "apple.fruit",
+      "L4": null,
+      "L5_forced": "apple.fruit",
+      "L5_selective": "apple.fruit"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "苹果酱",
+      "target_pos": null,
+      "context_tokens": [
+        "多种",
+        "菜肴",
+        "原料",
+        "之一"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6431309580802917,
+        "apple.fruit": 0.7765743136405945
+      },
+      "L5_best_margin": 0.13344335556030273,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "p0r5-0112",
+    "prediction": "xiaomi.company",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": "xiaomi.company"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "红米",
+        "采用",
+        "猎人",
+        "即",
+        "定制",
+        "款",
+        "达到",
+        "万",
+        "像素"
+      ],
+      "context_oov_tokens": [
+        "K70",
+        "K70Pro",
+        "光影",
+        "豪威",
+        "E"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.8280505537986755,
+        "xiaomi.grain": 0.713552713394165
+      },
+      "L5_best_margin": 0.1144978404045105,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.company"
+    }
+  },
+  {
+    "id": "p0r5-0113",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "大",
+        "每年",
+        "两次",
+        "夏季",
+        "部分",
+        "冬季",
+        "完全"
+      ],
+      "context_oov_tokens": [
+        "换羽",
+        "换羽",
+        "换羽"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.8099341988563538,
+        "cuckoo.bird": 0.7897918820381165
+      },
+      "L5_best_margin": 0.020142316818237305,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "p0r5-0114",
+    "prediction": "apple.fruit",
+    "resolved_by": "L5",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.fruit",
+      "L5_selective": "apple.fruit"
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "一种",
+        "无性繁殖",
+        "品种"
+      ],
+      "context_oov_tokens": [
+        "Gala",
+        " "
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.5366794466972351,
+        "apple.fruit": 0.7225243449211121
+      },
+      "L5_best_margin": 0.18584489822387695,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "p0r5-0115",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "行业协会",
+      "target_pos": null,
+      "context_tokens": [
+        "建立健全",
+        "商会",
+        "负责人",
+        "提名",
+        "审核",
+        "公示",
+        "监督",
+        "退出",
+        "等",
+        "制度"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.7933911681175232,
+        "xing.row": 0.6272140145301819,
+        "xing.industry": 0.7297238707542419
+      },
+      "L5_best_margin": 0.1661771535873413,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "p0r5-0116",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "结果",
+      "target_pos": null,
+      "context_tokens": [
+        "实验",
+        "目标",
+        "各有不同",
+        "尺度",
+        "实验",
+        "总是",
+        "依赖",
+        "可",
+        "重复",
+        "操作",
+        "以及",
+        "逻辑",
+        "分析"
+      ],
+      "context_oov_tokens": [
+        "有大有小"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.8248820900917053,
+        "jie.abstract": 0.885243833065033
+      },
+      "L5_best_margin": 0.06036174297332764,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "p0r5-0117",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.fruit",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "苹果汁",
+      "target_pos": null,
+      "context_tokens": [
+        "另外",
+        "作为",
+        "某些",
+        "鸡尾酒",
+        "成分"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.7650201320648193,
+        "apple.fruit": 0.7854812741279602
+      },
+      "L5_best_margin": 0.02046114206314087,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "p0r5-0118",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "特别",
+        "及其",
+        "应用",
+        "发展",
+        "很快",
+        "预计",
+        "定位",
+        "探测",
+        "追踪",
+        "以及",
+        "武器",
+        "方面",
+        "应用",
+        "将",
+        "广阔",
+        "前景"
+      ],
+      "context_oov_tokens": [
+        "受激发射"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.8331975340843201,
+        "guang.figurative": 0.7992597818374634
+      },
+      "L5_best_margin": 0.03393775224685669,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "p0r5-0119",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": "巨头",
+      "target_pos": null,
+      "context_tokens": [
+        "事实",
+        "理由",
+        "公司",
+        "成立",
+        "于",
+        "年",
+        "国内",
+        "领先",
+        "生活",
+        "用纸",
+        "首家",
+        "上市",
+        "生活",
+        "用纸",
+        "企业"
+      ],
+      "context_oov_tokens": [
+        "洁柔",
+        "A股"
+      ],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.7291162014007568,
+        "tou.leader": 0.7530882358551025,
+        "tou.beginning": 0.768657386302948
+      },
+      "L5_best_margin": 0.03954118490219116,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "p0r5-0120",
+    "prediction": "xing.approval",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": "xing.approval",
+      "L5_forced": "xing.row",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "显示",
+        "由",
+        "一系列",
+        "列",
+        "构成",
+        "网格"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.7655842304229736,
+        "xing.row": 0.7703725099563599,
+        "xing.industry": 0.7067286968231201
+      },
+      "L5_best_margin": 0.06364381313323975,
+      "cascade_A": "xing.approval",
+      "cascade_B": "xing.approval"
+    }
+  }
+]

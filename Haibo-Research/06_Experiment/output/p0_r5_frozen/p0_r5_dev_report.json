@@ -1,0 +1,82 @@
+{
+  "targets": {
+    "苹果": {
+      "samples": 15,
+      "gold_dist": {
+        "apple.company": 7,
+        "apple.fruit": 8
+      },
+      "mfs_accuracy": 0.5333333333333333
+    },
+    "小米": {
+      "samples": 2,
+      "gold_dist": {
+        "xiaomi.grain": 1,
+        "xiaomi.company": 1
+      },
+      "mfs_accuracy": 0.5
+    },
+    "杜鹃": {
+      "samples": 4,
+      "gold_dist": {
+        "cuckoo.bird": 2,
+        "cuckoo.flower": 2
+      },
+      "mfs_accuracy": 0.5
+    },
+    "花": {
+      "samples": 8,
+      "gold_dist": {
+        "hua.plant": 4,
+        "hua.spend": 4
+      },
+      "mfs_accuracy": 0.5
+    },
+    "光": {
+      "samples": 8,
+      "gold_dist": {
+        "guang.physical": 4,
+        "guang.figurative": 4
+      },
+      "mfs_accuracy": 0.5
+    },
+    "行": {
+      "samples": 7,
+      "gold_dist": {
+        "xing.row": 3,
+        "xing.approval": 3,
+        "xing.industry": 1
+      },
+      "mfs_accuracy": 0.42857142857142855
+    },
+    "口": {
+      "samples": 7,
+      "gold_dist": {
+        "kou.body": 3,
+        "kou.space": 4
+      },
+      "mfs_accuracy": 0.5714285714285714
+    },
+    "头": {
+      "samples": 3,
+      "gold_dist": {
+        "tou.beginning": 1,
+        "tou.body": 1,
+        "tou.leader": 1
+      },
+      "mfs_accuracy": 0.3333333333333333
+    },
+    "结": {
+      "samples": 4,
+      "gold_dist": {
+        "jie.concrete": 2,
+        "jie.abstract": 2
+      },
+      "mfs_accuracy": 0.5
+    }
+  },
+  "summary": {
+    "total_samples": 58,
+    "overall_mfs_accuracy": 0.5
+  }
+}

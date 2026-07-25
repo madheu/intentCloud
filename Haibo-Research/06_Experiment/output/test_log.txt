@@ -1,0 +1,53 @@
+Initializing OpenHowNet succeeded!
+开发集: 58 条, 覆盖词: {'光', '口', '苹果', '小米', '头', '花', '行', '结', '杜鹃'}
+MFS: {'苹果': 'apple.fruit', '光': 'guang.physical', '花': 'hua.plant', '行': 'xing.row', '口': 'kou.body', '结': '具体', '杜鹃': '鸟', '小米': '谷物', '头': '起始'}
+  ✅ 所有词合法回退
+
+构建原型...
+
+阈值搜索 (macro accuracy, coverage>=20%):
+  ms=0.0 mm=0.00: macro=0.331 cov=97%
+  ms=0.0 mm=0.02: macro=0.326 cov=91%
+  ms=0.0 mm=0.05: macro=0.279 cov=79%
+  ms=0.0 mm=0.10: macro=0.239 cov=66%
+  ms=0.1 mm=0.00: macro=0.331 cov=97%
+  ms=0.1 mm=0.02: macro=0.326 cov=91%
+  ms=0.1 mm=0.05: macro=0.279 cov=79%
+  ms=0.1 mm=0.10: macro=0.239 cov=66%
+  ms=0.2 mm=0.00: macro=0.331 cov=97%
+  ms=0.2 mm=0.02: macro=0.326 cov=91%
+  ms=0.2 mm=0.05: macro=0.279 cov=79%
+  ms=0.2 mm=0.10: macro=0.239 cov=66%
+  ms=0.3 mm=0.00: macro=0.331 cov=97%
+  ms=0.3 mm=0.02: macro=0.326 cov=91%
+  ms=0.3 mm=0.05: macro=0.279 cov=79%
+  ms=0.3 mm=0.10: macro=0.239 cov=66%
+
+最佳阈值: ms=0.0 mm=0.0 (macro=0.331 cov=97%如果找到)
+配置已写入: E:\intentCloud\Haibo-Research\06_Experiment\p0_r3_config.json
+  ✅ 预测为 sense ID 非 A/B/C
+  ✅ 表面词被拒绝
+  ✅ 所有词有 ≥2 候选
+  ✅ 苹果候选集完整
+  ✅ 开发数据构建: 58 条
+  ✅ 开发集 ID 唯一
+  ✅ 所有 dev span 精确匹配
+  ✅ L3 返回合法 sense ID 或 None
+  ✅ L4 返回合法 sense ID 或 None
+  ✅ L5 独立诊断执行 (18/20)
+  ✅ 原型与推理 token 提取一致
+  ✅ '专业' 在腾讯词表中
+  ✅ '能力' 在腾讯词表中
+  ✅ '提升' 在腾讯词表中
+  ✅ '指导' 在腾讯词表中
+  ✅ '专门' 在腾讯词表中
+  ✅ 源码无盲测金标路径
+  ✅ scorer 对非法预测抛错
+
+========================================
+通过: 18/14, 失败: 0/14
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\abc27\AppData\Local\Temp\jieba.cache
+Loading model cost 0.555 seconds.
+Prefix dict has been built successfully.
+

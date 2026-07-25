@@ -1,0 +1,163 @@
+{
+  "sense_map": {
+    "apple.company": {
+      "query": "苹果",
+      "sense_no": "244398",
+      "gloss": "IPHONE|苹果"
+    },
+    "apple.fruit": {
+      "query": "苹果",
+      "sense_no": "244397",
+      "gloss": "apple|苹果"
+    },
+    "xiaomi.company": {
+      "query": "小米",
+      "sense_no": "135733",
+      "gloss": "cell phone|小米"
+    },
+    "xiaomi.grain": {
+      "query": "小米",
+      "sense_no": "242635",
+      "gloss": "millet|小米"
+    },
+    "cuckoo.flower": {
+      "query": "杜鹃",
+      "sense_no": "61599",
+      "gloss": "azalea|杜鹃"
+    },
+    "cuckoo.bird": {
+      "query": "杜鹃",
+      "sense_no": "61593",
+      "gloss": "cuckoo|杜鹃"
+    },
+    "hua.plant": {
+      "query": "花",
+      "sense_no": "242326",
+      "gloss": "flower|花"
+    },
+    "hua.spend": {
+      "query": "花",
+      "sense_no": "242332",
+      "gloss": "spend|花"
+    },
+    "guang.physical": {
+      "query": "光",
+      "sense_no": "48873",
+      "gloss": "ray|光"
+    },
+    "guang.figurative": {
+      "query": "光",
+      "sense_no": "48867",
+      "gloss": "glory|光"
+    },
+    "xing.approval": {
+      "query": "行",
+      "sense_no": "250604",
+      "gloss": "competent|行"
+    },
+    "xing.row": {
+      "query": "行",
+      "sense_no": "250607",
+      "gloss": "line|行"
+    },
+    "xing.industry": {
+      "query": "行",
+      "sense_no": "250592",
+      "gloss": "business firm|行"
+    },
+    "kou.body": {
+      "query": "口",
+      "sense_no": "73573",
+      "gloss": "mouth|口"
+    },
+    "kou.space": {
+      "query": "口",
+      "sense_no": "73572",
+      "gloss": "entrance|口"
+    },
+    "tou.body": {
+      "query": "头",
+      "sense_no": "206669",
+      "gloss": "head|头"
+    },
+    "tou.leader": {
+      "query": "头",
+      "sense_no": "206672",
+      "gloss": "chief|头"
+    },
+    "tou.beginning": {
+      "query": "头",
+      "sense_no": "206677",
+      "gloss": "beginning|头"
+    },
+    "jie.concrete": {
+      "query": "结",
+      "sense_no": "42686",
+      "gloss": "knot|结"
+    },
+    "jie.abstract": {
+      "query": "结",
+      "sense_no": "42689",
+      "gloss": "conclusion|结"
+    }
+  },
+  "sememes": {
+    "apple.company": [
+      "PatternValue",
+      "able",
+      "tool",
+      "SpeBrand",
+      "communicate",
+      "bring"
+    ],
+    "apple.fruit": [
+      "fruit"
+    ],
+    "xiaomi.company": [],
+    "xiaomi.grain": [],
+    "cuckoo.flower": [],
+    "cuckoo.bird": [],
+    "hua.plant": [
+      "FlowerGrass"
+    ],
+    "hua.spend": [
+      "colored"
+    ],
+    "guang.physical": [
+      "lights"
+    ],
+    "guang.figurative": [
+      "Glory",
+      "glorious",
+      "human",
+      "group"
+    ],
+    "xing.approval": [
+      "qualified"
+    ],
+    "xing.row": [
+      "tour"
+    ],
+    "xing.industry": [
+      "InstitutePlace",
+      "commerce"
+    ],
+    "kou.body": [
+      "location",
+      "split",
+      "forming"
+    ],
+    "kou.space": [
+      "building",
+      "location",
+      "mouth",
+      "GoOut",
+      "GoInto"
+    ],
+    "tou.body": [],
+    "tou.leader": [],
+    "tou.beginning": [],
+    "jie.concrete": [],
+    "jie.abstract": []
+  }
+}

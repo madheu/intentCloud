@@ -1,0 +1,6 @@
+加载: 120 条
+  输入验证: ✅
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\abc27\AppData\Local\Temp\jieba.cache
+Loading model cost 0.338 seconds.
+Prefix dict has been built successfully.

@@ -1,0 +1,13 @@
+{
+  "p0_r4_config.json": "cfea0f2aa9ef095ed027129fbcd2e8513eda863cb8232e174adf4f01e5182c7d",
+  "p0_r4_predict.py": "c24dcd14afd2128f4b2a55ec910c1ec2a881032e0aafdd05540c113f642cdc5a",
+  "p0_r4_validate_input.py": "bb1e6f0f62ab3ddad56ea9588145fc9cf6e124f8144714a08272f13f93e9b699",
+  "p0_r4_validate_output.py": "103eeef88776e41cca8e1e232f3a1537c8079a69c367ea791322be61d1cd3f56",
+  "p0_r4_score.py": "9eb6a2ef06c843642a2d82c3c4b0e33b5878d407f771d4d579a5be03b95f1e47",
+  "p0_r4_tests.py": "25943ef3a2193cd5b3f0bfa3ce29fbce5f3d3f1a394c448c04e9bcae0248f921",
+  "p0_r4_build.py": "062166b4fb0054f26e3c46b810ae79967fcc89b2468dbaf5f93b77ceabaca7c3",
+  "p0_r4_sememe_map.json": "333185cf40bd211f970bea893b3b19298e5061e454d5f27fd2fdc1ad117d285b",
+  "p0_r4_prototypes.npz": "c94d24b82cd902697f38b59d060bced7e451045f587afe6be93384608f3463f5",
+  "test_log.txt": "c66c476273057e9e7528e284c441d1558c1f531b66447b2a7246cf667a14be6b",
+  "dependencies.json": "228f01ce3843e8d737e392844f6d244b894fb9b51464bbbc51eb9a1b200e629a"
+}

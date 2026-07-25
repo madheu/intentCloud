@@ -1,0 +1,193 @@
+{
+  "sense_ids": {
+    "苹果": [
+      "apple.company",
+      "apple.fruit"
+    ],
+    "小米": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ],
+    "杜鹃": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ],
+    "花": [
+      "hua.plant",
+      "hua.spend"
+    ],
+    "光": [
+      "guang.physical",
+      "guang.figurative"
+    ],
+    "行": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ],
+    "口": [
+      "kou.body",
+      "kou.space"
+    ],
+    "头": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ],
+    "结": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  "sense_pos_map": {
+    "apple.company": [
+      "n",
+      "nr",
+      "nt",
+      "nz"
+    ],
+    "apple.fruit": [
+      "n"
+    ],
+    "xiaomi.company": [
+      "n",
+      "nr",
+      "nt",
+      "nz"
+    ],
+    "xiaomi.grain": [
+      "n"
+    ],
+    "cuckoo.flower": [
+      "n"
+    ],
+    "cuckoo.bird": [
+      "n"
+    ],
+    "hua.plant": [
+      "n"
+    ],
+    "hua.spend": [
+      "v"
+    ],
+    "guang.physical": [
+      "n"
+    ],
+    "guang.figurative": [
+      "v",
+      "a",
+      "d"
+    ],
+    "xing.approval": [
+      "v",
+      "a"
+    ],
+    "xing.row": [
+      "n",
+      "q"
+    ],
+    "xing.industry": [
+      "n",
+      "nt"
+    ],
+    "kou.body": [
+      "n"
+    ],
+    "kou.space": [
+      "n"
+    ],
+    "tou.body": [
+      "n"
+    ],
+    "tou.leader": [
+      "n",
+      "nr"
+    ],
+    "tou.beginning": [
+      "n"
+    ],
+    "jie.concrete": [
+      "n"
+    ],
+    "jie.abstract": [
+      "n",
+      "v",
+      "a"
+    ]
+  },
+  "stop_words": [
+    "的",
+    "了",
+    "是",
+    "在",
+    "和",
+    "有",
+    "不",
+    "就",
+    "也",
+    "都",
+    "而",
+    "且",
+    "或",
+    "与",
+    "比",
+    "这款",
+    "这个",
+    "那个",
+    "一个",
+    "没有",
+    "可以",
+    "会",
+    "要",
+    "能",
+    "让",
+    "上",
+    "下",
+    "来",
+    "去",
+    "说",
+    "看",
+    "做",
+    "用",
+    "知道",
+    "怎么",
+    "什么",
+    "这",
+    "那",
+    "它",
+    "他",
+    "她",
+    "我",
+    "你",
+    "们",
+    "自己",
+    "人",
+    "为",
+    "被",
+    "把",
+    "从",
+    "对",
+    "到",
+    "得",
+    "很",
+    "还",
+    "又",
+    "再",
+    "才",
+    "只",
+    "但",
+    "如果",
+    "因为",
+    "所以",
+    "虽然",
+    "然后"
+  ],
+  "l5_min_similarity": 0.0,
+  "l5_min_margin": 0.0,
+  "cascade_order": [
+    "L3",
+    "L4",
+    "L5_MFS"
+  ],
+  "version": "p0-r3-002"
+}

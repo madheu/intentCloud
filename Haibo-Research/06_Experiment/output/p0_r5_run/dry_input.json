@@ -1,0 +1,1358 @@
+[
+  {
+    "id": "dry-苹果-000",
+    "sentence": "测试苹果句子0。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-001",
+    "sentence": "测试苹果句子1。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-002",
+    "sentence": "测试苹果句子2。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-003",
+    "sentence": "测试苹果句子3。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-004",
+    "sentence": "测试苹果句子4。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-005",
+    "sentence": "测试苹果句子5。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-006",
+    "sentence": "测试苹果句子6。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-007",
+    "sentence": "测试苹果句子7。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-008",
+    "sentence": "测试苹果句子8。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-009",
+    "sentence": "测试苹果句子9。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-010",
+    "sentence": "测试苹果句子10。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-苹果-011",
+    "sentence": "测试苹果句子11。",
+    "target_surface": "苹果",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "apple.company",
+      "apple.fruit"
+    ]
+  },
+  {
+    "id": "dry-小米-000",
+    "sentence": "测试小米句子0。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-001",
+    "sentence": "测试小米句子1。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-002",
+    "sentence": "测试小米句子2。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-003",
+    "sentence": "测试小米句子3。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-004",
+    "sentence": "测试小米句子4。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-005",
+    "sentence": "测试小米句子5。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-006",
+    "sentence": "测试小米句子6。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-007",
+    "sentence": "测试小米句子7。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-008",
+    "sentence": "测试小米句子8。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-009",
+    "sentence": "测试小米句子9。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-010",
+    "sentence": "测试小米句子10。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-小米-011",
+    "sentence": "测试小米句子11。",
+    "target_surface": "小米",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "xiaomi.company",
+      "xiaomi.grain"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-000",
+    "sentence": "测试杜鹃句子0。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-001",
+    "sentence": "测试杜鹃句子1。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-002",
+    "sentence": "测试杜鹃句子2。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-003",
+    "sentence": "测试杜鹃句子3。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-004",
+    "sentence": "测试杜鹃句子4。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-005",
+    "sentence": "测试杜鹃句子5。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-006",
+    "sentence": "测试杜鹃句子6。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-007",
+    "sentence": "测试杜鹃句子7。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-008",
+    "sentence": "测试杜鹃句子8。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-009",
+    "sentence": "测试杜鹃句子9。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-010",
+    "sentence": "测试杜鹃句子10。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-杜鹃-011",
+    "sentence": "测试杜鹃句子11。",
+    "target_surface": "杜鹃",
+    "target_start": 2,
+    "target_end": 4,
+    "candidate_sense_ids": [
+      "cuckoo.flower",
+      "cuckoo.bird"
+    ]
+  },
+  {
+    "id": "dry-花-000",
+    "sentence": "测试花句子0。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-001",
+    "sentence": "测试花句子1。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-002",
+    "sentence": "测试花句子2。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-003",
+    "sentence": "测试花句子3。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-004",
+    "sentence": "测试花句子4。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-005",
+    "sentence": "测试花句子5。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-006",
+    "sentence": "测试花句子6。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-007",
+    "sentence": "测试花句子7。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-008",
+    "sentence": "测试花句子8。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-009",
+    "sentence": "测试花句子9。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-010",
+    "sentence": "测试花句子10。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-花-011",
+    "sentence": "测试花句子11。",
+    "target_surface": "花",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "hua.plant",
+      "hua.spend"
+    ]
+  },
+  {
+    "id": "dry-光-000",
+    "sentence": "测试光句子0。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-001",
+    "sentence": "测试光句子1。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-002",
+    "sentence": "测试光句子2。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-003",
+    "sentence": "测试光句子3。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-004",
+    "sentence": "测试光句子4。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-005",
+    "sentence": "测试光句子5。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-006",
+    "sentence": "测试光句子6。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-007",
+    "sentence": "测试光句子7。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-008",
+    "sentence": "测试光句子8。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-009",
+    "sentence": "测试光句子9。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-010",
+    "sentence": "测试光句子10。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-光-011",
+    "sentence": "测试光句子11。",
+    "target_surface": "光",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "guang.physical",
+      "guang.figurative"
+    ]
+  },
+  {
+    "id": "dry-口-000",
+    "sentence": "测试口句子0。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-001",
+    "sentence": "测试口句子1。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-002",
+    "sentence": "测试口句子2。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-003",
+    "sentence": "测试口句子3。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-004",
+    "sentence": "测试口句子4。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-005",
+    "sentence": "测试口句子5。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-006",
+    "sentence": "测试口句子6。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-007",
+    "sentence": "测试口句子7。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-008",
+    "sentence": "测试口句子8。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-009",
+    "sentence": "测试口句子9。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-010",
+    "sentence": "测试口句子10。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-口-011",
+    "sentence": "测试口句子11。",
+    "target_surface": "口",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "kou.body",
+      "kou.space"
+    ]
+  },
+  {
+    "id": "dry-结-000",
+    "sentence": "测试结句子0。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-001",
+    "sentence": "测试结句子1。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-002",
+    "sentence": "测试结句子2。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-003",
+    "sentence": "测试结句子3。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-004",
+    "sentence": "测试结句子4。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-005",
+    "sentence": "测试结句子5。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-006",
+    "sentence": "测试结句子6。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-007",
+    "sentence": "测试结句子7。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-008",
+    "sentence": "测试结句子8。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-009",
+    "sentence": "测试结句子9。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-010",
+    "sentence": "测试结句子10。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-结-011",
+    "sentence": "测试结句子11。",
+    "target_surface": "结",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "jie.concrete",
+      "jie.abstract"
+    ]
+  },
+  {
+    "id": "dry-行-000",
+    "sentence": "测试行句子0。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-001",
+    "sentence": "测试行句子1。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-002",
+    "sentence": "测试行句子2。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-003",
+    "sentence": "测试行句子3。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-004",
+    "sentence": "测试行句子4。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-005",
+    "sentence": "测试行句子5。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-006",
+    "sentence": "测试行句子6。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-007",
+    "sentence": "测试行句子7。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-008",
+    "sentence": "测试行句子8。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-009",
+    "sentence": "测试行句子9。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-010",
+    "sentence": "测试行句子10。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-011",
+    "sentence": "测试行句子11。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-012",
+    "sentence": "测试行句子12。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-013",
+    "sentence": "测试行句子13。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-014",
+    "sentence": "测试行句子14。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-015",
+    "sentence": "测试行句子15。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-016",
+    "sentence": "测试行句子16。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-行-017",
+    "sentence": "测试行句子17。",
+    "target_surface": "行",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "xing.approval",
+      "xing.row",
+      "xing.industry"
+    ]
+  },
+  {
+    "id": "dry-头-000",
+    "sentence": "测试头句子0。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-001",
+    "sentence": "测试头句子1。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-002",
+    "sentence": "测试头句子2。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-003",
+    "sentence": "测试头句子3。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-004",
+    "sentence": "测试头句子4。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-005",
+    "sentence": "测试头句子5。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-006",
+    "sentence": "测试头句子6。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-007",
+    "sentence": "测试头句子7。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-008",
+    "sentence": "测试头句子8。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-009",
+    "sentence": "测试头句子9。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-010",
+    "sentence": "测试头句子10。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-011",
+    "sentence": "测试头句子11。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-012",
+    "sentence": "测试头句子12。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-013",
+    "sentence": "测试头句子13。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-014",
+    "sentence": "测试头句子14。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-015",
+    "sentence": "测试头句子15。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-016",
+    "sentence": "测试头句子16。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  },
+  {
+    "id": "dry-头-017",
+    "sentence": "测试头句子17。",
+    "target_surface": "头",
+    "target_start": 2,
+    "target_end": 3,
+    "candidate_sense_ids": [
+      "tou.body",
+      "tou.leader",
+      "tou.beginning"
+    ]
+  }
+]

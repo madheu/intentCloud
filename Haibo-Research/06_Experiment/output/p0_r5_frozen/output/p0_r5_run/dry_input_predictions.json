@@ -1,0 +1,3758 @@
+[
+  {
+    "id": "dry-苹果-000",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-001",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-002",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-003",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-004",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-005",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-006",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-007",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-008",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-009",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-010",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-苹果-011",
+    "prediction": "apple.fruit",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "apple.fruit",
+      "L2": "apple.company",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "apple.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "apple.company": 0.6101490259170532,
+        "apple.fruit": 0.563654899597168
+      },
+      "L5_best_margin": 0.046494126319885254,
+      "cascade_A": "apple.fruit",
+      "cascade_B": "apple.fruit"
+    }
+  },
+  {
+    "id": "dry-小米-000",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-001",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-002",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-003",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-004",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-005",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-006",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-007",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-008",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-009",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-010",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-小米-011",
+    "prediction": "xiaomi.grain",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xiaomi.grain",
+      "L2": "xiaomi.grain",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xiaomi.company",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xiaomi.company": 0.5962774753570557,
+        "xiaomi.grain": 0.517548143863678
+      },
+      "L5_best_margin": 0.07872933149337769,
+      "cascade_A": "xiaomi.grain",
+      "cascade_B": "xiaomi.grain"
+    }
+  },
+  {
+    "id": "dry-杜鹃-000",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-001",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-002",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-003",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-004",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-005",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-006",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-007",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-008",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-009",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-010",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-杜鹃-011",
+    "prediction": "cuckoo.bird",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "cuckoo.bird",
+      "L2": "cuckoo.flower",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "cuckoo.flower",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "nr",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "cuckoo.flower": 0.5697466731071472,
+        "cuckoo.bird": 0.5649059414863586
+      },
+      "L5_best_margin": 0.004840731620788574,
+      "cascade_A": "cuckoo.bird",
+      "cascade_B": "cuckoo.bird"
+    }
+  },
+  {
+    "id": "dry-花-000",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-001",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-002",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-003",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-004",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-005",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-006",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-007",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-008",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-009",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-010",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-花-011",
+    "prediction": "hua.spend",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "hua.plant",
+      "L2": "hua.plant",
+      "L3": null,
+      "L4": "hua.spend",
+      "L5_forced": "hua.plant",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "v",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "hua.plant": 0.583096981048584,
+        "hua.spend": 0.5544292330741882
+      },
+      "L5_best_margin": 0.028667747974395752,
+      "cascade_A": "hua.spend",
+      "cascade_B": "hua.spend"
+    }
+  },
+  {
+    "id": "dry-光-000",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-001",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-002",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-003",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-004",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-005",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-006",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-007",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-008",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-009",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-010",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-光-011",
+    "prediction": "guang.physical",
+    "resolved_by": "L4",
+    "independent": {
+      "MFS": "guang.physical",
+      "L2": "guang.physical",
+      "L3": null,
+      "L4": "guang.physical",
+      "L5_forced": "guang.physical",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "guang.physical": 0.6074621677398682,
+        "guang.figurative": 0.521571934223175
+      },
+      "L5_best_margin": 0.08589023351669312,
+      "cascade_A": "guang.physical",
+      "cascade_B": "guang.physical"
+    }
+  },
+  {
+    "id": "dry-口-000",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-001",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-002",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-003",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-004",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-005",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-006",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-007",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-008",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-009",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-010",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-口-011",
+    "prediction": "kou.space",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "kou.space",
+      "L2": "kou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "kou.body",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "q",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "kou.body": 0.5977557897567749,
+        "kou.space": 0.5333582162857056
+      },
+      "L5_best_margin": 0.06439757347106934,
+      "cascade_A": "kou.space",
+      "cascade_B": "kou.space"
+    }
+  },
+  {
+    "id": "dry-结-000",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-001",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-002",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-003",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-004",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-005",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-006",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-007",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-008",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-009",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-010",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-结-011",
+    "prediction": "jie.concrete",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "jie.concrete",
+      "L2": "jie.concrete",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "jie.abstract",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "jie.concrete": 0.6108226776123047,
+        "jie.abstract": 0.6373221278190613
+      },
+      "L5_best_margin": 0.026499450206756592,
+      "cascade_A": "jie.concrete",
+      "cascade_B": "jie.concrete"
+    }
+  },
+  {
+    "id": "dry-行-000",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-001",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-002",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-003",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-004",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-005",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-006",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-007",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-008",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-009",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-010",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-011",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-012",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-013",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-014",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-015",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-016",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-行-017",
+    "prediction": "xing.row",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "xing.row",
+      "L2": "xing.approval",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "xing.approval",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "zg",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "xing.approval": 0.6261366009712219,
+        "xing.row": 0.6141310334205627,
+        "xing.industry": 0.5512394905090332
+      },
+      "L5_best_margin": 0.07489711046218872,
+      "cascade_A": "xing.row",
+      "cascade_B": "xing.row"
+    }
+  },
+  {
+    "id": "dry-头-000",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-001",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-002",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-003",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-004",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-005",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-006",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-007",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-008",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-009",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-010",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-011",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-012",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-013",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-014",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-015",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-016",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  },
+  {
+    "id": "dry-头-017",
+    "prediction": "tou.beginning",
+    "resolved_by": "MFS",
+    "independent": {
+      "MFS": "tou.beginning",
+      "L2": "tou.body",
+      "L3": null,
+      "L4": null,
+      "L5_forced": "tou.beginning",
+      "L5_selective": null
+    },
+    "debug": {
+      "target_span_valid": true,
+      "covering_compound": null,
+      "target_pos": "n",
+      "context_tokens": [
+        "测试",
+        "句子"
+      ],
+      "context_oov_tokens": [],
+      "L5_computable": true,
+      "L5_scores": {
+        "tou.body": 0.5773451328277588,
+        "tou.leader": 0.5223336219787598,
+        "tou.beginning": 0.6453583240509033
+      },
+      "L5_best_margin": 0.12302470207214355,
+      "cascade_A": "tou.beginning",
+      "cascade_B": "tou.beginning"
+    }
+  }
+]

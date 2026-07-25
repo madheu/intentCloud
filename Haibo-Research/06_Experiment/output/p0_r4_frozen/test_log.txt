@@ -1,0 +1,29 @@
+Initializing OpenHowNet succeeded!
+  ✅ 未知 sense ID 被拒绝
+  ✅ 预测为 sense ID 非 A/B/C
+  ✅ 表面词被拒绝
+  ✅ 所有词有 ≥2 候选
+  ✅ 不完整候选集被拒绝
+  ✅ 重复 ID 被拒绝
+  ✅ 错误 target span 被拒绝
+  ✅ L3 返回合法 sense ID 或 None
+  ✅ L4 返回合法 sense ID 或 None
+  ✅ L5 独立诊断执行
+  ✅ token 提取一致
+  ✅ '专业' 在腾讯词表中
+  ✅ '能力' 在腾讯词表中
+  ✅ '提升' 在腾讯词表中
+  ✅ '指导' 在腾讯词表中
+  ✅ '专门' 在腾讯词表中
+  ✅ 源码无盲测金标路径
+  ✅ scorer 对非法预测抛错
+
+========================================
+通过: 18/18, 失败: 0/18
+
+--- stderr ---
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\abc27\AppData\Local\Temp\jieba.cache
+Loading model cost 0.496 seconds.
+Prefix dict has been built successfully.
+

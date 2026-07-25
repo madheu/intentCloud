@@ -1,0 +1,349 @@
+[
+  {
+    "id": 1,
+    "prediction": "科技公司",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "科技公司": 0.6767198443412781,
+        "水果": 0.6352105736732483
+      }
+    }
+  },
+  {
+    "id": 2,
+    "prediction": "科技公司",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "科技公司": 0.5756093859672546,
+        "水果": 0.5088065266609192
+      }
+    }
+  },
+  {
+    "id": 3,
+    "prediction": "科技公司",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "科技公司": 0.6784703135490417,
+        "水果": 0.6039695143699646
+      }
+    }
+  },
+  {
+    "id": 4,
+    "prediction": "科技公司",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "科技公司": 0.6826320290565491,
+        "水果": 0.6335698962211609
+      }
+    }
+  },
+  {
+    "id": 5,
+    "prediction": "科技公司",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "科技公司": 0.6672350764274597,
+        "水果": 0.5912173986434937
+      }
+    }
+  },
+  {
+    "id": 6,
+    "prediction": "B",
+    "resolved_by": "MFS",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 7,
+    "prediction": "水果",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "科技公司": 0.6223567724227905,
+        "水果": 0.6964755058288574
+      }
+    }
+  },
+  {
+    "id": 8,
+    "prediction": "水果",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "科技公司": 0.6138534545898438,
+        "水果": 0.703345537185669
+      }
+    }
+  },
+  {
+    "id": 9,
+    "prediction": "水果",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "科技公司": 0.6163885593414307,
+        "水果": 0.6557177901268005
+      }
+    }
+  },
+  {
+    "id": 10,
+    "prediction": "水果",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "科技公司": 0.5075533390045166,
+        "水果": 0.557214617729187
+      }
+    }
+  },
+  {
+    "id": 11,
+    "prediction": "B",
+    "resolved_by": "MFS",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 12,
+    "prediction": "没纸",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 13,
+    "prediction": "日用包装",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "文书办公": 0.0,
+        "日用包装": 0.7008967995643616
+      }
+    }
+  },
+  {
+    "id": 14,
+    "prediction": "纸面",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 15,
+    "prediction": "日用包装",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "文书办公": 0.0,
+        "日用包装": 0.6580010652542114
+      }
+    }
+  },
+  {
+    "id": 16,
+    "prediction": "用纸",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 17,
+    "prediction": "日用包装",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "文书办公": 0.0,
+        "日用包装": 0.6343567967414856
+      }
+    }
+  },
+  {
+    "id": 18,
+    "prediction": "物理光线",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 19,
+    "prediction": "物理光线",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 20,
+    "prediction": "花光",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 21,
+    "prediction": "光说不做",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 22,
+    "prediction": "为国争光",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 23,
+    "prediction": "物理光线",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 24,
+    "prediction": "花园里",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 25,
+    "prediction": "盆花",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 26,
+    "prediction": "消费",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 27,
+    "prediction": "花钱",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 28,
+    "prediction": "消费",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 29,
+    "prediction": "消费",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 30,
+    "prediction": "三行",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 31,
+    "prediction": "评价可以",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "评价可以": 0.0,
+        "排列行列": 0.0,
+        "行业银行": 0.0
+      }
+    }
+  },
+  {
+    "id": 32,
+    "prediction": "行不通",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 33,
+    "prediction": "银行",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 34,
+    "prediction": "一行",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 35,
+    "prediction": "人体嘴巴",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "人体嘴巴": 0.0,
+        "出入口空间": 0.0
+      }
+    }
+  },
+  {
+    "id": 36,
+    "prediction": "入口",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 37,
+    "prediction": "三口",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 38,
+    "prediction": "伤口",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  }
+]

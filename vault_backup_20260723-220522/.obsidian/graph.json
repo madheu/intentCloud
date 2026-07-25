@@ -1,0 +1,44 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:knowledge-graph  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:knowledge-graph{haibo  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:ai-dev  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -3,
+  "nodeSizeMultiplier": 2.71931582584658,
+  "lineSizeMultiplier": 0.335348997926745,
+  "collapse-forces": false,
+  "centerStrength": 0,
+  "repelStrength": 16.3856254319281,
+  "linkStrength": 1,
+  "linkDistance": 500,
+  "scale": 0.04778763710962381,
+  "close": false
+}

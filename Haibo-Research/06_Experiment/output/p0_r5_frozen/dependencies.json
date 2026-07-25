@@ -1,0 +1,10 @@
+{
+  "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Python313\\python.exe",
+  "jieba": "0.42.1",
+  "gensim": "4.4.0",
+  "numpy": "2.2.6",
+  "OpenHowNet": "2.0",
+  "\u817e\u8baf\u8bcd\u5411\u91cf": "5515923c7e67cdc7",
+  "HowNet \u6570\u636e": "\u76ee\u5f55"
+}

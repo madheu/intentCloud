@@ -1,0 +1,484 @@
+[
+  {
+    "id": 1,
+    "prediction": "门径",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 2,
+    "prediction": "大门",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 3,
+    "prediction": "门类",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 4,
+    "prediction": "铁门",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 5,
+    "prediction": "纸杯",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 6,
+    "prediction": "纸杯",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 7,
+    "prediction": "结成",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 8,
+    "prediction": "结果",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 9,
+    "prediction": "具体",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 10,
+    "prediction": "结论",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 11,
+    "prediction": "心率",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 12,
+    "prediction": "心跳",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 13,
+    "prediction": "开心",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 14,
+    "prediction": "伤心",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 15,
+    "prediction": "长方形",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 16,
+    "prediction": "我方",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 17,
+    "prediction": "正方形",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 18,
+    "prediction": "地方",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 19,
+    "prediction": "门口",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 20,
+    "prediction": "入口",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 21,
+    "prediction": "口腔",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 22,
+    "prediction": "界线",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 23,
+    "prediction": "世界",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 24,
+    "prediction": "各界",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 25,
+    "prediction": "交界",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 26,
+    "prediction": "科技公司",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 27,
+    "prediction": "科技公司",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 28,
+    "prediction": "水果",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 29,
+    "prediction": "水果",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 30,
+    "prediction": "个人",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 31,
+    "prediction": "个人",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 32,
+    "prediction": "科技",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 33,
+    "prediction": "科技",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 34,
+    "prediction": "鸟",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 35,
+    "prediction": "花",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 36,
+    "prediction": "杜鹃鸟",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 37,
+    "prediction": "花",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 38,
+    "prediction": "花费",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 39,
+    "prediction": "开花",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 40,
+    "prediction": "自然",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 41,
+    "prediction": "行业",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 42,
+    "prediction": "行业",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 43,
+    "prediction": "自然",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 44,
+    "prediction": "竖行",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 45,
+    "prediction": "可行",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 46,
+    "prediction": "三角",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 47,
+    "prediction": "鹿角",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 48,
+    "prediction": "谷物",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 49,
+    "prediction": "科技",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 50,
+    "prediction": "争光",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 51,
+    "prediction": "光谱",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 52,
+    "prediction": "从头",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 53,
+    "prediction": "头发",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 54,
+    "prediction": "头儿",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 55,
+    "prediction": "长城电脑",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 56,
+    "prediction": "建筑",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 57,
+    "prediction": "公司",
+    "resolved_by": "L4",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 58,
+    "prediction": "片面",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 59,
+    "prediction": "定点",
+    "resolved_by": "L3",
+    "debug": {
+      "L5_detail": {}
+    }
+  },
+  {
+    "id": 60,
+    "prediction": "时间",
+    "resolved_by": "L5",
+    "debug": {
+      "L5_detail": {
+        "时间": 0.8310618996620178
+      }
+    }
+  }
+]

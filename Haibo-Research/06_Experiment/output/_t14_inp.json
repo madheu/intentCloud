@@ -1,0 +1,1 @@
+[{"id": "x", "sentence": "苹果发布了新系统。", "target_surface": "苹果", "target_start": 0, "target_end": 2, "candidate_sense_ids": ["apple.company", "apple.fruit"]}]
