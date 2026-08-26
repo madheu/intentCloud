@@ -22,7 +22,7 @@ tags: [haibo, 配置]
 - **extra_model_paths.yaml:** configured to point to `E:\Comfy-Desktop\ComfyUI-Shared\models\`
 
 ## WeChat — 零号词云公众号
-- **Account:** 零号词云 (AppID: wx78788e395b33ff9e, AppSecret in settings)
+- **Account:** 零号词云 
 - **Type:** 订阅号 (cannot auto-publish via API, need manual post)
 - **Articles:** `E:\Diviner\wechat_articles\`
 - **Assets:** `assets\` subfolder
